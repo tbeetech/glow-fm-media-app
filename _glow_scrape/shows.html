@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="5uJkG4BBbRAepZjeiUmMlGtUNYrcnMuvU61PH218">
+    <title>Shows &amp; Programs - Glow FM</title>
+    <meta name="google-adsense-account" content="ca-pub-3970534274644088">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEVJRFYBL8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SEVJRFYBL8');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3970534274644088"
+     crossorigin="anonymous"></script>
+    
+        <meta name="description" content="Your Voice, Your Music - The heartbeat of the city. Listen to the best music, engaging shows, and stay connected with your community.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://glowfmradio.com/shows">
+    <meta property="og:title" content="Shows &amp; Programs - Glow FM">
+    <meta property="og:description" content="Your Voice, Your Music - The heartbeat of the city. Listen to the best music, engaging shows, and stay connected with your community.">
+    <meta property="og:image" content="https://glowfmradio.com/glowfm logo.jpeg">
+    <meta property="og:image:secure_url" content="https://glowfmradio.com/glowfm logo.jpeg">
+    <meta property="og:image:alt" content="Shows &amp; Programs - Glow FM">
+    <meta property="og:url" content="https://glowfmradio.com/shows">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Glow FM">
+    <meta property="og:locale" content="en">
+            <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shows &amp; Programs - Glow FM">
+    <meta name="twitter:description" content="Your Voice, Your Music - The heartbeat of the city. Listen to the best music, engaging shows, and stay connected with your community.">
+    <meta name="twitter:image" content="https://glowfmradio.com/glowfm logo.jpeg">
+                <link rel="icon" href="https://glowfmradio.com/glowfm logo.jpeg">
+        <link rel="apple-touch-icon" href="https://glowfmradio.com/glowfm logo.jpeg">
+        <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"RadioStation","name":"Glow FM","url":"https://glowfmradio.com/shows","logo":"https://glowfmradio.com/glowfm logo.jpeg","slogan":"Your Voice, Your Music","sameAs":[]}    </script>
+
+    <style>
+        [x-cloak]{display:none!important;}
+        .flash-auto-dismiss{
+            overflow:hidden;
+            max-height:200px;
+            pointer-events:none;
+            animation:flashAutoDismiss 5s ease forwards;
+        }
+        @keyframes flashAutoDismiss{
+            0%,85%{opacity:1;max-height:200px;}
+            100%{opacity:0;max-height:0;padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0;border-width:0;}
+        }
+    </style>
+    <link rel="preload" as="style" href="https://glowfmradio.com/build/assets/app-BQAKyC_D.css" /><link rel="modulepreload" as="script" href="https://glowfmradio.com/build/assets/app-DigtLzDw.js" /><link rel="stylesheet" href="https://glowfmradio.com/build/assets/app-BQAKyC_D.css" data-navigate-track="reload" /><script type="module" src="https://glowfmradio.com/build/assets/app-DigtLzDw.js" data-navigate-track="reload"></script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}[wire\:cloak] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+
+<body class="bg-white font-sans antialiased" x-data="{ 
+    mobileMenuOpen: false, 
+    searchOpen: false,
+    scrolled: false,
+    playerOpen: true,
+    audioPlaying: false,
+    consentBannerOpen: false,
+    consentChoice: null,
+    init() {
+        try {
+            const storedConsent = localStorage.getItem('cmp_consent');
+            if (storedConsent) {
+                const parsedConsent = JSON.parse(storedConsent);
+                this.consentChoice = parsedConsent.choice || null;
+                this.consentBannerOpen = false;
+            } else {
+                this.consentBannerOpen = true;
+            }
+        } catch (e) {}
+        window.addEventListener('scroll', () => {
+            this.scrolled = window.pageYOffset > 20;
+        });
+    },
+    toggleLive() {
+        const audio = this.$refs.liveAudio;
+        if (!audio || !audio.src) return;
+        if (audio.paused) {
+            audio.play();
+            this.audioPlaying = true;
+        } else {
+            audio.pause();
+            this.audioPlaying = false;
+        }
+    },
+    startLive() {
+        const audio = this.$refs.liveAudio;
+        if (!audio || !audio.src) return;
+        audio.play();
+        this.audioPlaying = true;
+        this.playerOpen = true;
+    },
+    setConsent(choice) {
+        this.consentChoice = choice;
+        this.consentBannerOpen = false;
+        try {
+            localStorage.setItem('cmp_consent', JSON.stringify({
+                choice,
+                ts: Date.now(),
+            }));
+        } catch (e) {}
+    }
+}" x-init="init()">
+    
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+        :class="scrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'">
+        <!-- Top Bar -->
+        <div class="bg-slate-600 text-white">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-10 text-sm">
+                    <div class="flex items-center space-x-6">
+                        <a href="tel:+234 703 022 3281"
+                            class="flex items-center space-x-2 hover:text-emerald-100 transition-colors">
+                            <i class="fas fa-phone text-xs"></i>
+                            <span class="hidden md:inline">+234 703 022 3281</span>
+                        </a>
+                        <a href="mailto:info@glowfm.com"
+                            class="flex items-center space-x-2 hover:text-emerald-100 transition-colors">
+                            <i class="fas fa-envelope text-xs"></i>
+                            <span class="hidden md:inline">info@glowfm.com</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="hidden sm:flex items-center space-x-2 text-xs">
+                            <span class="relative flex h-2 w-2">
+                                <span class="absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"
+                                    :class="audioPlaying ? 'animate-ping' : ''"></span>
+                                <span class="relative inline-flex h-2 w-2 rounded-full"
+                                    :class="audioPlaying ? 'bg-emerald-400' : 'bg-red-500'"></span>
+                            </span>
+                            <span class="font-medium" x-text="audioPlaying ? 'LIVE STREAMING' : 'LIVE NOW'"></span>
+                            <span class="text-emerald-200">•</span>
+                            <span class="font-medium">Commercials</span>
+                            <span class="text-emerald-200">•</span>
+                            <span class="font-medium tabular-nums"
+                                  data-station-timezone="Africa/Lagos"
+                                  x-data="{
+                                    now: '',
+                                    tz: null,
+                                    init() {
+                                        this.tz = this.$el.dataset.stationTimezone || 'UTC';
+                                        const formatter = new Intl.DateTimeFormat([], {
+                                            hour: '2-digit',
+                                            minute: '2-digit',
+                                            timeZone: this.tz,
+                                        });
+                                        const format = () => {
+                                            this.now = formatter.format(new Date());
+                                        };
+                                        format();
+                                        setInterval(format, 1000);
+                                    }
+                                  }"
+                                  x-text="now"></span>
+                            <span class="text-emerald-200 text-[11px] font-semibold">WAT</span>
+                        </span>
+                        <div class="flex items-center space-x-3">
+                            <a href="" class="hover:text-emerald-100 transition-colors" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="hover:text-emerald-100 transition-colors" aria-label="X">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="" class="hover:text-emerald-100 transition-colors" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="hover:text-emerald-100 transition-colors" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-3 group">
+                    <div class="relative">
+                                                    <img src="https://glowfmradio.com/glowfm logo.jpeg" alt="Glow FM logo"
+                                class="w-12 h-12 rounded-xl object-contain bg-white shadow-lg p-1 transform group-hover:scale-105 transition-transform duration-300">
+                                                <div
+                            class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white animate-pulse">
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-900 leading-none">Glow FM</h1>
+                        <p class="text-xs font-semibold text-emerald-600">99.1 MHz</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="/"
+                        class="px-4 py-2 text-gray-700 font-medium hover:text-emerald-600 transition-colors duration-200 ">
+                        Home
+                    </a>
+                    <a href="/about"
+                        class="px-4 py-2 text-gray-700 font-medium hover:text-emerald-600 transition-colors duration-200 ">
+                        About
+                    </a>
+                    <div x-data="{ open: false }" class="relative">
+                        <button @click="open = !open" @click.away="open = false"
+                            class="px-4 py-2 text-gray-700 font-medium hover:text-emerald-600 transition-colors duration-200 flex items-center text-emerald-600">
+                            Program
+                            <i class="fas fa-chevron-down text-xs ml-2"></i>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+                            x-transition:leave-end="opacity-0 translate-y-2"
+                            class="absolute left-0 mt-2 w-52 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                            <a href="/shows"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Shows
+                            </a>
+                            <a href="/schedule"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Schedule
+                            </a>
+                            <a href="/oaps"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                OAPs
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ open: false }" class="relative">
+                        <button @click="open = !open" @click.away="open = false"
+                            class="px-4 py-2 text-gray-700 font-medium hover:text-emerald-600 transition-colors duration-200 flex items-center ">
+                            Media
+                            <i class="fas fa-chevron-down text-xs ml-2"></i>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+                            x-transition:leave-end="opacity-0 translate-y-2"
+                            class="absolute left-0 mt-2 w-52 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                            <a href="/podcasts"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Podcasts
+                            </a>
+                            <a href="/news"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                News
+                            </a>
+                            <a href="/blog"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Blog
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ open: false }" class="relative">
+                        <button @click="open = !open" @click.away="open = false"
+                            class="px-4 py-2 text-gray-700 font-medium hover:text-emerald-600 transition-colors duration-200 flex items-center ">
+                            Community
+                            <i class="fas fa-chevron-down text-xs ml-2"></i>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+                            x-transition:leave-end="opacity-0 translate-y-2"
+                            class="absolute left-0 mt-2 w-52 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                            <a href="/team"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Team
+                            </a>
+                            <a href="/events"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Events
+                            </a>
+                            <a href="/contact"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Actions -->
+                <div class="flex items-center space-x-4">
+                    <!-- Search Button -->
+                    <button @click="searchOpen = !searchOpen"
+                        class="hidden md:flex items-center justify-center w-10 h-10 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                    <!-- Authentication Links -->
+                                            <!-- Login/Register Links -->
+                        <div class="hidden md:flex items-center space-x-2">
+                            <a href="https://glowfmradio.com/login"
+                                class="px-4 py-2 text-emerald-600 hover:text-emerald-700 font-medium transition-colors">
+                                Login
+                            </a>
+                            <a href="https://glowfmradio.com/register"
+                                class="px-6 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-full transition-colors">
+                                Sign Up
+                            </a>
+                        </div>
+                    
+                    <!-- Listen Live Button -->
+                    <button type="button" @click="startLive"
+                        class="hidden md:flex items-center space-x-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-play-circle text-xl"></i>
+                        <span>Listen Live</span>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button @click="mobileMenuOpen = !mobileMenuOpen"
+                        class="lg:hidden flex items-center justify-center w-10 h-10 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200">
+                        <i class="fas" :class="mobileMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Search Bar (Dropdown) -->
+        <div x-show="searchOpen" x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-4" class="border-t border-gray-200 bg-white shadow-xl"
+            @click.away="searchOpen = false">
+            <div class="container mx-auto px-4 py-6">
+                <div class="max-w-3xl mx-auto relative">
+                    <input type="text" placeholder="Search news, shows, events..."
+                        class="w-full px-6 py-4 pr-12 text-lg border-2 border-gray-300 rounded-2xl focus:outline-none focus:border-emerald-500 transition-colors">
+                    <button
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 text-emerald-600 hover:text-emerald-700">
+                        <i class="fas fa-search text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-4"
+            class="lg:hidden border-t border-gray-200 bg-white shadow-xl">
+            <div class="container mx-auto px-4 py-6 space-y-2">
+                <a href="/"
+                    class="block px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors">
+                    Home
+                </a>
+                <a href="/about"
+                    class="block px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors">
+                    About
+                </a>
+                <div x-data="{ open: false }" class="rounded-lg border border-gray-200">
+                    <button @click="open = !open"
+                        class="w-full flex items-center justify-between px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors">
+                        <span>Program</span>
+                        <i class="fas text-xs" :class="open ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                    </button>
+                    <div x-show="open" x-transition class="pb-2">
+                        <a href="/shows"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Shows
+                        </a>
+                        <a href="/schedule"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Schedule
+                        </a>
+                        <a href="/oaps"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            OAPs
+                        </a>
+                    </div>
+                </div>
+                <div x-data="{ open: false }" class="rounded-lg border border-gray-200">
+                    <button @click="open = !open"
+                        class="w-full flex items-center justify-between px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors">
+                        <span>Media</span>
+                        <i class="fas text-xs" :class="open ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                    </button>
+                    <div x-show="open" x-transition class="pb-2">
+                        <a href="/podcasts"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Podcasts
+                        </a>
+                        <a href="/news"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            News
+                        </a>
+                        <a href="/blog"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div x-data="{ open: false }" class="rounded-lg border border-gray-200">
+                    <button @click="open = !open"
+                        class="w-full flex items-center justify-between px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors">
+                        <span>Community</span>
+                        <i class="fas text-xs" :class="open ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                    </button>
+                    <div x-show="open" x-transition class="pb-2">
+                        <a href="/team"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Team
+                        </a>
+                        <a href="/events"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Events
+                        </a>
+                        <a href="/contact"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <button @click="searchOpen = !searchOpen"
+                        class="w-full px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors text-left">
+                        <i class="fas fa-search mr-2"></i> Search
+                    </button>
+                </div>
+                                    <div class="pt-2 space-y-2">
+                        <a href="https://glowfmradio.com/login"
+                            class="block px-4 py-3 text-emerald-600 font-medium hover:bg-emerald-50 rounded-lg transition-colors">
+                            <i class="fas fa-right-to-bracket mr-2"></i> Login
+                        </a>
+                        <a href="https://glowfmradio.com/register"
+                            class="block px-4 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-colors">
+                            <i class="fas fa-user-plus mr-2"></i> Sign Up
+                        </a>
+                    </div>
+                                <button type="button" @click="startLive"
+                    class="block mt-4 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-full text-center shadow-lg">
+                    <i class="fas fa-play-circle mr-2"></i> Listen Live
+                </button>
+            </div>
+        </div>
+    </header>
+
+            <div class="bg-emerald-600 text-white">
+            <div class="container mx-auto px-4 py-2">
+                <div class="flex items-center space-x-4 text-sm">
+                    <span class="flex items-center space-x-2 font-semibold">
+                        <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                        <span>NOW PLAYING</span>
+                    </span>
+                    <marquee class="flex-1">
+                         —  •  • Broadcasting live now
+                    </marquee>
+                    <button type="button" @click="startLive"
+                        class="hidden sm:inline-flex items-center space-x-2 px-3 py-1 bg-white/20 hover:bg-white/30 rounded-full text-xs font-semibold">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Listen Live</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Spacer for Fixed Header -->
+    <div class="h-28"></div>
+
+    
+    
+    <!-- Main Content -->
+    <main>
+        <div wire:snapshot="{&quot;data&quot;:{&quot;selectedCategory&quot;:&quot;all&quot;,&quot;searchQuery&quot;:&quot;&quot;,&quot;sortBy&quot;:&quot;featured&quot;,&quot;paginators&quot;:[{&quot;page&quot;:1},{&quot;s&quot;:&quot;arr&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;otHNcpty9yL23Vrq57NW&quot;,&quot;name&quot;:&quot;page.show-page&quot;,&quot;path&quot;:&quot;shows&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;273d89581dedd5057fcc74ed8f798cf286cbf8c3a6e0320185f56120bb281e69&quot;}" wire:effects="{&quot;url&quot;:{&quot;selectedCategory&quot;:{&quot;as&quot;:&quot;selectedCategory&quot;,&quot;use&quot;:&quot;push&quot;,&quot;alwaysShow&quot;:false,&quot;except&quot;:&quot;all&quot;},&quot;searchQuery&quot;:{&quot;as&quot;:&quot;searchQuery&quot;,&quot;use&quot;:&quot;push&quot;,&quot;alwaysShow&quot;:false,&quot;except&quot;:&quot;&quot;},&quot;sortBy&quot;:{&quot;as&quot;:&quot;sortBy&quot;,&quot;use&quot;:&quot;push&quot;,&quot;alwaysShow&quot;:false,&quot;except&quot;:&quot;featured&quot;},&quot;paginators.page&quot;:{&quot;as&quot;:&quot;page&quot;,&quot;use&quot;:&quot;push&quot;,&quot;alwaysShow&quot;:false,&quot;except&quot;:null}}}" wire:id="otHNcpty9yL23Vrq57NW">
+    <section class="relative bg-gradient-to-br from-emerald-700 via-emerald-800 to-teal-800 text-white py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Shows & Programs</h1>
+                <p class="text-xl md:text-2xl text-emerald-100 leading-relaxed">
+                    Discover the daily lineup, hosts, and signature programs that power Glow FM.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--[if BLOCK]><![endif]-->        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 group">
+                        <div class="relative h-96 lg:h-auto overflow-hidden">
+                            <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/shows/covers/ME3U1yJPDjhH91s8M3HxMm6s3FHdKfhD5LSOZY7O.jpg" alt="Morning motivations " class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-5xl font-bold text-white">MM</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                            <div class="absolute top-6 left-6">
+                                <span class="px-4 py-2 bg-emerald-600 text-white text-sm font-bold rounded-full shadow-lg">
+                                    <i class="fas fa-star mr-1"></i> FEATURED
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-8 lg:p-12 text-white flex flex-col justify-center">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <span class="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                                    Education
+                                </span>
+                                <span class="text-emerald-300 text-sm">
+                                    <i class="fas fa-clock mr-1"></i> 5 mins
+                                </span>
+                                <span class="text-emerald-300 text-sm">
+                                    <i class="fas fa-user mr-1"></i> Desmond Ujiro
+                                </span>
+                            </div>
+
+                            <h2 class="text-3xl lg:text-4xl font-bold mb-4 leading-tight">Morning motivations </h2>
+                            <p class="text-gray-300 text-lg mb-6 leading-relaxed">A motivational program to always start up the week, every Monday morning, 5:10am - 5:15am</p>
+
+                            <a href="https://glowfmradio.com/shows/morning-motivations"
+                                class="inline-flex items-center space-x-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-full transition-all duration-300 w-fit">
+                                <span>View Show</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--[if ENDBLOCK]><![endif]-->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <aside class="lg:col-span-1 space-y-8">
+                    <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                            <i class="fas fa-search text-emerald-600 mr-2"></i>
+                            Search Shows
+                        </h3>
+                        <div class="relative">
+                            <input type="text" wire:model.live.debounce.500ms="searchQuery"
+                                placeholder="Search shows..."
+                                class="w-full px-4 py-3 pr-10 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-emerald-500 transition-colors">
+                            <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                            <i class="fas fa-folder text-emerald-600 mr-2"></i>
+                            Categories
+                        </h3>
+                        <div class="space-y-2">
+                            <!--[if BLOCK]><![endif]-->                                                                <button wire:click="$set('selectedCategory', 'all')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 bg-emerald-50 text-emerald-700 font-semibold">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-emerald-600"></i>
+                                        <span>All Shows</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">101</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'education')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Education</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">9</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'information')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Information</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">17</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'politics')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Politics</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">8</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'religious')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Religious</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">24</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'current-affairs')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Current Affairs</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">1</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'social-networking')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Social Networking</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">2</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'entertainment')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Entertainment</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">25</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'commercials')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Commercials</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">1</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'news')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>News</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">9</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'sport')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Sport</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">2</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'health')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Health</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">1</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'law')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Law</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">1</span>
+                                </button>
+                                                                                            <button wire:click="$set('selectedCategory', 'business')"
+                                    class="w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-gray-700 hover:bg-gray-50">
+                                    <span class="flex items-center space-x-2">
+                                        <i class="fas fa-microphone text-blue-600"></i>
+                                        <span>Business</span>
+                                    </span>
+                                    <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">1</span>
+                                </button>
+                            <!--[if ENDBLOCK]><![endif]-->                        </div>
+                    </div>
+                </aside>
+
+                <div class="lg:col-span-3">
+                    <div class="mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-4 sm:space-y-0">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">
+                                <!--[if BLOCK]><![endif]-->                                    All Shows
+                                <!--[if ENDBLOCK]><![endif]-->                            </h2>
+                            <p class="text-gray-600 mt-1">101 shows found</p>
+                        </div>
+
+                        <select wire:model.live="sortBy"
+                            class="px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            <option value="featured">Featured</option>
+                            <option value="latest">Latest</option>
+                            <option value="popular">Most Listened</option>
+                            <option value="title_asc">Title (A–Z)</option>
+                            <option value="title_desc">Title (Z–A)</option>
+                            <option value="host_asc">Host (A–Z)</option>
+                            <option value="host_desc">Host (Z–A)</option>
+                            <option value="day_asc">Day & Time (Earliest)</option>
+                            <option value="day_desc">Day & Time (Latest)</option>
+                            <option value="duration_asc">Duration (Shortest)</option>
+                            <option value="duration_desc">Duration (Longest)</option>
+                            <option value="category_asc">Category (A–Z)</option>
+                            <option value="category_desc">Category (Z–A)</option>
+                            <option value="format_asc">Format (A–Z)</option>
+                            <option value="format_desc">Format (Z–A)</option>
+                        </select>
+                    </div>
+
+                    <!--[if BLOCK]><![endif]-->                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!--[if BLOCK]><![endif]-->                                <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                                    <div class="relative h-52 overflow-hidden">
+                                        <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/shows/covers/u6THu6uKr3Czh4F5iTq31i53lqDjoTrpeXTYlcnr.jpg" alt="AMEBO KEKE" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">AK</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                        <div class="absolute top-4 left-4">
+                                            <span class="px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                                                Information
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="p-6">
+                                        <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-clock text-xs"></i>
+                                                <span>120 mins</span>
+                                            </span>
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-user text-xs"></i>
+                                                <span>Desmond Ujiro</span>
+                                            </span>
+                                        </div>
+
+                                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-600 transition-colors">
+                                            <a href="https://glowfmradio.com/shows/amebo-keke">AMEBO KEKE</a>
+                                        </h3>
+
+                                        <p class="text-gray-600 mb-4 line-clamp-3">A current affairs pidgin program</p>
+
+                                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="relative w-10 h-10 rounded-full overflow-hidden">
+                                                    <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-xs font-bold text-white">DU</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-semibold text-gray-900">Desmond Ujiro</p>
+                                                    <p class="text-xs text-gray-500">Live</p>
+                                                </div>
+                                            </div>
+                                            <a href="https://glowfmradio.com/shows/amebo-keke"
+                                                class="text-emerald-600 hover:text-emerald-700 text-sm font-semibold">
+                                                View
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                                            <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                                    <div class="relative h-52 overflow-hidden">
+                                        <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/shows/covers/ME3U1yJPDjhH91s8M3HxMm6s3FHdKfhD5LSOZY7O.jpg" alt="Morning motivations " class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">MM</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                        <div class="absolute top-4 left-4">
+                                            <span class="px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                                                Education
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="p-6">
+                                        <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-clock text-xs"></i>
+                                                <span>5 mins</span>
+                                            </span>
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-user text-xs"></i>
+                                                <span>Desmond Ujiro</span>
+                                            </span>
+                                        </div>
+
+                                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-600 transition-colors">
+                                            <a href="https://glowfmradio.com/shows/morning-motivations">Morning motivations </a>
+                                        </h3>
+
+                                        <p class="text-gray-600 mb-4 line-clamp-3">A motivational program to always start up the week, every Monday morning, 5:10am - 5:15am</p>
+
+                                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="relative w-10 h-10 rounded-full overflow-hidden">
+                                                    <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-xs font-bold text-white">DU</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-semibold text-gray-900">Desmond Ujiro</p>
+                                                    <p class="text-xs text-gray-500">Pre-recorded</p>
+                                                </div>
+                                            </div>
+                                            <a href="https://glowfmradio.com/shows/morning-motivations"
+                                                class="text-emerald-600 hover:text-emerald-700 text-sm font-semibold">
+                                                View
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                                            <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                                    <div class="relative h-52 overflow-hidden">
+                                        <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">AN</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                        <div class="absolute top-4 left-4">
+                                            <span class="px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                                                Information
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="p-6">
+                                        <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-clock text-xs"></i>
+                                                <span>45 mins</span>
+                                            </span>
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-user text-xs"></i>
+                                                <span>Glow FM</span>
+                                            </span>
+                                        </div>
+
+                                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-600 transition-colors">
+                                            <a href="https://glowfmradio.com/shows/a-n-woyin">A N woyin</a>
+                                        </h3>
+
+                                        <p class="text-gray-600 mb-4 line-clamp-3">A N woyin programs </p>
+
+                                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="relative w-10 h-10 rounded-full overflow-hidden">
+                                                    <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-xs font-bold text-white">GF</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-semibold text-gray-900">Glow FM</p>
+                                                    <p class="text-xs text-gray-500">Live</p>
+                                                </div>
+                                            </div>
+                                            <a href="https://glowfmradio.com/shows/a-n-woyin"
+                                                class="text-emerald-600 hover:text-emerald-700 text-sm font-semibold">
+                                                View
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                                            <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                                    <div class="relative h-52 overflow-hidden">
+                                        <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">AI</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                        <div class="absolute top-4 left-4">
+                                            <span class="px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                                                Information
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="p-6">
+                                        <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-clock text-xs"></i>
+                                                <span>30 mins</span>
+                                            </span>
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-user text-xs"></i>
+                                                <span>Mr. Gbenga</span>
+                                            </span>
+                                        </div>
+
+                                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-600 transition-colors">
+                                            <a href="https://glowfmradio.com/shows/abo-ilu">Abo Ilu</a>
+                                        </h3>
+
+                                        <p class="text-gray-600 mb-4 line-clamp-3">Abo Ilu by Gbenga</p>
+
+                                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="relative w-10 h-10 rounded-full overflow-hidden">
+                                                    <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-xs font-bold text-white">MG</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-semibold text-gray-900">Mr. Gbenga</p>
+                                                    <p class="text-xs text-gray-500">Live</p>
+                                                </div>
+                                            </div>
+                                            <a href="https://glowfmradio.com/shows/abo-ilu"
+                                                class="text-emerald-600 hover:text-emerald-700 text-sm font-semibold">
+                                                View
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                                            <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                                    <div class="relative h-52 overflow-hidden">
+                                        <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">AI</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                        <div class="absolute top-4 left-4">
+                                            <span class="px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                                                Information
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="p-6">
+                                        <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-clock text-xs"></i>
+                                                <span>15 mins</span>
+                                            </span>
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-user text-xs"></i>
+                                                <span>Glow FM</span>
+                                            </span>
+                                        </div>
+
+                                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-600 transition-colors">
+                                            <a href="https://glowfmradio.com/shows/agbe-iwoyi">Agbe Iwoyi</a>
+                                        </h3>
+
+                                        <p class="text-gray-600 mb-4 line-clamp-3">Agbe Iwoyi</p>
+
+                                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="relative w-10 h-10 rounded-full overflow-hidden">
+                                                    <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-xs font-bold text-white">GF</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-semibold text-gray-900">Glow FM</p>
+                                                    <p class="text-xs text-gray-500">Live</p>
+                                                </div>
+                                            </div>
+                                            <a href="https://glowfmradio.com/shows/agbe-iwoyi"
+                                                class="text-emerald-600 hover:text-emerald-700 text-sm font-semibold">
+                                                View
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                                            <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                                    <div class="relative h-52 overflow-hidden">
+                                        <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">A</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                        <div class="absolute top-4 left-4">
+                                            <span class="px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                                                Entertainment
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="p-6">
+                                        <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-clock text-xs"></i>
+                                                <span>60 mins</span>
+                                            </span>
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-user text-xs"></i>
+                                                <span>Tolu Adedayo</span>
+                                            </span>
+                                        </div>
+
+                                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-600 transition-colors">
+                                            <a href="https://glowfmradio.com/shows/agborandun">Agborandun</a>
+                                        </h3>
+
+                                        <p class="text-gray-600 mb-4 line-clamp-3">Agborandun by Tolu Adedayo</p>
+
+                                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="relative w-10 h-10 rounded-full overflow-hidden">
+                                                    <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-xs font-bold text-white">TA</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-semibold text-gray-900">Tolu Adedayo</p>
+                                                    <p class="text-xs text-gray-500">Pre-recorded</p>
+                                                </div>
+                                            </div>
+                                            <a href="https://glowfmradio.com/shows/agborandun"
+                                                class="text-emerald-600 hover:text-emerald-700 text-sm font-semibold">
+                                                View
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                                            <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                                    <div class="relative h-52 overflow-hidden">
+                                        <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">AO</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                        <div class="absolute top-4 left-4">
+                                            <span class="px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                                                Information
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="p-6">
+                                        <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-clock text-xs"></i>
+                                                <span>60 mins</span>
+                                            </span>
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-user text-xs"></i>
+                                                <span>Glow FM</span>
+                                            </span>
+                                        </div>
+
+                                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-600 transition-colors">
+                                            <a href="https://glowfmradio.com/shows/akoni-oodua">Akoni Oodua</a>
+                                        </h3>
+
+                                        <p class="text-gray-600 mb-4 line-clamp-3">Akoni Oodua</p>
+
+                                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="relative w-10 h-10 rounded-full overflow-hidden">
+                                                    <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-xs font-bold text-white">GF</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-semibold text-gray-900">Glow FM</p>
+                                                    <p class="text-xs text-gray-500">Live</p>
+                                                </div>
+                                            </div>
+                                            <a href="https://glowfmradio.com/shows/akoni-oodua"
+                                                class="text-emerald-600 hover:text-emerald-700 text-sm font-semibold">
+                                                View
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                                            <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                                    <div class="relative h-52 overflow-hidden">
+                                        <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">AA</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                        <div class="absolute top-4 left-4">
+                                            <span class="px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                                                Entertainment
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="p-6">
+                                        <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-clock text-xs"></i>
+                                                <span>60 mins</span>
+                                            </span>
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-user text-xs"></i>
+                                                <span>McChurchill</span>
+                                            </span>
+                                        </div>
+
+                                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-600 transition-colors">
+                                            <a href="https://glowfmradio.com/shows/ale-ariwo">Ale Ariwo</a>
+                                        </h3>
+
+                                        <p class="text-gray-600 mb-4 line-clamp-3">Ale Ariwo by Churchill and Co.</p>
+
+                                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="relative w-10 h-10 rounded-full overflow-hidden">
+                                                    <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-xs font-bold text-white">M</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-semibold text-gray-900">McChurchill</p>
+                                                    <p class="text-xs text-gray-500">Live</p>
+                                                </div>
+                                            </div>
+                                            <a href="https://glowfmradio.com/shows/ale-ariwo"
+                                                class="text-emerald-600 hover:text-emerald-700 text-sm font-semibold">
+                                                View
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                                            <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                                    <div class="relative h-52 overflow-hidden">
+                                        <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">A</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                        <div class="absolute top-4 left-4">
+                                            <span class="px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                                                Religious
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="p-6">
+                                        <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-clock text-xs"></i>
+                                                <span>60 mins</span>
+                                            </span>
+                                            <span class="flex items-center space-x-1">
+                                                <i class="fas fa-user text-xs"></i>
+                                                <span>Prop Olajide</span>
+                                            </span>
+                                        </div>
+
+                                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-600 transition-colors">
+                                            <a href="https://glowfmradio.com/shows/apedahun">Apedahun</a>
+                                        </h3>
+
+                                        <p class="text-gray-600 mb-4 line-clamp-3">Apedahun by Prop Olajide</p>
+
+                                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="relative w-10 h-10 rounded-full overflow-hidden">
+                                                    <!--[if BLOCK]><![endif]-->    <div class="absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-xs font-bold text-white">PO</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-semibold text-gray-900">Prop Olajide</p>
+                                                    <p class="text-xs text-gray-500">Pre-recorded</p>
+                                                </div>
+                                            </div>
+                                            <a href="https://glowfmradio.com/shows/apedahun"
+                                                class="text-emerald-600 hover:text-emerald-700 text-sm font-semibold">
+                                                View
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            <!--[if ENDBLOCK]><![endif]-->                        </div>
+                        <div class="mt-12 flex justify-center">
+                            <div>
+    <!--[if BLOCK]><![endif]-->        <nav role="navigation" aria-label="Pagination Navigation" class="flex items-center justify-between">
+            <div class="flex justify-between flex-1 sm:hidden">
+                <span>
+                    <!--[if BLOCK]><![endif]-->                        <span class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default leading-5 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300 dark:focus:border-blue-700 dark:active:bg-gray-700 dark:active:text-gray-300">
+                            &laquo; Previous
+                        </span>
+                    <!--[if ENDBLOCK]><![endif]-->                </span>
+
+                <span>
+                    <!--[if BLOCK]><![endif]-->                        <button type="button" wire:click="nextPage('page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" wire:loading.attr="disabled" dusk="nextPage.before" class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 rounded-md hover:text-gray-500 focus:outline-none focus:ring ring-blue-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300 dark:focus:border-blue-700 dark:active:bg-gray-700 dark:active:text-gray-300">
+                            Next &raquo;
+                        </button>
+                    <!--[if ENDBLOCK]><![endif]-->                </span>
+            </div>
+
+            <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                <div>
+                    <p class="text-sm text-gray-700 leading-5 dark:text-gray-400">
+                        <span>Showing</span>
+                        <span class="font-medium">1</span>
+                        <span>to</span>
+                        <span class="font-medium">9</span>
+                        <span>of</span>
+                        <span class="font-medium">101</span>
+                        <span>results</span>
+                    </p>
+                </div>
+
+                <div>
+                    <span class="relative z-0 inline-flex rtl:flex-row-reverse rounded-md shadow-sm">
+                        <span>
+                            
+                            <!--[if BLOCK]><![endif]-->                                <span aria-disabled="true" aria-label="&amp;laquo; Previous">
+                                    <span class="relative inline-flex items-center px-2 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default rounded-l-md leading-5 dark:bg-gray-800 dark:border-gray-600" aria-hidden="true">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </span>
+                            <!--[if ENDBLOCK]><![endif]-->                        </span>
+
+                        
+                        <!--[if BLOCK]><![endif]-->                            
+                            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+                            
+                            <!--[if BLOCK]><![endif]-->                                <!--[if BLOCK]><![endif]-->                                    <span wire:key="paginator-page-page1">
+                                        <!--[if BLOCK]><![endif]-->                                            <span aria-current="page">
+                                                <span class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default leading-5 dark:bg-gray-800 dark:border-gray-600">1</span>
+                                            </span>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                                                    <span wire:key="paginator-page-page2">
+                                        <!--[if BLOCK]><![endif]-->                                            <button type="button" wire:click="gotoPage(2, 'page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:text-gray-300 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Go to page 2">
+                                                2
+                                            </button>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                                                    <span wire:key="paginator-page-page3">
+                                        <!--[if BLOCK]><![endif]-->                                            <button type="button" wire:click="gotoPage(3, 'page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:text-gray-300 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Go to page 3">
+                                                3
+                                            </button>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                                                    <span wire:key="paginator-page-page4">
+                                        <!--[if BLOCK]><![endif]-->                                            <button type="button" wire:click="gotoPage(4, 'page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:text-gray-300 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Go to page 4">
+                                                4
+                                            </button>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                                                    <span wire:key="paginator-page-page5">
+                                        <!--[if BLOCK]><![endif]-->                                            <button type="button" wire:click="gotoPage(5, 'page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:text-gray-300 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Go to page 5">
+                                                5
+                                            </button>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                                                    <span wire:key="paginator-page-page6">
+                                        <!--[if BLOCK]><![endif]-->                                            <button type="button" wire:click="gotoPage(6, 'page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:text-gray-300 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Go to page 6">
+                                                6
+                                            </button>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                                                    <span wire:key="paginator-page-page7">
+                                        <!--[if BLOCK]><![endif]-->                                            <button type="button" wire:click="gotoPage(7, 'page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:text-gray-300 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Go to page 7">
+                                                7
+                                            </button>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                                                    <span wire:key="paginator-page-page8">
+                                        <!--[if BLOCK]><![endif]-->                                            <button type="button" wire:click="gotoPage(8, 'page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:text-gray-300 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Go to page 8">
+                                                8
+                                            </button>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                                                    <span wire:key="paginator-page-page9">
+                                        <!--[if BLOCK]><![endif]-->                                            <button type="button" wire:click="gotoPage(9, 'page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:text-gray-300 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Go to page 9">
+                                                9
+                                            </button>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                                                    <span wire:key="paginator-page-page10">
+                                        <!--[if BLOCK]><![endif]-->                                            <button type="button" wire:click="gotoPage(10, 'page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:text-gray-300 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Go to page 10">
+                                                10
+                                            </button>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                                                    <span wire:key="paginator-page-page11">
+                                        <!--[if BLOCK]><![endif]-->                                            <button type="button" wire:click="gotoPage(11, 'page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:text-gray-300 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Go to page 11">
+                                                11
+                                            </button>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                                                    <span wire:key="paginator-page-page12">
+                                        <!--[if BLOCK]><![endif]-->                                            <button type="button" wire:click="gotoPage(12, 'page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:text-gray-300 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Go to page 12">
+                                                12
+                                            </button>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </span>
+                                <!--[if ENDBLOCK]><![endif]-->                            <!--[if ENDBLOCK]><![endif]-->                        <!--[if ENDBLOCK]><![endif]-->
+                        <span>
+                            
+                            <!--[if BLOCK]><![endif]-->                                <button type="button" wire:click="nextPage('page')" x-on:click="   ($el.closest(&#039;body&#039;) || document.querySelector(&#039;body&#039;)).scrollIntoView()" dusk="nextPage.after" class="relative inline-flex items-center px-2 py-2 -ml-px text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-r-md leading-5 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:ring ring-blue-300 active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150 dark:bg-gray-800 dark:border-gray-600 dark:active:bg-gray-700 dark:focus:border-blue-800" aria-label="Next &amp;raquo;">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            <!--[if ENDBLOCK]><![endif]-->                        </span>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    <!--[if ENDBLOCK]><![endif]--></div>
+
+                        </div>
+                    <!--[if ENDBLOCK]><![endif]-->                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 mt-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+
+                <!-- About Section -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                                                    <img src="https://glowfmradio.com/glowfm logo.jpeg" alt="Glow FM logo"
+                                class="w-12 h-12 rounded-xl object-contain bg-white shadow-lg p-1">
+                                                <div>
+                            <h3 class="text-xl font-bold">Glow FM</h3>
+                            <p class="text-sm text-emerald-400">99.1 MHz</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Your Voice, Your Music. Broadcasting the heartbeat of the city of Akure with the best music, engaging
+                        shows, and vibrant community connection.
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <a href=""
+                            class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href=""
+                            class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href=""
+                            class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href=""
+                            class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="/about"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/shows"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                Our Shows
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/schedule"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                Schedule
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/podcasts"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                Our Podcasts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/news"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                News & Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact Info</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-emerald-400 mt-1"></i>
+                            <span class="text-gray-400">
+                                1 Efon Alaye street Ijapo Estate, Akure, Akure, Nigeria.
+                            </span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-emerald-400"></i>
+                            <a href="tel:+234 703 022 3281" class="text-gray-400 hover:text-emerald-400 transition-colors">
+                                +234 703 022 3281
+                            </a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-emerald-400"></i>
+                            <a href="mailto:info@glowfm.com"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors">
+                                info@glowfm.com
+                            </a>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-clock text-emerald-400 mt-1"></i>
+                            <span class="text-gray-400">
+                                24/7 Broadcasting<br>
+                                Office: Mon-Fri, 9AM - 6PM
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to get updates on shows, events, and exclusive content!
+                    </p>
+                    <form method="POST" action="https://glowfmradio.com/newsletter/subscribe" class="space-y-3">
+                        <input type="hidden" name="_token" value="5uJkG4BBbRAepZjeiUmMlGtUNYrcnMuvU61PH218" autocomplete="off">                        <input type="hidden" name="source" value="footer">
+                        <input type="email" name="email" required placeholder="Your email address"
+                            class="w-full px-4 py-3 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all">
+                        <button type="submit"
+                            class="w-full px-4 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-colors duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+
+                    <!-- Recent Shows -->
+                    <div class="mt-6 pt-6 border-t border-gray-800">
+                        <h4 class="text-sm font-semibold mb-3 text-gray-300">Recent Shows</h4>
+                        <div class="space-y-2">
+                                                            <a href="https://glowfmradio.com/shows/corruption-must-go"
+                                    class="flex items-center space-x-2 text-gray-400 hover:text-emerald-400 transition-colors text-sm">
+                                    <i class="fas fa-microphone text-xs"></i>
+                                    <span>Corruption must go</span>
+                                </a>
+                                                            <a href="https://glowfmradio.com/shows/ara-n-be"
+                                    class="flex items-center space-x-2 text-gray-400 hover:text-emerald-400 transition-colors text-sm">
+                                    <i class="fas fa-microphone text-xs"></i>
+                                    <span>Ara n be</span>
+                                </a>
+                                                            <a href="https://glowfmradio.com/shows/aseyori-ni-temi"
+                                    class="flex items-center space-x-2 text-gray-400 hover:text-emerald-400 transition-colors text-sm">
+                                    <i class="fas fa-microphone text-xs"></i>
+                                    <span>Aseyori ni temi</span>
+                                </a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2026 Glow FM 99.1 MHz. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-6 text-sm">
+                        <a href="privacy-policy" class="text-gray-400 hover:text-emerald-400 transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Listen Live Player -->
+    <div x-show="playerOpen" x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 translate-y-full" x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-full" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
+        <div class="bg-gray-900 text-white rounded-2xl shadow-2xl overflow-hidden max-w-[18rem] sm:max-w-sm">
+            <!-- Player Header -->
+            <div class="bg-emerald-600 px-3 py-1.5 sm:px-4 sm:py-2 flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <span class="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
+                        <span class="absolute inline-flex h-full w-full rounded-full bg-white opacity-60"
+                            :class="audioPlaying ? 'animate-ping' : ''"></span>
+                        <span class="relative inline-flex h-2.5 w-2.5 rounded-full"
+                            :class="audioPlaying ? 'bg-lime-300' : 'bg-white'"></span>
+                    </span>
+                    <span class="text-xs sm:text-sm font-semibold" x-text="audioPlaying ? 'STREAMING LIVE' : 'LIVE NOW'"></span>
+                </div>
+                <button @click="playerOpen = false" class="text-white hover:text-gray-200 transition-colors">
+                    <i class="fas fa-times text-sm sm:text-base"></i>
+                </button>
+            </div>
+
+            <!-- Player Content -->
+            <div class="p-3 sm:p-4">
+                <div class="flex items-center space-x-3 sm:space-x-4 mb-3 sm:mb-4">
+                    <div class="flex-shrink-0">
+                        <div
+                            class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg shadow-lg flex items-center justify-center">
+                            <i class="fas fa-music text-white text-xl sm:text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-semibold text-xs sm:text-sm truncate"></h4>
+                        <p class="text-xs text-gray-400 truncate"></p>
+                        <div class="flex items-center space-x-2 mt-1">
+                            <i class="fas fa-microphone text-emerald-400 text-xs"></i>
+                            <span class="text-xs text-gray-400 truncate">Commercials</span>
+                        </div>
+                        <div class="flex items-center space-x-2 mt-1">
+                            <i class="fas fa-user text-emerald-400 text-[10px]"></i>
+                            <span class="text-[11px] text-gray-400 truncate">Glow FM</span>
+                        </div>
+                        <div class="flex items-center space-x-2 mt-1">
+                            <i class="fas fa-clock text-emerald-400 text-[10px]"></i>
+                            <span class="text-[11px] text-gray-400">12:31 PM - 1:00 PM</span>
+                            <span class="text-[10px] text-emerald-300 font-semibold">WAT</span>
+                        </div>
+                    </div>
+                    <div class="flex items-end space-x-1" x-show="audioPlaying">
+                        <span class="w-1 h-3 bg-emerald-400 rounded-full animate-pulse"></span>
+                        <span class="w-1 h-5 bg-emerald-300 rounded-full animate-pulse"></span>
+                        <span class="w-1 h-4 bg-emerald-200 rounded-full animate-pulse"></span>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <button type="button" @click="toggleLive"
+                            class="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-600 hover:bg-emerald-700 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fas text-white text-sm sm:text-base" :class="audioPlaying ? 'fa-pause' : 'fa-play'"></i>
+                        </button>
+                        <button
+                            class="w-7 h-7 sm:w-8 sm:h-8 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fas fa-volume-up text-white text-xs sm:text-sm"></i>
+                        </button>
+                    </div>
+                    <span class="text-[11px] sm:text-xs text-gray-400">Broadcasting live now</span>
+                    <a href="https://stream-176.zeno.fm/mwam2yirv1pvv" target="_blank" rel="noopener"
+                        class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gray-800 hover:bg-gray-700 text-white text-[11px] sm:text-xs font-medium rounded-lg transition-colors">
+                        Full Player
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio x-ref="liveAudio" src="https://stream-176.zeno.fm/mwam2yirv1pvv" preload="none"></audio>
+
+    
+    
+    
+    <div x-cloak x-show="consentBannerOpen" x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 translate-y-6" x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-6"
+        class="js-cookie-consent cookie-consent fixed hover:uppercase bottom-0 inset-x-0 pb-2 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="p-2 rounded-lg bg-indigo-100">
+                <div class="flex flex-col sm:flex-row items-center justify-between flex-wrap">
+                    <div class="w-full sm:w-auto flex-1 items-center mb-2 sm:mb-0">
+                        <p class="ml-3 text-black cookie-consent__message">
+                            We use cookies to improve your experience.
+                        </p>
+                        <a href="https://glowfmradio.com/privacy-policy" class="ml-3 text-xs text-blue-800 hover:text-blue-900 underline">
+                            Privacy Policy
+                        </a>
+                    </div>
+                    <div class="mt-2 flex-shrink-0 sm:mt-0 sm:ml-2 sm:order-last">
+                        <button type="button" @click="setConsent('accept')"
+                            class="js-cookie-consent-agree cookie-consent__agree cursor-pointer flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium text-white hover:text-black bg-blue-800 hover:bg-blue-300">
+                            Agree
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('click', async (event) => {
+            const button = event.target.closest('[data-copy-link]');
+            if (!button) return;
+
+            event.preventDefault();
+            const link = button.getAttribute('data-copy-link') || '';
+            if (!link) return;
+
+            const textTarget = button.querySelector('[data-copy-text]');
+            const originalText = textTarget ? textTarget.textContent : '';
+
+            try {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    await navigator.clipboard.writeText(link);
+                } else {
+                    const textarea = document.createElement('textarea');
+                    textarea.value = link;
+                    textarea.setAttribute('readonly', '');
+                    textarea.style.position = 'absolute';
+                    textarea.style.left = '-9999px';
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    document.execCommand('copy');
+                    textarea.remove();
+                }
+                if (textTarget) {
+                    textTarget.textContent = 'Copied!';
+                    setTimeout(() => {
+                        textTarget.textContent = originalText;
+                    }, 1500);
+                }
+            } catch (e) {
+                if (textTarget) {
+                    textTarget.textContent = 'Copy failed';
+                    setTimeout(() => {
+                        textTarget.textContent = originalText;
+                    }, 1500);
+                }
+            }
+        });
+    </script>
+    <script src="/livewire/livewire.min.js?id=61e33937"   data-csrf="5uJkG4BBbRAepZjeiUmMlGtUNYrcnMuvU61PH218" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script>
+        const openShareUrl = (url) => {
+            if (!url || typeof url !== 'string') return;
+            window.location.href = url;
+        };
+
+        window.addEventListener('open-share-url', (event) => {
+            openShareUrl(event?.detail?.url ?? event?.detail);
+        });
+
+        document.addEventListener('livewire:load', () => {
+            if (window.livewire && typeof window.livewire.on === 'function') {
+                window.livewire.on('open-share-url', (payload) => {
+                    openShareUrl(payload?.url ?? payload);
+                });
+            }
+        });
+
+        document.addEventListener('livewire:initialized', () => {
+            if (window.Livewire && typeof Livewire.on === 'function') {
+                Livewire.on('open-share-url', ({ url }) => openShareUrl(url));
+            }
+        });
+    </script>
+</body>
+
+</html>

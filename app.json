@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "GLOW 99.1 FM",
+    "slug": "glow-991-fm",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.glowfmradio.app",
+      "versionCode": 1
+    },
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0279a3e5-541a-4c82-bd4c-dd7688215981"
+      }
+    }
+  }
+}

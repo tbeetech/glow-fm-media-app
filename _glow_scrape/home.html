@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="nV7YZCU2HHdjlHLQyRs3kN12pc8YtXueUu8Gc8a7">
+    <title>Glow FM 99.1 - Your Station, Your Voice</title>
+    <meta name="google-adsense-account" content="ca-pub-3970534274644088">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEVJRFYBL8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SEVJRFYBL8');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3970534274644088"
+     crossorigin="anonymous"></script>
+    
+        <meta name="description" content="Your Voice, Your Music - The heartbeat of the city. Listen to the best music, engaging shows, and stay connected with your community.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://glowfmradio.com">
+    <meta property="og:title" content="Glow FM 99.1 - Your Station, Your Voice">
+    <meta property="og:description" content="Your Voice, Your Music - The heartbeat of the city. Listen to the best music, engaging shows, and stay connected with your community.">
+    <meta property="og:image" content="https://glowfmradio.com/glowfm logo.jpeg">
+    <meta property="og:image:secure_url" content="https://glowfmradio.com/glowfm logo.jpeg">
+    <meta property="og:image:alt" content="Glow FM 99.1 - Your Station, Your Voice">
+    <meta property="og:url" content="https://glowfmradio.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Glow FM">
+    <meta property="og:locale" content="en">
+            <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Glow FM 99.1 - Your Station, Your Voice">
+    <meta name="twitter:description" content="Your Voice, Your Music - The heartbeat of the city. Listen to the best music, engaging shows, and stay connected with your community.">
+    <meta name="twitter:image" content="https://glowfmradio.com/glowfm logo.jpeg">
+                <link rel="icon" href="https://glowfmradio.com/glowfm logo.jpeg">
+        <link rel="apple-touch-icon" href="https://glowfmradio.com/glowfm logo.jpeg">
+        <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"RadioStation","name":"Glow FM","url":"https://glowfmradio.com","logo":"https://glowfmradio.com/glowfm logo.jpeg","slogan":"Your Voice, Your Music","sameAs":[]}    </script>
+
+    <style>
+        [x-cloak]{display:none!important;}
+        .flash-auto-dismiss{
+            overflow:hidden;
+            max-height:200px;
+            pointer-events:none;
+            animation:flashAutoDismiss 5s ease forwards;
+        }
+        @keyframes flashAutoDismiss{
+            0%,85%{opacity:1;max-height:200px;}
+            100%{opacity:0;max-height:0;padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0;border-width:0;}
+        }
+    </style>
+    <link rel="preload" as="style" href="https://glowfmradio.com/build/assets/app-BQAKyC_D.css" /><link rel="modulepreload" as="script" href="https://glowfmradio.com/build/assets/app-DigtLzDw.js" /><link rel="stylesheet" href="https://glowfmradio.com/build/assets/app-BQAKyC_D.css" data-navigate-track="reload" /><script type="module" src="https://glowfmradio.com/build/assets/app-DigtLzDw.js" data-navigate-track="reload"></script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}[wire\:cloak] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+
+<body class="bg-white font-sans antialiased" x-data="{ 
+    mobileMenuOpen: false, 
+    searchOpen: false,
+    scrolled: false,
+    playerOpen: true,
+    audioPlaying: false,
+    consentBannerOpen: false,
+    consentChoice: null,
+    init() {
+        try {
+            const storedConsent = localStorage.getItem('cmp_consent');
+            if (storedConsent) {
+                const parsedConsent = JSON.parse(storedConsent);
+                this.consentChoice = parsedConsent.choice || null;
+                this.consentBannerOpen = false;
+            } else {
+                this.consentBannerOpen = true;
+            }
+        } catch (e) {}
+        window.addEventListener('scroll', () => {
+            this.scrolled = window.pageYOffset > 20;
+        });
+    },
+    toggleLive() {
+        const audio = this.$refs.liveAudio;
+        if (!audio || !audio.src) return;
+        if (audio.paused) {
+            audio.play();
+            this.audioPlaying = true;
+        } else {
+            audio.pause();
+            this.audioPlaying = false;
+        }
+    },
+    startLive() {
+        const audio = this.$refs.liveAudio;
+        if (!audio || !audio.src) return;
+        audio.play();
+        this.audioPlaying = true;
+        this.playerOpen = true;
+    },
+    setConsent(choice) {
+        this.consentChoice = choice;
+        this.consentBannerOpen = false;
+        try {
+            localStorage.setItem('cmp_consent', JSON.stringify({
+                choice,
+                ts: Date.now(),
+            }));
+        } catch (e) {}
+    }
+}" x-init="init()">
+    
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+        :class="scrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'">
+        <!-- Top Bar -->
+        <div class="bg-slate-600 text-white">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-10 text-sm">
+                    <div class="flex items-center space-x-6">
+                        <a href="tel:+234 703 022 3281"
+                            class="flex items-center space-x-2 hover:text-emerald-100 transition-colors">
+                            <i class="fas fa-phone text-xs"></i>
+                            <span class="hidden md:inline">+234 703 022 3281</span>
+                        </a>
+                        <a href="mailto:info@glowfm.com"
+                            class="flex items-center space-x-2 hover:text-emerald-100 transition-colors">
+                            <i class="fas fa-envelope text-xs"></i>
+                            <span class="hidden md:inline">info@glowfm.com</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="hidden sm:flex items-center space-x-2 text-xs">
+                            <span class="relative flex h-2 w-2">
+                                <span class="absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"
+                                    :class="audioPlaying ? 'animate-ping' : ''"></span>
+                                <span class="relative inline-flex h-2 w-2 rounded-full"
+                                    :class="audioPlaying ? 'bg-emerald-400' : 'bg-red-500'"></span>
+                            </span>
+                            <span class="font-medium" x-text="audioPlaying ? 'LIVE STREAMING' : 'LIVE NOW'"></span>
+                            <span class="text-emerald-200">•</span>
+                            <span class="font-medium">Commercials</span>
+                            <span class="text-emerald-200">•</span>
+                            <span class="font-medium tabular-nums"
+                                  data-station-timezone="Africa/Lagos"
+                                  x-data="{
+                                    now: '',
+                                    tz: null,
+                                    init() {
+                                        this.tz = this.$el.dataset.stationTimezone || 'UTC';
+                                        const formatter = new Intl.DateTimeFormat([], {
+                                            hour: '2-digit',
+                                            minute: '2-digit',
+                                            timeZone: this.tz,
+                                        });
+                                        const format = () => {
+                                            this.now = formatter.format(new Date());
+                                        };
+                                        format();
+                                        setInterval(format, 1000);
+                                    }
+                                  }"
+                                  x-text="now"></span>
+                            <span class="text-emerald-200 text-[11px] font-semibold">WAT</span>
+                        </span>
+                        <div class="flex items-center space-x-3">
+                            <a href="" class="hover:text-emerald-100 transition-colors" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="hover:text-emerald-100 transition-colors" aria-label="X">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="" class="hover:text-emerald-100 transition-colors" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="hover:text-emerald-100 transition-colors" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-3 group">
+                    <div class="relative">
+                                                    <img src="https://glowfmradio.com/glowfm logo.jpeg" alt="Glow FM logo"
+                                class="w-12 h-12 rounded-xl object-contain bg-white shadow-lg p-1 transform group-hover:scale-105 transition-transform duration-300">
+                                                <div
+                            class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white animate-pulse">
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-900 leading-none">Glow FM</h1>
+                        <p class="text-xs font-semibold text-emerald-600">99.1 MHz</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="/"
+                        class="px-4 py-2 text-gray-700 font-medium hover:text-emerald-600 transition-colors duration-200 text-emerald-600">
+                        Home
+                    </a>
+                    <a href="/about"
+                        class="px-4 py-2 text-gray-700 font-medium hover:text-emerald-600 transition-colors duration-200 ">
+                        About
+                    </a>
+                    <div x-data="{ open: false }" class="relative">
+                        <button @click="open = !open" @click.away="open = false"
+                            class="px-4 py-2 text-gray-700 font-medium hover:text-emerald-600 transition-colors duration-200 flex items-center ">
+                            Program
+                            <i class="fas fa-chevron-down text-xs ml-2"></i>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+                            x-transition:leave-end="opacity-0 translate-y-2"
+                            class="absolute left-0 mt-2 w-52 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                            <a href="/shows"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Shows
+                            </a>
+                            <a href="/schedule"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Schedule
+                            </a>
+                            <a href="/oaps"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                OAPs
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ open: false }" class="relative">
+                        <button @click="open = !open" @click.away="open = false"
+                            class="px-4 py-2 text-gray-700 font-medium hover:text-emerald-600 transition-colors duration-200 flex items-center ">
+                            Media
+                            <i class="fas fa-chevron-down text-xs ml-2"></i>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+                            x-transition:leave-end="opacity-0 translate-y-2"
+                            class="absolute left-0 mt-2 w-52 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                            <a href="/podcasts"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Podcasts
+                            </a>
+                            <a href="/news"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                News
+                            </a>
+                            <a href="/blog"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Blog
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ open: false }" class="relative">
+                        <button @click="open = !open" @click.away="open = false"
+                            class="px-4 py-2 text-gray-700 font-medium hover:text-emerald-600 transition-colors duration-200 flex items-center ">
+                            Community
+                            <i class="fas fa-chevron-down text-xs ml-2"></i>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+                            x-transition:leave-end="opacity-0 translate-y-2"
+                            class="absolute left-0 mt-2 w-52 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                            <a href="/team"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Team
+                            </a>
+                            <a href="/events"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Events
+                            </a>
+                            <a href="/contact"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Actions -->
+                <div class="flex items-center space-x-4">
+                    <!-- Search Button -->
+                    <button @click="searchOpen = !searchOpen"
+                        class="hidden md:flex items-center justify-center w-10 h-10 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                    <!-- Authentication Links -->
+                                            <!-- Login/Register Links -->
+                        <div class="hidden md:flex items-center space-x-2">
+                            <a href="https://glowfmradio.com/login"
+                                class="px-4 py-2 text-emerald-600 hover:text-emerald-700 font-medium transition-colors">
+                                Login
+                            </a>
+                            <a href="https://glowfmradio.com/register"
+                                class="px-6 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-full transition-colors">
+                                Sign Up
+                            </a>
+                        </div>
+                    
+                    <!-- Listen Live Button -->
+                    <button type="button" @click="startLive"
+                        class="hidden md:flex items-center space-x-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-play-circle text-xl"></i>
+                        <span>Listen Live</span>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button @click="mobileMenuOpen = !mobileMenuOpen"
+                        class="lg:hidden flex items-center justify-center w-10 h-10 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200">
+                        <i class="fas" :class="mobileMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Search Bar (Dropdown) -->
+        <div x-show="searchOpen" x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-4" class="border-t border-gray-200 bg-white shadow-xl"
+            @click.away="searchOpen = false">
+            <div class="container mx-auto px-4 py-6">
+                <div class="max-w-3xl mx-auto relative">
+                    <input type="text" placeholder="Search news, shows, events..."
+                        class="w-full px-6 py-4 pr-12 text-lg border-2 border-gray-300 rounded-2xl focus:outline-none focus:border-emerald-500 transition-colors">
+                    <button
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 text-emerald-600 hover:text-emerald-700">
+                        <i class="fas fa-search text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-4"
+            class="lg:hidden border-t border-gray-200 bg-white shadow-xl">
+            <div class="container mx-auto px-4 py-6 space-y-2">
+                <a href="/"
+                    class="block px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors">
+                    Home
+                </a>
+                <a href="/about"
+                    class="block px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors">
+                    About
+                </a>
+                <div x-data="{ open: false }" class="rounded-lg border border-gray-200">
+                    <button @click="open = !open"
+                        class="w-full flex items-center justify-between px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors">
+                        <span>Program</span>
+                        <i class="fas text-xs" :class="open ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                    </button>
+                    <div x-show="open" x-transition class="pb-2">
+                        <a href="/shows"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Shows
+                        </a>
+                        <a href="/schedule"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Schedule
+                        </a>
+                        <a href="/oaps"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            OAPs
+                        </a>
+                    </div>
+                </div>
+                <div x-data="{ open: false }" class="rounded-lg border border-gray-200">
+                    <button @click="open = !open"
+                        class="w-full flex items-center justify-between px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors">
+                        <span>Media</span>
+                        <i class="fas text-xs" :class="open ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                    </button>
+                    <div x-show="open" x-transition class="pb-2">
+                        <a href="/podcasts"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Podcasts
+                        </a>
+                        <a href="/news"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            News
+                        </a>
+                        <a href="/blog"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div x-data="{ open: false }" class="rounded-lg border border-gray-200">
+                    <button @click="open = !open"
+                        class="w-full flex items-center justify-between px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors">
+                        <span>Community</span>
+                        <i class="fas text-xs" :class="open ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                    </button>
+                    <div x-show="open" x-transition class="pb-2">
+                        <a href="/team"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Team
+                        </a>
+                        <a href="/events"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Events
+                        </a>
+                        <a href="/contact"
+                            class="block px-6 py-2 text-sm text-gray-600 hover:text-emerald-600">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <button @click="searchOpen = !searchOpen"
+                        class="w-full px-4 py-3 text-gray-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors text-left">
+                        <i class="fas fa-search mr-2"></i> Search
+                    </button>
+                </div>
+                                    <div class="pt-2 space-y-2">
+                        <a href="https://glowfmradio.com/login"
+                            class="block px-4 py-3 text-emerald-600 font-medium hover:bg-emerald-50 rounded-lg transition-colors">
+                            <i class="fas fa-right-to-bracket mr-2"></i> Login
+                        </a>
+                        <a href="https://glowfmradio.com/register"
+                            class="block px-4 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-colors">
+                            <i class="fas fa-user-plus mr-2"></i> Sign Up
+                        </a>
+                    </div>
+                                <button type="button" @click="startLive"
+                    class="block mt-4 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-full text-center shadow-lg">
+                    <i class="fas fa-play-circle mr-2"></i> Listen Live
+                </button>
+            </div>
+        </div>
+    </header>
+
+            <div class="bg-emerald-600 text-white">
+            <div class="container mx-auto px-4 py-2">
+                <div class="flex items-center space-x-4 text-sm">
+                    <span class="flex items-center space-x-2 font-semibold">
+                        <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                        <span>NOW PLAYING</span>
+                    </span>
+                    <marquee class="flex-1">
+                         —  •  • Broadcasting live now
+                    </marquee>
+                    <button type="button" @click="startLive"
+                        class="hidden sm:inline-flex items-center space-x-2 px-3 py-1 bg-white/20 hover:bg-white/30 rounded-full text-xs font-semibold">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Listen Live</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Spacer for Fixed Header -->
+    <div class="h-28"></div>
+
+    
+    
+    <!-- Main Content -->
+    <main>
+        <div wire:snapshot="{&quot;data&quot;:{&quot;featuredShows&quot;:[[[{&quot;id&quot;:2,&quot;slug&quot;:&quot;amebo-keke&quot;,&quot;title&quot;:&quot;AMEBO KEKE&quot;,&quot;host&quot;:&quot;Desmond Ujiro&quot;,&quot;host_slug&quot;:&quot;desmond-ujiro&quot;,&quot;time&quot;:&quot;12:01 PM - 2:00 PM&quot;,&quot;description&quot;:&quot;A current affairs pidgin program&quot;,&quot;image&quot;:&quot;\/storage\/uploads\/shows\/covers\/u6THu6uKr3Czh4F5iTq31i53lqDjoTrpeXTYlcnr.jpg&quot;,&quot;category&quot;:&quot;Information&quot;,&quot;days&quot;:&quot;Saturday&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:4,&quot;slug&quot;:&quot;morning-motivations&quot;,&quot;title&quot;:&quot;Morning motivations &quot;,&quot;host&quot;:&quot;Desmond Ujiro&quot;,&quot;host_slug&quot;:&quot;desmond-ujiro&quot;,&quot;time&quot;:&quot;5:00 AM - 5:14 AM&quot;,&quot;description&quot;:&quot;A motivational program to always start up the week, every Monday morning, 5:10am - 5:15am&quot;,&quot;image&quot;:&quot;\/storage\/uploads\/shows\/covers\/ME3U1yJPDjhH91s8M3HxMm6s3FHdKfhD5LSOZY7O.jpg&quot;,&quot;category&quot;:&quot;Education&quot;,&quot;days&quot;:&quot;Monday&quot;},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;latestPodcastEpisodes&quot;:[[[{&quot;id&quot;:6,&quot;slug&quot;:&quot;eps-3&quot;,&quot;show_slug&quot;:&quot;glow-chat-room&quot;,&quot;title&quot;:&quot;EPS 3&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;\/storage\/uploads\/podcasts\/episode-covers\/du3yi0oA3yhvREXOGmi58aHmKmn8A317kfVEm1hD.png&quot;,&quot;show_title&quot;:&quot;GLOW CHAT ROOM&quot;,&quot;duration&quot;:&quot;24:18&quot;,&quot;published_at&quot;:&quot;Feb 02, 2026&quot;,&quot;plays&quot;:&quot;30&quot;,&quot;season_episode&quot;:null},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:5,&quot;slug&quot;:&quot;eps-2&quot;,&quot;show_slug&quot;:&quot;glow-chat-room&quot;,&quot;title&quot;:&quot;EPS 2&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;\/storage\/uploads\/podcasts\/episode-covers\/LdAWMvX6DfCAKgk7YilP0jVFjldvF3IulxLfdWGi.png&quot;,&quot;show_title&quot;:&quot;GLOW CHAT ROOM&quot;,&quot;duration&quot;:&quot;21:24&quot;,&quot;published_at&quot;:&quot;Feb 02, 2026&quot;,&quot;plays&quot;:&quot;23&quot;,&quot;season_episode&quot;:null},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:4,&quot;slug&quot;:&quot;glow-chat-room-episode-1&quot;,&quot;show_slug&quot;:&quot;glow-chat-room&quot;,&quot;title&quot;:&quot;Glow chat room episode 1&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;\/storage\/uploads\/podcasts\/episode-covers\/yCs68HibDIxWAzrjmJ9REA3NUnzqhoAZnh8x4XS8.png&quot;,&quot;show_title&quot;:&quot;GLOW CHAT ROOM&quot;,&quot;duration&quot;:&quot;22:55&quot;,&quot;published_at&quot;:&quot;Jan 29, 2026&quot;,&quot;plays&quot;:&quot;24&quot;,&quot;season_episode&quot;:null},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:3,&quot;slug&quot;:&quot;premier-glow-moment&quot;,&quot;show_slug&quot;:&quot;glow-moment&quot;,&quot;title&quot;:&quot;Premier Glow Moment&quot;,&quot;description&quot;:&quot;Welcome to the amazing glow moment of glowfm radio?&quot;,&quot;image&quot;:&quot;\/storage\/uploads\/podcasts\/episode-covers\/MytRw5HWhs4ijh3YXCRjMkK6kcV2fkT5N8gb6vKm.jpg&quot;,&quot;show_title&quot;:&quot;GLOW MOMENT&quot;,&quot;duration&quot;:&quot;0:37&quot;,&quot;published_at&quot;:&quot;Jan 27, 2026&quot;,&quot;plays&quot;:&quot;15&quot;,&quot;season_episode&quot;:null},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;latestNews&quot;:[[[{&quot;id&quot;:48,&quot;slug&quot;:&quot;lookman-makes-first-goal-for-atletico-madrid&quot;,&quot;title&quot;:&quot;Lookman makes first goal for Atl\u00e9tico Madrid&quot;,&quot;excerpt&quot;:&quot;Atl\u00e9tico Madrid\u2019s new forward Ademola Lookman announced himself in style on Thursday, scoring on his debut as the Spanish side faced Real Betis in a Copa del Rey quarter-final at Estadio La Cartuja, according to PUNCH Sports Extra&quot;,&quot;image&quot;:&quot;https:\/\/vodacomsoccer.com\/_next\/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmobi_express%2Fimages%2F2026%2F2%2F1770361450420%2F16%2Fademola-lookman-of-atletico-madrid-celebrates-his-goal-5-february-202616.jpeg&amp;w=1920&amp;q=75&quot;,&quot;category&quot;:&quot;Sport&quot;,&quot;date&quot;:&quot;3 hours ago&quot;,&quot;author&quot;:&quot;japhet samuel&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;2&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:47,&quot;slug&quot;:&quot;popular-united-states-based-streamer-supports-makoko-community&quot;,&quot;title&quot;:&quot;Popular United States-based streamer supports Makoko community&quot;,&quot;excerpt&quot;:&quot;Popular United States-based streamer Kai Cenat has again shown support for the Makoko community in Lagos, visiting the Makoko Children School Orphanage Home as part of his current trip to Nigeria.&quot;,&quot;image&quot;:&quot;https:\/\/lifestyle.thecable.ng\/wp-content\/uploads\/2026\/02\/IMG-20260205-WA0000-770x560.jpg&quot;,&quot;category&quot;:&quot;Entertainment&quot;,&quot;date&quot;:&quot;22 hours ago&quot;,&quot;author&quot;:&quot;japhet samuel&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;3&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:46,&quot;slug&quot;:&quot;nollywood-actress-aunty-ajara-passes-on-after-prolonged-illness&quot;,&quot;title&quot;:&quot;Nollywood Actress Aunty Ajara Passes On After Prolonged Illness&quot;,&quot;excerpt&quot;:&quot;Nollywood actress Ajara Lasisi, popularly known as Aunty Ajara, has passed away after a prolonged illness. Her death has drawn an outpouring of grief and tributes from colleagues, fans, and the Nollywood community.&quot;,&quot;image&quot;:&quot;https:\/\/www.dockaysworld.com.ng\/wp-content\/uploads\/2026\/02\/IMG_3268.jpeg&quot;,&quot;category&quot;:&quot;Entertainment&quot;,&quot;date&quot;:&quot;1 day ago&quot;,&quot;author&quot;:&quot;Oyetoke Adedayo Ebenezer&quot;,&quot;read_time&quot;:&quot;2 min read&quot;,&quot;views&quot;:&quot;126&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:44,&quot;slug&quot;:&quot;ondo-at-50-govt-awards-obasanjo-fasoranti-aiyedatiwa-others&quot;,&quot;title&quot;:&quot;ONDO @50: GOVT AWARDS OBASANJO, FASORANTI, AIYEDATIWA, OTHERS&quot;,&quot;excerpt&quot;:&quot;IN A NIGHT OF ELEGANCE AND JUBILATION, ONDO STATE ENDED THE CELEBRATION OF ITS GOLDEN JUBILEE BY HONOURING PRESIDENT BOLA TINUBU, FORMER PRESIDENT OLUSEGUN OBASANJO, ELDER STATESMAN REUBEN FASORANTI, GOVERNOR LUCKY AIYEDATIWA, AND 67 OTHER DISTINGUISHED SONS, DAUGHTERS, AND FRIENDS OF THE STATE.&quot;,&quot;image&quot;:&quot;\/storage\/uploads\/news\/LvEh8gxPYyvUFLTO4RGaQgiTpOLF0RivbY7Gl2LT.jpg&quot;,&quot;category&quot;:&quot;Entertainment&quot;,&quot;date&quot;:&quot;1 day ago&quot;,&quot;author&quot;:&quot;Adekunle Aminah&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;9&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:43,&quot;slug&quot;:&quot;kwara-state-emir-urges-government-to-implement-policies-against-gender-based-violence&quot;,&quot;title&quot;:&quot;Kwara State Emir urges Government to Implement Policies Against Gender Based Violence&quot;,&quot;excerpt&quot;:&quot;EMIR OF SHONGA IN KWARA STATE, HALIRU NDANUSA SAYS THE GOVERNMENT HAVE TO IMPLEMENT POLICIES AGAINST GENDER BASED VIOLENCE TO END THE MENANCE.\n&quot;,&quot;image&quot;:&quot;https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcR4koh3ixyT8vUAOKINM2klpLc1KiIy-ZybDynS6Cj8HQ&amp;s=10&quot;,&quot;category&quot;:&quot;Politics&quot;,&quot;date&quot;:&quot;2 days ago&quot;,&quot;author&quot;:&quot;Rachel Salami&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;79&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:42,&quot;slug&quot;:&quot;frc-warns-state-local-governments-against-borrowing-without-approval&quot;,&quot;title&quot;:&quot;FRC Warns State, Local Governments against borrowing without approval &quot;,&quot;excerpt&quot;:&quot;THE FEDERAL GOVERNMENT HAS WARNED STATES AND LOCAL GOVERNMENTS AGAINST BORROWING FROM FINANCIAL INSTITUTIONS WITHOUT A CERTIFICATE OF PROOF OF COMPLIANCE FROM THE FISCAL RESPONSIBILITY COMMISSION (FRC).&quot;,&quot;image&quot;:&quot;https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSFVZtnvukljB47gUb1xYUh436lUhIOtX9ADniWDskknw&amp;s=10&quot;,&quot;category&quot;:&quot;Finance&quot;,&quot;date&quot;:&quot;2 days ago&quot;,&quot;author&quot;:&quot;Rachel Salami&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;68&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;latestBlogPosts&quot;:[[[{&quot;id&quot;:2,&quot;slug&quot;:&quot;alaafin-kicks-as-makinde-installs-ladoja-chairman-of-obas-council&quot;,&quot;title&quot;:&quot;Alaafin kicks as Makinde installs Ladoja chairman of Obas council&quot;,&quot;excerpt&quot;:&quot;The Alaafin of Oyo, Oba Akeem Owoade, was conspicuously absent from the inauguration, which was held at the House of Chiefs, Parliament Building, Secretariat, Ibadan.&quot;,&quot;image&quot;:&quot;https:\/\/cdn.punchng.com\/wp-content\/uploads\/2025\/11\/11014215\/Makinde.jpg&quot;,&quot;category&quot;:&quot;Politics&quot;,&quot;category_slug&quot;:&quot;politics&quot;,&quot;category_color&quot;:&quot;red&quot;,&quot;date&quot;:&quot;3 weeks ago&quot;,&quot;author&quot;:&quot;Oyetoke Adedayo Ebenezer&quot;,&quot;read_time&quot;:&quot;8 min read&quot;,&quot;views&quot;:&quot;51&quot;,&quot;comments_count&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:1,&quot;slug&quot;:&quot;flutterwave-buys-nigerias-mono-in-rare-african-fintech-exit&quot;,&quot;title&quot;:&quot;Flutterwave buys Nigeria\u2019s Mono in rare African fintech exit&quot;,&quot;excerpt&quot;:&quot;The transaction mirrors earlier consolidation attempts in global fintech infrastructure, including\u00a0Visa\u2019s failed acquisition of Plaid in 2020, which was blocked by U.S. regulators. Hassan cited that deal as evidence that combining data infrastructure with payment rails can unlock scale.\u00a0&quot;,&quot;image&quot;:&quot;\/storage\/uploads\/blog\/MJTJ5x3YtfvcvoIBCSEsWZgO2lTUQvs5mPmfcRc2.webp&quot;,&quot;category&quot;:&quot;TechNology&quot;,&quot;category_slug&quot;:&quot;technology&quot;,&quot;category_color&quot;:&quot;pink&quot;,&quot;date&quot;:&quot;Unpublished&quot;,&quot;author&quot;:&quot;Oyetoke Adedayo Ebenezer&quot;,&quot;read_time&quot;:&quot;4 min read&quot;,&quot;views&quot;:&quot;60&quot;,&quot;comments_count&quot;:0},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;trendingBlogPosts&quot;:[[[{&quot;id&quot;:1,&quot;slug&quot;:&quot;flutterwave-buys-nigerias-mono-in-rare-african-fintech-exit&quot;,&quot;title&quot;:&quot;Flutterwave buys Nigeria\u2019s Mono in rare African fintech exit&quot;,&quot;category&quot;:&quot;TechNology&quot;,&quot;views&quot;:60,&quot;published_at&quot;:&quot;Unpublished&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:2,&quot;slug&quot;:&quot;alaafin-kicks-as-makinde-installs-ladoja-chairman-of-obas-council&quot;,&quot;title&quot;:&quot;Alaafin kicks as Makinde installs Ladoja chairman of Obas council&quot;,&quot;category&quot;:&quot;Politics&quot;,&quot;views&quot;:51,&quot;published_at&quot;:&quot;3 weeks ago&quot;},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;upcomingEvents&quot;:[[],{&quot;s&quot;:&quot;arr&quot;}],&quot;stats&quot;:[[[{&quot;number&quot;:&quot;1M+&quot;,&quot;label&quot;:&quot;Monthly Listeners&quot;,&quot;icon&quot;:&quot;fas fa-users&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;number&quot;:&quot;24\/7&quot;,&quot;label&quot;:&quot;Live Broadcasting&quot;,&quot;icon&quot;:&quot;fas fa-broadcast-tower&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;number&quot;:&quot;38&quot;,&quot;label&quot;:&quot;News Articles&quot;,&quot;icon&quot;:&quot;fas fa-newspaper&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;number&quot;:&quot;2&quot;,&quot;label&quot;:&quot;Blog Articles&quot;,&quot;icon&quot;:&quot;fas fa-blog&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;number&quot;:&quot;101+&quot;,&quot;label&quot;:&quot;Show Programs&quot;,&quot;icon&quot;:&quot;fas fa-microphone&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;number&quot;:&quot;4&quot;,&quot;label&quot;:&quot;Podcast Episodes&quot;,&quot;icon&quot;:&quot;fas fa-podcast&quot;},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;testimonials&quot;:[[],{&quot;s&quot;:&quot;arr&quot;}],&quot;breakingNews&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\News\\News&quot;,&quot;key&quot;:46,&quot;s&quot;:&quot;mdl&quot;}],&quot;trendingNews&quot;:[[[{&quot;id&quot;:28,&quot;slug&quot;:&quot;portugal-to-face-super-eagles-ahead-of-2026-fifa-world-cup&quot;,&quot;title&quot;:&quot;Portugal to Face Super Eagles ahead of 2026 FIFA World Cup&quot;,&quot;category&quot;:&quot;Sport&quot;,&quot;views&quot;:196,&quot;published_at&quot;:&quot;1 week ago&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:29,&quot;slug&quot;:&quot;suspected-jihadists-attack-niamey-airport&quot;,&quot;title&quot;:&quot;SUSPECTED JIHADISTS ATTACK NIAMEY AIRPORT&quot;,&quot;category&quot;:&quot;Foreign&quot;,&quot;views&quot;:151,&quot;published_at&quot;:&quot;1 week ago&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:30,&quot;slug&quot;:&quot;iran-threatens-us-after-trumps-warning&quot;,&quot;title&quot;:&quot;Iran Threatens US After Trump\u2019s Warning&quot;,&quot;category&quot;:&quot;Foreign&quot;,&quot;views&quot;:148,&quot;published_at&quot;:&quot;6 days ago&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:27,&quot;slug&quot;:&quot;akoko-edo-local-government-area-chairman-bliss-oshionogue-impeached&quot;,&quot;title&quot;:&quot;AKOKO-EDO LOCAL GOVERNMENT AREA CHAIRMAN, BLISS OSHIONOGUE IMPEACHED &quot;,&quot;category&quot;:&quot;Politics&quot;,&quot;views&quot;:132,&quot;published_at&quot;:&quot;1 week ago&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:31,&quot;slug&quot;:&quot;grammy-awards-2026-full-winners-list-historic-wins-major-snubs&quot;,&quot;title&quot;:&quot;Grammy Awards 2026: Full Winners List, Historic Wins &amp; Major Snubs&quot;,&quot;category&quot;:&quot;Entertainment&quot;,&quot;views&quot;:128,&quot;published_at&quot;:&quot;4 days ago&quot;},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;featuredNews&quot;:[[[{&quot;id&quot;:46,&quot;slug&quot;:&quot;nollywood-actress-aunty-ajara-passes-on-after-prolonged-illness&quot;,&quot;title&quot;:&quot;Nollywood Actress Aunty Ajara Passes On After Prolonged Illness&quot;,&quot;excerpt&quot;:&quot;Nollywood actress Ajara Lasisi, popularly known as Aunty Ajara, has passed away after a prolonged illness. Her death has drawn an outpouring of grief and tributes from colleagues, fans, and the Nollywood community.&quot;,&quot;image&quot;:&quot;https:\/\/www.dockaysworld.com.ng\/wp-content\/uploads\/2026\/02\/IMG_3268.jpeg&quot;,&quot;category&quot;:&quot;Entertainment&quot;,&quot;date&quot;:&quot;1 day ago&quot;,&quot;author&quot;:&quot;Oyetoke Adedayo Ebenezer&quot;,&quot;read_time&quot;:&quot;2 min read&quot;,&quot;views&quot;:&quot;126&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:38,&quot;slug&quot;:&quot;ondo-state-at-50-leaders-celebrate-five-decades-of-growth-and-resilience&quot;,&quot;title&quot;:&quot;Ondo State at 50: Leaders Celebrate Five Decades of Growth and Resilience&quot;,&quot;excerpt&quot;:&quot;AS ONDO STATE MARKS ITS GOLDEN JUBILEE TODAY, EMINENT LEADERS, POLITICIANS, LEGAL PRACTITIONERS AND ACADEMICS HAVE CONGRATULATED THE GOVERNMENT AND RESIDENTS ON 50 YEARS OF RESILIENCE, PROGRESS AND DEVELOPMENT.&quot;,&quot;image&quot;:&quot;https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcT30PTnr6vyQ5BjppAS8bjoPw1v9jfA0uxm_NcIz7ulbw&amp;s=10&quot;,&quot;category&quot;:&quot;Politics&quot;,&quot;date&quot;:&quot;2 days ago&quot;,&quot;author&quot;:&quot;Rachel Salami&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;113&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;mostViewedNews&quot;:[[[{&quot;id&quot;:28,&quot;slug&quot;:&quot;portugal-to-face-super-eagles-ahead-of-2026-fifa-world-cup&quot;,&quot;title&quot;:&quot;Portugal to Face Super Eagles ahead of 2026 FIFA World Cup&quot;,&quot;category&quot;:&quot;Sport&quot;,&quot;date&quot;:&quot;1 week ago&quot;,&quot;views&quot;:&quot;196&quot;,&quot;image&quot;:&quot;https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcQDHb1sUorWPD-t3cWY6aJs06lC-Gn43N6GGncmhbxW2bxQ3aKKKZXfvmE&amp;s=10&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:29,&quot;slug&quot;:&quot;suspected-jihadists-attack-niamey-airport&quot;,&quot;title&quot;:&quot;SUSPECTED JIHADISTS ATTACK NIAMEY AIRPORT&quot;,&quot;category&quot;:&quot;Foreign&quot;,&quot;date&quot;:&quot;1 week ago&quot;,&quot;views&quot;:&quot;151&quot;,&quot;image&quot;:&quot;https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcTMn3BZubMWjaBROJAKVGntXQi_5_peqWqDhn9-Id61Qw&amp;s=10&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:30,&quot;slug&quot;:&quot;iran-threatens-us-after-trumps-warning&quot;,&quot;title&quot;:&quot;Iran Threatens US After Trump\u2019s Warning&quot;,&quot;category&quot;:&quot;Foreign&quot;,&quot;date&quot;:&quot;6 days ago&quot;,&quot;views&quot;:&quot;148&quot;,&quot;image&quot;:&quot;https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcRmtiY4CfnbRRdwGwWZqRYMZX22UZRAOdQVmUp6ZLiD1A&amp;s=10&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:27,&quot;slug&quot;:&quot;akoko-edo-local-government-area-chairman-bliss-oshionogue-impeached&quot;,&quot;title&quot;:&quot;AKOKO-EDO LOCAL GOVERNMENT AREA CHAIRMAN, BLISS OSHIONOGUE IMPEACHED &quot;,&quot;category&quot;:&quot;Politics&quot;,&quot;date&quot;:&quot;1 week ago&quot;,&quot;views&quot;:&quot;132&quot;,&quot;image&quot;:&quot;https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcRweqvyboo0j9_jSdgH5Am-joMrmNUxNjWiZy2lCPo3hi21IyP5j5mU6Y7O&amp;s=10&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:31,&quot;slug&quot;:&quot;grammy-awards-2026-full-winners-list-historic-wins-major-snubs&quot;,&quot;title&quot;:&quot;Grammy Awards 2026: Full Winners List, Historic Wins &amp; Major Snubs&quot;,&quot;category&quot;:&quot;Entertainment&quot;,&quot;date&quot;:&quot;4 days ago&quot;,&quot;views&quot;:&quot;128&quot;,&quot;image&quot;:&quot;https:\/\/i8.amplience.net\/i\/naras\/2024_grammys_general_key_art_euphoria_right_alined.jpg&quot;},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;otherNews&quot;:[[[{&quot;id&quot;:48,&quot;slug&quot;:&quot;lookman-makes-first-goal-for-atletico-madrid&quot;,&quot;title&quot;:&quot;Lookman makes first goal for Atl\u00e9tico Madrid&quot;,&quot;excerpt&quot;:&quot;Atl\u00e9tico Madrid\u2019s new forward Ademola Lookman announced himself in style on Thursday, scoring on his debut as the Spanish side faced Real Betis in a Copa del Rey quarter-final at Estadio La Cartuja, according to PUNCH Sports Extra&quot;,&quot;image&quot;:&quot;https:\/\/vodacomsoccer.com\/_next\/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmobi_express%2Fimages%2F2026%2F2%2F1770361450420%2F16%2Fademola-lookman-of-atletico-madrid-celebrates-his-goal-5-february-202616.jpeg&amp;w=1920&amp;q=75&quot;,&quot;category&quot;:&quot;Sport&quot;,&quot;date&quot;:&quot;3 hours ago&quot;,&quot;author&quot;:&quot;japhet samuel&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;2&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:47,&quot;slug&quot;:&quot;popular-united-states-based-streamer-supports-makoko-community&quot;,&quot;title&quot;:&quot;Popular United States-based streamer supports Makoko community&quot;,&quot;excerpt&quot;:&quot;Popular United States-based streamer Kai Cenat has again shown support for the Makoko community in Lagos, visiting the Makoko Children School Orphanage Home as part of his current trip to Nigeria.&quot;,&quot;image&quot;:&quot;https:\/\/lifestyle.thecable.ng\/wp-content\/uploads\/2026\/02\/IMG-20260205-WA0000-770x560.jpg&quot;,&quot;category&quot;:&quot;Entertainment&quot;,&quot;date&quot;:&quot;22 hours ago&quot;,&quot;author&quot;:&quot;japhet samuel&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;3&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:44,&quot;slug&quot;:&quot;ondo-at-50-govt-awards-obasanjo-fasoranti-aiyedatiwa-others&quot;,&quot;title&quot;:&quot;ONDO @50: GOVT AWARDS OBASANJO, FASORANTI, AIYEDATIWA, OTHERS&quot;,&quot;excerpt&quot;:&quot;IN A NIGHT OF ELEGANCE AND JUBILATION, ONDO STATE ENDED THE CELEBRATION OF ITS GOLDEN JUBILEE BY HONOURING PRESIDENT BOLA TINUBU, FORMER PRESIDENT OLUSEGUN OBASANJO, ELDER STATESMAN REUBEN FASORANTI, GOVERNOR LUCKY AIYEDATIWA, AND 67 OTHER DISTINGUISHED SONS, DAUGHTERS, AND FRIENDS OF THE STATE.&quot;,&quot;image&quot;:&quot;\/storage\/uploads\/news\/LvEh8gxPYyvUFLTO4RGaQgiTpOLF0RivbY7Gl2LT.jpg&quot;,&quot;category&quot;:&quot;Entertainment&quot;,&quot;date&quot;:&quot;1 day ago&quot;,&quot;author&quot;:&quot;Adekunle Aminah&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;9&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:43,&quot;slug&quot;:&quot;kwara-state-emir-urges-government-to-implement-policies-against-gender-based-violence&quot;,&quot;title&quot;:&quot;Kwara State Emir urges Government to Implement Policies Against Gender Based Violence&quot;,&quot;excerpt&quot;:&quot;EMIR OF SHONGA IN KWARA STATE, HALIRU NDANUSA SAYS THE GOVERNMENT HAVE TO IMPLEMENT POLICIES AGAINST GENDER BASED VIOLENCE TO END THE MENANCE.\n&quot;,&quot;image&quot;:&quot;https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcR4koh3ixyT8vUAOKINM2klpLc1KiIy-ZybDynS6Cj8HQ&amp;s=10&quot;,&quot;category&quot;:&quot;Politics&quot;,&quot;date&quot;:&quot;2 days ago&quot;,&quot;author&quot;:&quot;Rachel Salami&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;79&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:42,&quot;slug&quot;:&quot;frc-warns-state-local-governments-against-borrowing-without-approval&quot;,&quot;title&quot;:&quot;FRC Warns State, Local Governments against borrowing without approval &quot;,&quot;excerpt&quot;:&quot;THE FEDERAL GOVERNMENT HAS WARNED STATES AND LOCAL GOVERNMENTS AGAINST BORROWING FROM FINANCIAL INSTITUTIONS WITHOUT A CERTIFICATE OF PROOF OF COMPLIANCE FROM THE FISCAL RESPONSIBILITY COMMISSION (FRC).&quot;,&quot;image&quot;:&quot;https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSFVZtnvukljB47gUb1xYUh436lUhIOtX9ADniWDskknw&amp;s=10&quot;,&quot;category&quot;:&quot;Finance&quot;,&quot;date&quot;:&quot;2 days ago&quot;,&quot;author&quot;:&quot;Rachel Salami&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;68&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;id&quot;:41,&quot;slug&quot;:&quot;nigerias-super-falcons-to-open-training-camp-ahead-of-2026-womens-africa-cup&quot;,&quot;title&quot;:&quot;Nigeria\u2019s Super Falcons to Open Training Camp ahead of 2026 Women\u2019s Africa Cup&quot;,&quot;excerpt&quot;:&quot;NIGERIA\u2019S SUPER FALCONS ARE EXPECTED TO OPEN TRAINING CAMP FOR THE 2026 WOMEN\u2019S AFRICA CUP OF NATIONS ON FRIDAY, FEBRUARY 20.&quot;,&quot;image&quot;:&quot;https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcQSMGjbRk8W3WeTJZclZNwgo95Q357HQcH3FRc16tb6UQ&amp;s=10&quot;,&quot;category&quot;:&quot;Sport&quot;,&quot;date&quot;:&quot;2 days ago&quot;,&quot;author&quot;:&quot;Rachel Salami&quot;,&quot;read_time&quot;:&quot;1 min read&quot;,&quot;views&quot;:&quot;57&quot;,&quot;likes&quot;:0},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;newsBatch&quot;:1,&quot;newsBatchSize&quot;:6,&quot;newsHasMore&quot;:true,&quot;homeContent&quot;:[{&quot;hero_badge&quot;:&quot;NOW LIVE ON AIR&quot;,&quot;hero_title&quot;:&quot;Your Station,&quot;,&quot;hero_highlight&quot;:&quot;Your Voice&quot;,&quot;hero_subtitle&quot;:&quot;Broadcasting the heartbeat of the city of Akure, 24\/7 on 99.1 FM&quot;,&quot;primary_cta_text&quot;:&quot;Listen Live Now&quot;,&quot;primary_cta_url&quot;:&quot;#&quot;,&quot;secondary_cta_text&quot;:&quot;View Schedule&quot;,&quot;secondary_cta_url&quot;:&quot;\/shows&quot;,&quot;now_playing_label&quot;:&quot;Currently Playing&quot;,&quot;now_playing_title&quot;:&quot;&quot;,&quot;now_playing_time&quot;:&quot;&quot;},{&quot;s&quot;:&quot;arr&quot;}],&quot;currentShow&quot;:[{&quot;title&quot;:&quot;Commercials&quot;,&quot;slug&quot;:&quot;commercials&quot;,&quot;host&quot;:&quot;Glow FM&quot;,&quot;host_slug&quot;:&quot;glow-fm&quot;,&quot;time&quot;:&quot;12:31 PM - 1:00 PM&quot;},{&quot;s&quot;:&quot;arr&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;Nd4HOAeVKSeq396XcuFP&quot;,&quot;name&quot;:&quot;page.home-page&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;6efc89d237050ca5aaae3f561163097f8fae39a3c6b0123869f0aee5d8ce7584&quot;}" wire:effects="[]" wire:id="Nd4HOAeVKSeq396XcuFP" wire:poll.60s="refreshHomeData">
+                                                            <!-- Breaking News Banner (if exists) -->
+    <!--[if BLOCK]><![endif]-->    <div class="bg-red-600 text-white py-3 sticky top-28 z-40 shadow-lg animate-pulse">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center space-x-4">
+                <span class="flex-shrink-0 px-3 py-1 bg-white text-red-600 font-bold text-sm rounded-full">
+                    <i class="fas fa-bolt mr-1"></i> BREAKING
+                </span>
+                <marquee class="flex-1 font-semibold">
+                    Nollywood Actress Aunty Ajara Passes On After Prolonged Illness - Nollywood actress Ajara Lasisi, popularly known as Aunty Ajara, has passed away after a prolonged illness. Her death has drawn an outpouring of grief and tributes from colleagues, fans, and the Nollywood community.
+                </marquee>
+                <a href="/news/nollywood-actress-aunty-ajara-passes-on-after-prolonged-illness" class="flex-shrink-0 px-4 py-1 bg-white/20 hover:bg-white/30 rounded-full text-sm font-semibold transition-colors">
+                    Read More <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--[if ENDBLOCK]><![endif]-->
+    <!-- Hero Section -->
+    <section class="relative bg-orange-500 text-white overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 glass-panel px-4 py-2 rounded-full mb-6">
+                        <span class="w-3 h-3 bg-lime-500 rounded-full glass-glow"></span>
+                        <span class="text-sm font-semibold">NOW LIVE ON AIR</span>
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                        Your Station,<br>
+                        <span class="text-emerald-200">Your Voice</span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl text-emerald-100 mb-8 leading-relaxed">
+                        Broadcasting the heartbeat of the city of Akure, 24/7 on 99.1 FM
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#" @click.prevent="startLive"
+                            class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 px-8 py-4 bg-white text-emerald-700 font-bold rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                            <i class="fas fa-play-circle text-2xl"></i>
+                            <span>Listen Live Now</span>
+                        </a>
+                        <a href="/shows" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 px-8 py-4 bg-amber-700 backdrop-blur-sm text-white font-semibold rounded-full border-2 border-white/30 hover:bg-white/10 transition-all duration-300">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>View Schedule</span>
+                        </a>
+                    </div>
+
+                    <!-- Current Show Info -->
+                    <div class="mt-12 p-6 glass-panel rounded-2xl border border-white/20">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 glass-panel rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-microphone-alt text-3xl"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 text-left">
+                                <p class="text-sm text-emerald-200 mb-1">Now Playing</p>
+                                <!--[if BLOCK]><![endif]-->                                    <h3 class="text-lg font-bold">
+                                        <!--[if BLOCK]><![endif]-->                                            <a href="https://glowfmradio.com/shows/commercials" class="hover:text-white">
+                                                Commercials
+                                            </a>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </h3>
+                                    <p class="text-sm text-emerald-100">
+                                        <!--[if BLOCK]><![endif]-->                                            <a href="https://glowfmradio.com/oaps/glow-fm" class="hover:text-white">
+                                                Glow FM
+                                            </a>
+                                        <!--[if ENDBLOCK]><![endif]-->                                        <!--[if BLOCK]><![endif]-->                                            <span class="mx-2">•</span>12:31 PM - 1:00 PM
+                                            <span class="ml-2 text-[10px] text-emerald-200 font-semibold">WAT</span>
+                                        <!--[if ENDBLOCK]><![endif]-->                                    </p>
+                                <!--[if ENDBLOCK]><![endif]-->                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Radio Visualization -->
+                <div class="relative">
+                    <div class="relative z-10">
+                        <!-- Main Circle -->
+                        <div class="w-80 h-80 md:w-96 md:h-96 mx-auto glass-orb glass-sheen rounded-full border-8 border-white/20 flex items-center justify-center relative">
+                            <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-slate-900 to-slate-950 rounded-full flex items-center justify-center shadow-2xl">
+                                <div class="text-center">
+                                    <i class="fas fa-radio text-8xl text-white mb-4"></i>
+                                    <div class="text-4xl font-bold text-white">99.1</div>
+                                    <div class="text-xl text-emerald-100">FM</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Pulse Rings -->
+                            <div class="absolute inset-0 rounded-full border-4 border-white/30 glass-ripple"></div>
+                            <div class="absolute inset-0 rounded-full border-4 border-white/20 glass-glow"></div>
+                        </div>
+
+                        <!-- Floating Elements -->
+                        <div class="absolute top-10 -left-10 w-24 h-24 glass-panel rounded-2xl flex items-center justify-center transform rotate-12 glass-float">
+                            <i class="fas fa-music text-4xl text-white"></i>
+                        </div>
+                        <div class="absolute bottom-20 -right-10 w-20 h-20 glass-panel rounded-full flex items-center justify-center glass-float-slow">
+                            <i class="fas fa-heart text-3xl text-red-400"></i>
+                        </div>
+                        <div class="absolute top-1/2 -right-20 w-16 h-16 glass-panel rounded-xl flex items-center justify-center transform -rotate-12 glass-float">
+                            <i class="fas fa-star text-2xl text-yellow-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave Bottom -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 80C1200 80 1320 70 1380 65L1440 60V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!--[if BLOCK]><![endif]-->                                        <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-4">
+                            <i class="fas fa-users text-3xl text-emerald-600"></i>
+                        </div>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">1M+</div>
+                        <div class="text-gray-600 font-medium">Monthly Listeners</div>
+                    </div>
+                                                        <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-4">
+                            <i class="fas fa-broadcast-tower text-3xl text-emerald-600"></i>
+                        </div>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">24/7</div>
+                        <div class="text-gray-600 font-medium">Live Broadcasting</div>
+                    </div>
+                                                        <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-4">
+                            <i class="fas fa-newspaper text-3xl text-emerald-600"></i>
+                        </div>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">38</div>
+                        <div class="text-gray-600 font-medium">News Articles</div>
+                    </div>
+                                                        <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-4">
+                            <i class="fas fa-blog text-3xl text-emerald-600"></i>
+                        </div>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">2</div>
+                        <div class="text-gray-600 font-medium">Blog Articles</div>
+                    </div>
+                                                        <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-4">
+                            <i class="fas fa-microphone text-3xl text-emerald-600"></i>
+                        </div>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">101+</div>
+                        <div class="text-gray-600 font-medium">Show Programs</div>
+                    </div>
+                                                        <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-4">
+                            <i class="fas fa-podcast text-3xl text-emerald-600"></i>
+                        </div>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">4</div>
+                        <div class="text-gray-600 font-medium">Podcast Episodes</div>
+                    </div>
+                <!--[if ENDBLOCK]><![endif]-->            </div>
+        </div>
+    </section>
+
+    <!-- Trending News Ticker -->
+    <!--[if BLOCK]><![endif]-->    <section class="py-4 bg-emerald-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center space-x-4">
+                <div class="flex-shrink-0 flex items-center space-x-2 font-bold">
+                    <i class="fas fa-fire text-orange-300"></i>
+                    <span>TRENDING:</span>
+                </div>
+                <div class="flex-1 overflow-hidden">
+                    <div class="flex animate-scroll space-x-8">
+                    <!--[if BLOCK]><![endif]-->                                                    <a href="/news/portugal-to-face-super-eagles-ahead-of-2026-fifa-world-cup" class="flex-shrink-0 hover:text-emerald-200 transition-colors">
+                                <span class="font-semibold">Portugal to Face Super Eagles ahead of 2026 FIFA World Cup</span>
+                                <span class="text-emerald-200 text-sm ml-2">• 196 views</span>
+                            </a>
+                                                                            <a href="/news/suspected-jihadists-attack-niamey-airport" class="flex-shrink-0 hover:text-emerald-200 transition-colors">
+                                <span class="font-semibold">SUSPECTED JIHADISTS ATTACK NIAMEY AIRPORT</span>
+                                <span class="text-emerald-200 text-sm ml-2">• 151 views</span>
+                            </a>
+                                                                            <a href="/news/iran-threatens-us-after-trumps-warning" class="flex-shrink-0 hover:text-emerald-200 transition-colors">
+                                <span class="font-semibold">Iran Threatens US After Trump’s Warning</span>
+                                <span class="text-emerald-200 text-sm ml-2">• 148 views</span>
+                            </a>
+                                                                            <a href="/news/akoko-edo-local-government-area-chairman-bliss-oshionogue-impeached" class="flex-shrink-0 hover:text-emerald-200 transition-colors">
+                                <span class="font-semibold">AKOKO-EDO LOCAL GOVERNMENT AREA CHAIRMAN, BLISS OSHIONOGUE IMPEACHED </span>
+                                <span class="text-emerald-200 text-sm ml-2">• 132 views</span>
+                            </a>
+                                                                            <a href="/news/grammy-awards-2026-full-winners-list-historic-wins-major-snubs" class="flex-shrink-0 hover:text-emerald-200 transition-colors">
+                                <span class="font-semibold">Grammy Awards 2026: Full Winners List, Historic Wins &amp; Major Snubs</span>
+                                <span class="text-emerald-200 text-sm ml-2">• 128 views</span>
+                            </a>
+                        <!--[if ENDBLOCK]><![endif]-->                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--[if ENDBLOCK]><![endif]-->
+
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section - REAL DATA -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between mb-12">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Latest News</h2>
+                    <p class="text-xl text-gray-600">Stay updated with the latest from Glow FM</p>
+                </div>
+                <a href="/news" class="hidden md:inline-flex items-center space-x-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+                    <span>View All</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!--[if BLOCK]><![endif]-->                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!--[if BLOCK]><![endif]-->                                                <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                            <div class="relative h-56 overflow-hidden">
+                                <!--[if BLOCK]><![endif]-->    <img src="https://vodacomsoccer.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmobi_express%2Fimages%2F2026%2F2%2F1770361450420%2F16%2Fademola-lookman-of-atletico-madrid-celebrates-his-goal-5-february-202616.jpeg&amp;w=1920&amp;q=75" alt="Lookman makes first goal for Atlético Madrid" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">LM</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                <div class="absolute top-4 left-4">
+                                    <span class="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                                        Sport
+                                    </span>
+                                </div>
+                                <div class="absolute bottom-4 right-4 flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-eye mr-1"></i> 2
+                                    </span>
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-heart mr-1"></i> 0
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-calendar text-xs"></i>
+                                        <span>3 hours ago</span>
+                                    </span>
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-clock text-xs"></i>
+                                        <span>1 min read</span>
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                                    <a href="/news/lookman-makes-first-goal-for-atletico-madrid">Lookman makes first goal for Atlético Madrid</a>
+                                </h3>
+                                <p class="text-gray-600 mb-4 line-clamp-3">Atlético Madrid’s new forward Ademola Lookman announced himself in style on Thursday, scoring on his debut as the Spanish side faced Real Betis in a Copa del Rey quarter-final at Estadio La Cartuja, according to PUNCH Sports Extra</p>
+                                <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                    <span class="inline-flex items-center space-x-2 text-sm text-gray-600">
+                                        <img src="https://glowfmradio.com/glowfm logo.jpeg" alt="Glow FM" class="w-5 h-5 rounded-full object-cover">
+                                        <span>Glow FM</span>
+                                    </span>
+                                    <a href="/news/lookman-makes-first-goal-for-atletico-madrid" class="inline-flex items-center space-x-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+                                        <span>Read More</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                                                                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                            <div class="relative h-56 overflow-hidden">
+                                <!--[if BLOCK]><![endif]-->    <img src="https://lifestyle.thecable.ng/wp-content/uploads/2026/02/IMG-20260205-WA0000-770x560.jpg" alt="Popular United States-based streamer supports Makoko community" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">PU</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                <div class="absolute top-4 left-4">
+                                    <span class="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                                        Entertainment
+                                    </span>
+                                </div>
+                                <div class="absolute bottom-4 right-4 flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-eye mr-1"></i> 3
+                                    </span>
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-heart mr-1"></i> 0
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-calendar text-xs"></i>
+                                        <span>22 hours ago</span>
+                                    </span>
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-clock text-xs"></i>
+                                        <span>1 min read</span>
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                                    <a href="/news/popular-united-states-based-streamer-supports-makoko-community">Popular United States-based streamer supports Makoko community</a>
+                                </h3>
+                                <p class="text-gray-600 mb-4 line-clamp-3">Popular United States-based streamer Kai Cenat has again shown support for the Makoko community in Lagos, visiting the Makoko Children School Orphanage Home as part of his current trip to Nigeria.</p>
+                                <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                    <span class="inline-flex items-center space-x-2 text-sm text-gray-600">
+                                        <img src="https://glowfmradio.com/glowfm logo.jpeg" alt="Glow FM" class="w-5 h-5 rounded-full object-cover">
+                                        <span>Glow FM</span>
+                                    </span>
+                                    <a href="/news/popular-united-states-based-streamer-supports-makoko-community" class="inline-flex items-center space-x-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+                                        <span>Read More</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                                                                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                            <div class="relative h-56 overflow-hidden">
+                                <!--[if BLOCK]><![endif]-->    <img src="https://www.dockaysworld.com.ng/wp-content/uploads/2026/02/IMG_3268.jpeg" alt="Nollywood Actress Aunty Ajara Passes On After Prolonged Illness" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">NA</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                <div class="absolute top-4 left-4">
+                                    <span class="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                                        Entertainment
+                                    </span>
+                                </div>
+                                <div class="absolute bottom-4 right-4 flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-eye mr-1"></i> 126
+                                    </span>
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-heart mr-1"></i> 0
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-calendar text-xs"></i>
+                                        <span>1 day ago</span>
+                                    </span>
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-clock text-xs"></i>
+                                        <span>2 min read</span>
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                                    <a href="/news/nollywood-actress-aunty-ajara-passes-on-after-prolonged-illness">Nollywood Actress Aunty Ajara Passes On After Prolonged Illness</a>
+                                </h3>
+                                <p class="text-gray-600 mb-4 line-clamp-3">Nollywood actress Ajara Lasisi, popularly known as Aunty Ajara, has passed away after a prolonged illness. Her death has drawn an outpouring of grief and tributes from colleagues, fans, and the Nollywood community.</p>
+                                <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                    <span class="inline-flex items-center space-x-2 text-sm text-gray-600">
+                                        <img src="https://glowfmradio.com/glowfm logo.jpeg" alt="Glow FM" class="w-5 h-5 rounded-full object-cover">
+                                        <span>Glow FM</span>
+                                    </span>
+                                    <a href="/news/nollywood-actress-aunty-ajara-passes-on-after-prolonged-illness" class="inline-flex items-center space-x-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+                                        <span>Read More</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                                                                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                            <div class="relative h-56 overflow-hidden">
+                                <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/news/LvEh8gxPYyvUFLTO4RGaQgiTpOLF0RivbY7Gl2LT.jpg" alt="ONDO @50: GOVT AWARDS OBASANJO, FASORANTI, AIYEDATIWA, OTHERS" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">O@</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                <div class="absolute top-4 left-4">
+                                    <span class="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                                        Entertainment
+                                    </span>
+                                </div>
+                                <div class="absolute bottom-4 right-4 flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-eye mr-1"></i> 9
+                                    </span>
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-heart mr-1"></i> 0
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-calendar text-xs"></i>
+                                        <span>1 day ago</span>
+                                    </span>
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-clock text-xs"></i>
+                                        <span>1 min read</span>
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                                    <a href="/news/ondo-at-50-govt-awards-obasanjo-fasoranti-aiyedatiwa-others">ONDO @50: GOVT AWARDS OBASANJO, FASORANTI, AIYEDATIWA, OTHERS</a>
+                                </h3>
+                                <p class="text-gray-600 mb-4 line-clamp-3">IN A NIGHT OF ELEGANCE AND JUBILATION, ONDO STATE ENDED THE CELEBRATION OF ITS GOLDEN JUBILEE BY HONOURING PRESIDENT BOLA TINUBU, FORMER PRESIDENT OLUSEGUN OBASANJO, ELDER STATESMAN REUBEN FASORANTI, GOVERNOR LUCKY AIYEDATIWA, AND 67 OTHER DISTINGUISHED SONS, DAUGHTERS, AND FRIENDS OF THE STATE.</p>
+                                <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                    <span class="inline-flex items-center space-x-2 text-sm text-gray-600">
+                                        <img src="https://glowfmradio.com/glowfm logo.jpeg" alt="Glow FM" class="w-5 h-5 rounded-full object-cover">
+                                        <span>Glow FM</span>
+                                    </span>
+                                    <a href="/news/ondo-at-50-govt-awards-obasanjo-fasoranti-aiyedatiwa-others" class="inline-flex items-center space-x-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+                                        <span>Read More</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                                                                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                            <div class="relative h-56 overflow-hidden">
+                                <!--[if BLOCK]><![endif]-->    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4koh3ixyT8vUAOKINM2klpLc1KiIy-ZybDynS6Cj8HQ&amp;s=10" alt="Kwara State Emir urges Government to Implement Policies Against Gender Based Violence" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">KS</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                <div class="absolute top-4 left-4">
+                                    <span class="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                                        Politics
+                                    </span>
+                                </div>
+                                <div class="absolute bottom-4 right-4 flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-eye mr-1"></i> 79
+                                    </span>
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-heart mr-1"></i> 0
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-calendar text-xs"></i>
+                                        <span>2 days ago</span>
+                                    </span>
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-clock text-xs"></i>
+                                        <span>1 min read</span>
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                                    <a href="/news/kwara-state-emir-urges-government-to-implement-policies-against-gender-based-violence">Kwara State Emir urges Government to Implement Policies Against Gender Based Violence</a>
+                                </h3>
+                                <p class="text-gray-600 mb-4 line-clamp-3">EMIR OF SHONGA IN KWARA STATE, HALIRU NDANUSA SAYS THE GOVERNMENT HAVE TO IMPLEMENT POLICIES AGAINST GENDER BASED VIOLENCE TO END THE MENANCE.
+</p>
+                                <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                    <span class="inline-flex items-center space-x-2 text-sm text-gray-600">
+                                        <img src="https://glowfmradio.com/glowfm logo.jpeg" alt="Glow FM" class="w-5 h-5 rounded-full object-cover">
+                                        <span>Glow FM</span>
+                                    </span>
+                                    <a href="/news/kwara-state-emir-urges-government-to-implement-policies-against-gender-based-violence" class="inline-flex items-center space-x-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+                                        <span>Read More</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                                                                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                            <div class="relative h-56 overflow-hidden">
+                                <!--[if BLOCK]><![endif]-->    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFVZtnvukljB47gUb1xYUh436lUhIOtX9ADniWDskknw&amp;s=10" alt="FRC Warns State, Local Governments against borrowing without approval " class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-3xl font-bold text-white">FW</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                <div class="absolute top-4 left-4">
+                                    <span class="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                                        Finance
+                                    </span>
+                                </div>
+                                <div class="absolute bottom-4 right-4 flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-eye mr-1"></i> 68
+                                    </span>
+                                    <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                        <i class="fas fa-heart mr-1"></i> 0
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-calendar text-xs"></i>
+                                        <span>2 days ago</span>
+                                    </span>
+                                    <span class="flex items-center space-x-1">
+                                        <i class="fas fa-clock text-xs"></i>
+                                        <span>1 min read</span>
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                                    <a href="/news/frc-warns-state-local-governments-against-borrowing-without-approval">FRC Warns State, Local Governments against borrowing without approval </a>
+                                </h3>
+                                <p class="text-gray-600 mb-4 line-clamp-3">THE FEDERAL GOVERNMENT HAS WARNED STATES AND LOCAL GOVERNMENTS AGAINST BORROWING FROM FINANCIAL INSTITUTIONS WITHOUT A CERTIFICATE OF PROOF OF COMPLIANCE FROM THE FISCAL RESPONSIBILITY COMMISSION (FRC).</p>
+                                <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                    <span class="inline-flex items-center space-x-2 text-sm text-gray-600">
+                                        <img src="https://glowfmradio.com/glowfm logo.jpeg" alt="Glow FM" class="w-5 h-5 rounded-full object-cover">
+                                        <span>Glow FM</span>
+                                    </span>
+                                    <a href="/news/frc-warns-state-local-governments-against-borrowing-without-approval" class="inline-flex items-center space-x-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+                                        <span>Read More</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    <!--[if ENDBLOCK]><![endif]-->                </div>
+            <!--[if ENDBLOCK]><![endif]-->
+            <div class="text-center mt-12">
+                <a href="/news" class="inline-flex items-center space-x-2 px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    <span>View All News</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsroom Spotlight Section -->
+    <section class="relative py-24 bg-gradient-to-br from-amber-50 via-white to-emerald-50 overflow-hidden"
+        x-data="{
+            loading: false,
+            initObserver() {
+                const observer = new IntersectionObserver((entries) => {
+                    if (!entries[0].isIntersecting) return;
+                    if (this.loading || !$wire.get('newsHasMore')) return;
+                    this.loading = true;
+                    $wire.loadMoreNews().then(() => { this.loading = false; });
+                }, { rootMargin: '200px' });
+                observer.observe(this.$refs.newsSentinel);
+            }
+        }"
+        x-init="initObserver()"
+    >
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-emerald-200/40 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-amber-200/50 rounded-full blur-3xl"></div>
+        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, rgba(15, 23, 42, 0.12) 1px, transparent 0); background-size: 24px 24px;"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+                <div>
+                    <p class="uppercase tracking-[0.3em] text-xs text-emerald-700 font-semibold">Newsroom</p>
+                    <h2 class="text-4xl md:text-6xl font-black text-slate-900 mt-2" style="font-family: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', serif;">
+                        Featured, Most Viewed, and Fresh Drops
+                    </h2>
+                    <p class="text-lg text-slate-600 mt-4 max-w-2xl">
+                        Curated highlights and what the city is reading right now — refreshed in batches as you scroll.
+                    </p>
+                </div>
+                <a href="/news" class="inline-flex items-center space-x-2 text-emerald-700 font-semibold hover:text-emerald-800 transition-colors">
+                    <span>Explore Newsroom</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!--[if BLOCK]><![endif]-->                <div class="flex flex-wrap gap-3 mb-10">
+                    <span class="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-full bg-slate-900 text-white">
+                        <i class="fas fa-fire text-amber-300"></i> Trending Now
+                    </span>
+                    <!--[if BLOCK]><![endif]-->                                                <a href="/news/portugal-to-face-super-eagles-ahead-of-2026-fifa-world-cup" class="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-full bg-white/80 border border-emerald-100 text-emerald-800 hover:bg-emerald-600 hover:text-white transition-colors">
+                            <span>Portugal to Face Super Eagles ahead of 2026 FIFA World Cup</span>
+                            <span class="text-[10px] opacity-70">1 week ago</span>
+                        </a>
+                                                                    <a href="/news/suspected-jihadists-attack-niamey-airport" class="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-full bg-white/80 border border-emerald-100 text-emerald-800 hover:bg-emerald-600 hover:text-white transition-colors">
+                            <span>SUSPECTED JIHADISTS ATTACK NIAMEY AIRPORT</span>
+                            <span class="text-[10px] opacity-70">1 week ago</span>
+                        </a>
+                                                                    <a href="/news/iran-threatens-us-after-trumps-warning" class="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-full bg-white/80 border border-emerald-100 text-emerald-800 hover:bg-emerald-600 hover:text-white transition-colors">
+                            <span>Iran Threatens US After Trump’s Warning</span>
+                            <span class="text-[10px] opacity-70">6 days ago</span>
+                        </a>
+                                                                    <a href="/news/akoko-edo-local-government-area-chairman-bliss-oshionogue-impeached" class="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-full bg-white/80 border border-emerald-100 text-emerald-800 hover:bg-emerald-600 hover:text-white transition-colors">
+                            <span>AKOKO-EDO LOCAL GOVERNMENT AREA CHAIRMAN, BLISS OSHIONOGUE IMPEACHED </span>
+                            <span class="text-[10px] opacity-70">1 week ago</span>
+                        </a>
+                                                                    <a href="/news/grammy-awards-2026-full-winners-list-historic-wins-major-snubs" class="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-full bg-white/80 border border-emerald-100 text-emerald-800 hover:bg-emerald-600 hover:text-white transition-colors">
+                            <span>Grammy Awards 2026: Full Winners List, Historic Wins &amp; Major Snubs</span>
+                            <span class="text-[10px] opacity-70">4 days ago</span>
+                        </a>
+                    <!--[if ENDBLOCK]><![endif]-->                </div>
+            <!--[if ENDBLOCK]><![endif]-->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-8 space-y-6">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-2xl font-bold text-slate-900">Featured News</h3>
+                        <span class="text-sm font-semibold text-emerald-700 bg-emerald-100/80 px-3 py-1 rounded-full">Editor's picks</span>
+                    </div>
+
+                                        <!--[if BLOCK]><![endif]-->                        <article class="group relative overflow-hidden rounded-3xl shadow-xl bg-white">
+                            <div class="relative h-80">
+                                <!--[if BLOCK]><![endif]-->    <img src="https://www.dockaysworld.com.ng/wp-content/uploads/2026/02/IMG_3268.jpeg" alt="Nollywood Actress Aunty Ajara Passes On After Prolonged Illness" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-4xl font-bold text-white">NA</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6">
+                                    <span class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold rounded-full bg-white/90 text-emerald-700">
+                                        Entertainment
+                                    </span>
+                                    <h4 class="text-2xl md:text-3xl font-bold text-white mt-3">
+                                        <a href="/news/nollywood-actress-aunty-ajara-passes-on-after-prolonged-illness">Nollywood Actress Aunty Ajara Passes On After Prolonged Illness</a>
+                                    </h4>
+                                    <p class="text-sm text-white/80 mt-2 line-clamp-2">Nollywood actress Ajara Lasisi, popularly known as Aunty Ajara, has passed away after a prolonged illness. Her death has drawn an outpouring of grief and tributes from colleagues, fans, and the Nollywood community.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between px-6 py-4 border-t border-slate-100">
+                                <div class="flex items-center gap-4 text-sm text-slate-500">
+                                    <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-xs"></i>2 min read</span>
+                                    <span class="inline-flex items-center gap-1"><i class="fas fa-eye text-xs"></i>126</span>
+                                </div>
+                                <a href="/news/nollywood-actress-aunty-ajara-passes-on-after-prolonged-illness" class="inline-flex items-center gap-2 text-emerald-700 font-semibold">
+                                    <span>Read Story</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    <!--[if ENDBLOCK]><![endif]-->
+                    <!--[if BLOCK]><![endif]-->                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!--[if BLOCK]><![endif]-->                                                                <article class="group rounded-2xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                                    <div class="relative h-48">
+                                        <!--[if BLOCK]><![endif]-->    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30PTnr6vyQ5BjppAS8bjoPw1v9jfA0uxm_NcIz7ulbw&amp;s=10" alt="Ondo State at 50: Leaders Celebrate Five Decades of Growth and Resilience" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-slate-800">
+        <span class="text-2xl font-bold text-white">OS</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                        <span class="absolute top-4 left-4 px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                                            Politics
+                                        </span>
+                                    </div>
+                                    <div class="p-5">
+                                        <p class="text-xs uppercase tracking-widest text-emerald-700 font-semibold">2 days ago</p>
+                                        <h4 class="text-lg font-bold text-slate-900 mt-2 group-hover:text-emerald-700 transition-colors">
+                                            <a href="/news/ondo-state-at-50-leaders-celebrate-five-decades-of-growth-and-resilience">Ondo State at 50: Leaders Celebrate Five Decades of Growth and Resilience</a>
+                                        </h4>
+                                        <p class="text-sm text-slate-600 mt-2 line-clamp-2">AS ONDO STATE MARKS ITS GOLDEN JUBILEE TODAY, EMINENT LEADERS, POLITICIANS, LEGAL PRACTITIONERS AND ACADEMICS HAVE CONGRATULATED THE GOVERNMENT AND RESIDENTS ON 50 YEARS OF RESILIENCE, PROGRESS AND DEVELOPMENT.</p>
+                                    </div>
+                                </article>
+                            <!--[if ENDBLOCK]><![endif]-->                        </div>
+                    <!--[if ENDBLOCK]><![endif]-->                </div>
+
+                <div class="lg:col-span-4">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold text-slate-900">Most Viewed</h3>
+                        <span class="text-xs font-semibold text-amber-700 bg-amber-100/80 px-3 py-1 rounded-full">Top reads</span>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!--[if BLOCK]><![endif]-->                                                        <a href="/news/portugal-to-face-super-eagles-ahead-of-2026-fifa-world-cup" class="group flex items-start gap-4 p-4 rounded-2xl bg-white/80 border border-white hover:bg-white shadow-sm hover:shadow-lg transition-all duration-300">
+                                <div class="text-2xl font-black text-emerald-700/60 w-8">1</div>
+                                <div class="flex-1">
+                                    <p class="text-xs uppercase tracking-widest text-amber-700 font-semibold">Sport</p>
+                                    <h4 class="text-base font-bold text-slate-900 group-hover:text-emerald-700 transition-colors mt-1">
+                                        Portugal to Face Super Eagles ahead of 2026 FIFA World Cup
+                                    </h4>
+                                    <div class="flex items-center gap-3 text-xs text-slate-500 mt-2">
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-eye text-[10px]"></i>196</span>
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-[10px]"></i>1 week ago</span>
+                                    </div>
+                                </div>
+                            </a>
+                                                                                <a href="/news/suspected-jihadists-attack-niamey-airport" class="group flex items-start gap-4 p-4 rounded-2xl bg-white/80 border border-white hover:bg-white shadow-sm hover:shadow-lg transition-all duration-300">
+                                <div class="text-2xl font-black text-emerald-700/60 w-8">2</div>
+                                <div class="flex-1">
+                                    <p class="text-xs uppercase tracking-widest text-amber-700 font-semibold">Foreign</p>
+                                    <h4 class="text-base font-bold text-slate-900 group-hover:text-emerald-700 transition-colors mt-1">
+                                        SUSPECTED JIHADISTS ATTACK NIAMEY AIRPORT
+                                    </h4>
+                                    <div class="flex items-center gap-3 text-xs text-slate-500 mt-2">
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-eye text-[10px]"></i>151</span>
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-[10px]"></i>1 week ago</span>
+                                    </div>
+                                </div>
+                            </a>
+                                                                                <a href="/news/iran-threatens-us-after-trumps-warning" class="group flex items-start gap-4 p-4 rounded-2xl bg-white/80 border border-white hover:bg-white shadow-sm hover:shadow-lg transition-all duration-300">
+                                <div class="text-2xl font-black text-emerald-700/60 w-8">3</div>
+                                <div class="flex-1">
+                                    <p class="text-xs uppercase tracking-widest text-amber-700 font-semibold">Foreign</p>
+                                    <h4 class="text-base font-bold text-slate-900 group-hover:text-emerald-700 transition-colors mt-1">
+                                        Iran Threatens US After Trump’s Warning
+                                    </h4>
+                                    <div class="flex items-center gap-3 text-xs text-slate-500 mt-2">
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-eye text-[10px]"></i>148</span>
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-[10px]"></i>6 days ago</span>
+                                    </div>
+                                </div>
+                            </a>
+                                                                                <a href="/news/akoko-edo-local-government-area-chairman-bliss-oshionogue-impeached" class="group flex items-start gap-4 p-4 rounded-2xl bg-white/80 border border-white hover:bg-white shadow-sm hover:shadow-lg transition-all duration-300">
+                                <div class="text-2xl font-black text-emerald-700/60 w-8">4</div>
+                                <div class="flex-1">
+                                    <p class="text-xs uppercase tracking-widest text-amber-700 font-semibold">Politics</p>
+                                    <h4 class="text-base font-bold text-slate-900 group-hover:text-emerald-700 transition-colors mt-1">
+                                        AKOKO-EDO LOCAL GOVERNMENT AREA CHAIRMAN, BLISS OSHIONOGUE IMPEACHED 
+                                    </h4>
+                                    <div class="flex items-center gap-3 text-xs text-slate-500 mt-2">
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-eye text-[10px]"></i>132</span>
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-[10px]"></i>1 week ago</span>
+                                    </div>
+                                </div>
+                            </a>
+                                                                                <a href="/news/grammy-awards-2026-full-winners-list-historic-wins-major-snubs" class="group flex items-start gap-4 p-4 rounded-2xl bg-white/80 border border-white hover:bg-white shadow-sm hover:shadow-lg transition-all duration-300">
+                                <div class="text-2xl font-black text-emerald-700/60 w-8">5</div>
+                                <div class="flex-1">
+                                    <p class="text-xs uppercase tracking-widest text-amber-700 font-semibold">Entertainment</p>
+                                    <h4 class="text-base font-bold text-slate-900 group-hover:text-emerald-700 transition-colors mt-1">
+                                        Grammy Awards 2026: Full Winners List, Historic Wins &amp; Major Snubs
+                                    </h4>
+                                    <div class="flex items-center gap-3 text-xs text-slate-500 mt-2">
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-eye text-[10px]"></i>128</span>
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-[10px]"></i>4 days ago</span>
+                                    </div>
+                                </div>
+                            </a>
+                        <!--[if ENDBLOCK]><![endif]-->                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold text-slate-900">More News</h3>
+                    <span class="text-sm text-slate-500">Keep scrolling for more updates</span>
+                </div>
+
+                <!--[if BLOCK]><![endif]-->                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                        <!--[if BLOCK]><![endif]-->                                                        <article class="group rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300">
+                                <div class="relative h-48 overflow-hidden">
+                                    <!--[if BLOCK]><![endif]-->    <img src="https://vodacomsoccer.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmobi_express%2Fimages%2F2026%2F2%2F1770361450420%2F16%2Fademola-lookman-of-atletico-madrid-celebrates-his-goal-5-february-202616.jpeg&amp;w=1920&amp;q=75" alt="Lookman makes first goal for Atlético Madrid" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/80">
+        <span class="text-2xl font-bold text-white">LM</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                    <div class="absolute top-4 left-4">
+                                        <span class="px-3 py-1 bg-slate-900/80 text-white text-xs font-semibold rounded-full">
+                                            Sport
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500">
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-calendar text-[10px]"></i>3 hours ago</span>
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-[10px]"></i>1 min read</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-slate-900 mt-2 group-hover:text-emerald-700 transition-colors">
+                                        <a href="/news/lookman-makes-first-goal-for-atletico-madrid">Lookman makes first goal for Atlético Madrid</a>
+                                    </h4>
+                                    <p class="text-sm text-slate-600 mt-2 line-clamp-2">Atlético Madrid’s new forward Ademola Lookman announced himself in style on Thursday, scoring on his debut as the Spanish side faced Real Betis in a Copa del Rey quarter-final at Estadio La Cartuja, according to PUNCH Sports Extra</p>
+                                </div>
+                            </article>
+                                                                                <article class="group rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300">
+                                <div class="relative h-48 overflow-hidden">
+                                    <!--[if BLOCK]><![endif]-->    <img src="https://lifestyle.thecable.ng/wp-content/uploads/2026/02/IMG-20260205-WA0000-770x560.jpg" alt="Popular United States-based streamer supports Makoko community" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/80">
+        <span class="text-2xl font-bold text-white">PU</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                    <div class="absolute top-4 left-4">
+                                        <span class="px-3 py-1 bg-slate-900/80 text-white text-xs font-semibold rounded-full">
+                                            Entertainment
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500">
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-calendar text-[10px]"></i>22 hours ago</span>
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-[10px]"></i>1 min read</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-slate-900 mt-2 group-hover:text-emerald-700 transition-colors">
+                                        <a href="/news/popular-united-states-based-streamer-supports-makoko-community">Popular United States-based streamer supports Makoko community</a>
+                                    </h4>
+                                    <p class="text-sm text-slate-600 mt-2 line-clamp-2">Popular United States-based streamer Kai Cenat has again shown support for the Makoko community in Lagos, visiting the Makoko Children School Orphanage Home as part of his current trip to Nigeria.</p>
+                                </div>
+                            </article>
+                                                                                <article class="group rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300">
+                                <div class="relative h-48 overflow-hidden">
+                                    <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/news/LvEh8gxPYyvUFLTO4RGaQgiTpOLF0RivbY7Gl2LT.jpg" alt="ONDO @50: GOVT AWARDS OBASANJO, FASORANTI, AIYEDATIWA, OTHERS" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/80">
+        <span class="text-2xl font-bold text-white">O@</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                    <div class="absolute top-4 left-4">
+                                        <span class="px-3 py-1 bg-slate-900/80 text-white text-xs font-semibold rounded-full">
+                                            Entertainment
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500">
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-calendar text-[10px]"></i>1 day ago</span>
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-[10px]"></i>1 min read</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-slate-900 mt-2 group-hover:text-emerald-700 transition-colors">
+                                        <a href="/news/ondo-at-50-govt-awards-obasanjo-fasoranti-aiyedatiwa-others">ONDO @50: GOVT AWARDS OBASANJO, FASORANTI, AIYEDATIWA, OTHERS</a>
+                                    </h4>
+                                    <p class="text-sm text-slate-600 mt-2 line-clamp-2">IN A NIGHT OF ELEGANCE AND JUBILATION, ONDO STATE ENDED THE CELEBRATION OF ITS GOLDEN JUBILEE BY HONOURING PRESIDENT BOLA TINUBU, FORMER PRESIDENT OLUSEGUN OBASANJO, ELDER STATESMAN REUBEN FASORANTI, GOVERNOR LUCKY AIYEDATIWA, AND 67 OTHER DISTINGUISHED SONS, DAUGHTERS, AND FRIENDS OF THE STATE.</p>
+                                </div>
+                            </article>
+                                                                                <article class="group rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300">
+                                <div class="relative h-48 overflow-hidden">
+                                    <!--[if BLOCK]><![endif]-->    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4koh3ixyT8vUAOKINM2klpLc1KiIy-ZybDynS6Cj8HQ&amp;s=10" alt="Kwara State Emir urges Government to Implement Policies Against Gender Based Violence" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/80">
+        <span class="text-2xl font-bold text-white">KS</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                    <div class="absolute top-4 left-4">
+                                        <span class="px-3 py-1 bg-slate-900/80 text-white text-xs font-semibold rounded-full">
+                                            Politics
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500">
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-calendar text-[10px]"></i>2 days ago</span>
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-[10px]"></i>1 min read</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-slate-900 mt-2 group-hover:text-emerald-700 transition-colors">
+                                        <a href="/news/kwara-state-emir-urges-government-to-implement-policies-against-gender-based-violence">Kwara State Emir urges Government to Implement Policies Against Gender Based Violence</a>
+                                    </h4>
+                                    <p class="text-sm text-slate-600 mt-2 line-clamp-2">EMIR OF SHONGA IN KWARA STATE, HALIRU NDANUSA SAYS THE GOVERNMENT HAVE TO IMPLEMENT POLICIES AGAINST GENDER BASED VIOLENCE TO END THE MENANCE.
+</p>
+                                </div>
+                            </article>
+                                                                                <article class="group rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300">
+                                <div class="relative h-48 overflow-hidden">
+                                    <!--[if BLOCK]><![endif]-->    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFVZtnvukljB47gUb1xYUh436lUhIOtX9ADniWDskknw&amp;s=10" alt="FRC Warns State, Local Governments against borrowing without approval " class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/80">
+        <span class="text-2xl font-bold text-white">FW</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                    <div class="absolute top-4 left-4">
+                                        <span class="px-3 py-1 bg-slate-900/80 text-white text-xs font-semibold rounded-full">
+                                            Finance
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500">
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-calendar text-[10px]"></i>2 days ago</span>
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-[10px]"></i>1 min read</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-slate-900 mt-2 group-hover:text-emerald-700 transition-colors">
+                                        <a href="/news/frc-warns-state-local-governments-against-borrowing-without-approval">FRC Warns State, Local Governments against borrowing without approval </a>
+                                    </h4>
+                                    <p class="text-sm text-slate-600 mt-2 line-clamp-2">THE FEDERAL GOVERNMENT HAS WARNED STATES AND LOCAL GOVERNMENTS AGAINST BORROWING FROM FINANCIAL INSTITUTIONS WITHOUT A CERTIFICATE OF PROOF OF COMPLIANCE FROM THE FISCAL RESPONSIBILITY COMMISSION (FRC).</p>
+                                </div>
+                            </article>
+                                                                                <article class="group rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300">
+                                <div class="relative h-48 overflow-hidden">
+                                    <!--[if BLOCK]><![endif]-->    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSMGjbRk8W3WeTJZclZNwgo95Q357HQcH3FRc16tb6UQ&amp;s=10" alt="Nigeria’s Super Falcons to Open Training Camp ahead of 2026 Women’s Africa Cup" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/80">
+        <span class="text-2xl font-bold text-white">NS</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                                    <div class="absolute top-4 left-4">
+                                        <span class="px-3 py-1 bg-slate-900/80 text-white text-xs font-semibold rounded-full">
+                                            Sport
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500">
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-calendar text-[10px]"></i>2 days ago</span>
+                                        <span class="inline-flex items-center gap-1"><i class="fas fa-clock text-[10px]"></i>1 min read</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-slate-900 mt-2 group-hover:text-emerald-700 transition-colors">
+                                        <a href="/news/nigerias-super-falcons-to-open-training-camp-ahead-of-2026-womens-africa-cup">Nigeria’s Super Falcons to Open Training Camp ahead of 2026 Women’s Africa Cup</a>
+                                    </h4>
+                                    <p class="text-sm text-slate-600 mt-2 line-clamp-2">NIGERIA’S SUPER FALCONS ARE EXPECTED TO OPEN TRAINING CAMP FOR THE 2026 WOMEN’S AFRICA CUP OF NATIONS ON FRIDAY, FEBRUARY 20.</p>
+                                </div>
+                            </article>
+                        <!--[if ENDBLOCK]><![endif]-->                    </div>
+                <!--[if ENDBLOCK]><![endif]-->
+                <div class="mt-10 flex items-center justify-center">
+                    <div x-ref="newsSentinel" class="w-full max-w-sm">
+                        <!--[if BLOCK]><![endif]-->                            <div class="flex items-center justify-center gap-3 text-sm text-slate-500">
+                                <span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+                                <span>Loading more stories...</span>
+                            </div>
+                            <div wire:loading.flex wire:target="loadMoreNews" class="mt-3 justify-center text-xs text-emerald-700">
+                                Fetching the next batch
+                            </div>
+                        <!--[if ENDBLOCK]><![endif]-->                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Latest Blog Posts Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between mb-12">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Latest Blog Posts</h2>
+                <p class="text-xl text-gray-600">Deep insights and articles from our blog</p>
+            </div>
+            <a href="/blog" class="hidden md:inline-flex items-center space-x-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors">
+                <span>View All Posts</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <!--[if BLOCK]><![endif]-->            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!--[if BLOCK]><![endif]-->                                        <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <div class="relative h-56 overflow-hidden">
+                            <!--[if BLOCK]><![endif]-->    <img src="https://cdn.punchng.com/wp-content/uploads/2025/11/11014215/Makinde.jpg" alt="Alaafin kicks as Makinde installs Ladoja chairman of Obas council" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-purple-700/90">
+        <span class="text-3xl font-bold text-white">AK</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-red-600 text-white text-xs font-semibold rounded-full">
+                                    Politics
+                                </span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 flex items-center space-x-2">
+                                <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                    <i class="fas fa-eye mr-1"></i> 51
+                                </span>
+                                <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                    <i class="fas fa-comment mr-1"></i> 0
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                <span class="flex items-center space-x-1">
+                                    <i class="fas fa-calendar text-xs"></i>
+                                    <span>3 weeks ago</span>
+                                </span>
+                                <span class="flex items-center space-x-1">
+                                    <i class="fas fa-clock text-xs"></i>
+                                    <span>8 min read</span>
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
+                                <a href="/blog/alaafin-kicks-as-makinde-installs-ladoja-chairman-of-obas-council">Alaafin kicks as Makinde installs Ladoja chairman of Obas council</a>
+                            </h3>
+                            <p class="text-gray-600 mb-4 line-clamp-3">The Alaafin of Oyo, Oba Akeem Owoade, was conspicuously absent from the inauguration, which was held at the House of Chiefs, Parliament Building, Secretariat, Ibadan.</p>
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                <span class="text-sm text-gray-600">
+                                    <i class="fas fa-user-circle mr-1"></i> Oyetoke Adedayo Ebenezer
+                                </span>
+                                <a href="/blog/alaafin-kicks-as-makinde-installs-ladoja-chairman-of-obas-council" class="inline-flex items-center space-x-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors">
+                                    <span>Read More</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                                                        <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <div class="relative h-56 overflow-hidden">
+                            <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/blog/MJTJ5x3YtfvcvoIBCSEsWZgO2lTUQvs5mPmfcRc2.webp" alt="Flutterwave buys Nigeria’s Mono in rare African fintech exit" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-purple-700/90">
+        <span class="text-3xl font-bold text-white">FB</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-pink-600 text-white text-xs font-semibold rounded-full">
+                                    TechNology
+                                </span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 flex items-center space-x-2">
+                                <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                    <i class="fas fa-eye mr-1"></i> 60
+                                </span>
+                                <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                    <i class="fas fa-comment mr-1"></i> 0
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                                <span class="flex items-center space-x-1">
+                                    <i class="fas fa-calendar text-xs"></i>
+                                    <span>Unpublished</span>
+                                </span>
+                                <span class="flex items-center space-x-1">
+                                    <i class="fas fa-clock text-xs"></i>
+                                    <span>4 min read</span>
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
+                                <a href="/blog/flutterwave-buys-nigerias-mono-in-rare-african-fintech-exit">Flutterwave buys Nigeria’s Mono in rare African fintech exit</a>
+                            </h3>
+                            <p class="text-gray-600 mb-4 line-clamp-3">The transaction mirrors earlier consolidation attempts in global fintech infrastructure, including Visa’s failed acquisition of Plaid in 2020, which was blocked by U.S. regulators. Hassan cited that deal as evidence that combining data infrastructure with payment rails can unlock scale. </p>
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                <span class="text-sm text-gray-600">
+                                    <i class="fas fa-user-circle mr-1"></i> Oyetoke Adedayo Ebenezer
+                                </span>
+                                <a href="/blog/flutterwave-buys-nigerias-mono-in-rare-african-fintech-exit" class="inline-flex items-center space-x-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors">
+                                    <span>Read More</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                <!--[if ENDBLOCK]><![endif]-->            </div>
+        <!--[if ENDBLOCK]><![endif]-->
+        <div class="text-center mt-12">
+            <a href="/blog" class="inline-flex items-center space-x-2 px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                <span>View All Blog Posts</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Trending Blog Posts Ticker -->
+<!--[if BLOCK]><![endif]--><section class="py-4 bg-purple-600 text-white">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center space-x-4">
+            <div class="flex-shrink-0 flex items-center space-x-2 font-bold">
+                <i class="fas fa-fire text-orange-300"></i>
+                <span>TRENDING BLOG:</span>
+            </div>
+            <div class="flex-1 overflow-hidden">
+                <div class="flex animate-scroll space-x-8">
+                <!--[if BLOCK]><![endif]-->                                        <a href="/blog/flutterwave-buys-nigerias-mono-in-rare-african-fintech-exit" class="flex-shrink-0 hover:text-purple-200 transition-colors">
+                            <span class="font-semibold">Flutterwave buys Nigeria’s Mono in rare African fintech exit</span>
+                            <span class="text-purple-200 text-sm ml-2">• 60 views</span>
+                        </a>
+                                                            <a href="/blog/alaafin-kicks-as-makinde-installs-ladoja-chairman-of-obas-council" class="flex-shrink-0 hover:text-purple-200 transition-colors">
+                            <span class="font-semibold">Alaafin kicks as Makinde installs Ladoja chairman of Obas council</span>
+                            <span class="text-purple-200 text-sm ml-2">• 51 views</span>
+                        </a>
+                    <!--[if ENDBLOCK]><![endif]-->                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--[if ENDBLOCK]><![endif]-->
+    <!-- Upcoming Events Section -->
+    <section class="py-20 bg-amber-600 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Upcoming Events</h2>
+                <p class="text-xl text-emerald-100 max-w-2xl mx-auto">
+                    Join us at our exclusive events and experience the magic of live entertainment
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->            </div>
+
+            <div class="text-center mt-12">
+                <a href="/events" class="inline-flex items-center space-x-2 px-8 py-4 bg-white text-emerald-700 font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    <span>View All Events</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Podcast Section -->
+<!-- Latest Podcast Episodes Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Latest Podcast Episodes</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Listen to our newest podcast episodes featuring amazing conversations and stories
+            </p>
+        </div>
+
+        <!--[if BLOCK]><![endif]-->            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!--[if BLOCK]><![endif]-->                                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                        <div class="relative h-48 overflow-hidden">
+                            <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/podcasts/episode-covers/du3yi0oA3yhvREXOGmi58aHmKmn8A317kfVEm1hD.png" alt="EPS 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-purple-700/90">
+        <span class="text-3xl font-bold text-white">E3</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="https://glowfmradio.com/podcasts/glow-chat-room/eps-3" 
+                                   class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fas fa-play ml-1"></i>
+                                </a>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                    24:18
+                                </span>
+                            </div>
+                            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->                        </div>
+                        <div class="p-6">
+                            <p class="text-xs text-purple-600 font-semibold mb-2">GLOW CHAT ROOM</p>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors">
+                                <a href="https://glowfmradio.com/podcasts/glow-chat-room/eps-3">
+                                    EPS 3
+                                </a>
+                            </h3>
+                            <p class="text-sm text-gray-600 mb-4 line-clamp-2"></p>
+                            <div class="flex items-center justify-between text-xs text-gray-500">
+                                <span><i class="fas fa-calendar mr-1"></i>Feb 02, 2026</span>
+                                <span><i class="fas fa-headphones mr-1"></i>30</span>
+                            </div>
+                        </div>
+                    </div>
+                                                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                        <div class="relative h-48 overflow-hidden">
+                            <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/podcasts/episode-covers/LdAWMvX6DfCAKgk7YilP0jVFjldvF3IulxLfdWGi.png" alt="EPS 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-purple-700/90">
+        <span class="text-3xl font-bold text-white">E2</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="https://glowfmradio.com/podcasts/glow-chat-room/eps-2" 
+                                   class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fas fa-play ml-1"></i>
+                                </a>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                    21:24
+                                </span>
+                            </div>
+                            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->                        </div>
+                        <div class="p-6">
+                            <p class="text-xs text-purple-600 font-semibold mb-2">GLOW CHAT ROOM</p>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors">
+                                <a href="https://glowfmradio.com/podcasts/glow-chat-room/eps-2">
+                                    EPS 2
+                                </a>
+                            </h3>
+                            <p class="text-sm text-gray-600 mb-4 line-clamp-2"></p>
+                            <div class="flex items-center justify-between text-xs text-gray-500">
+                                <span><i class="fas fa-calendar mr-1"></i>Feb 02, 2026</span>
+                                <span><i class="fas fa-headphones mr-1"></i>23</span>
+                            </div>
+                        </div>
+                    </div>
+                                                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                        <div class="relative h-48 overflow-hidden">
+                            <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/podcasts/episode-covers/yCs68HibDIxWAzrjmJ9REA3NUnzqhoAZnh8x4XS8.png" alt="Glow chat room episode 1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-purple-700/90">
+        <span class="text-3xl font-bold text-white">GC</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="https://glowfmradio.com/podcasts/glow-chat-room/glow-chat-room-episode-1" 
+                                   class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fas fa-play ml-1"></i>
+                                </a>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                    22:55
+                                </span>
+                            </div>
+                            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->                        </div>
+                        <div class="p-6">
+                            <p class="text-xs text-purple-600 font-semibold mb-2">GLOW CHAT ROOM</p>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors">
+                                <a href="https://glowfmradio.com/podcasts/glow-chat-room/glow-chat-room-episode-1">
+                                    Glow chat room episode 1
+                                </a>
+                            </h3>
+                            <p class="text-sm text-gray-600 mb-4 line-clamp-2"></p>
+                            <div class="flex items-center justify-between text-xs text-gray-500">
+                                <span><i class="fas fa-calendar mr-1"></i>Jan 29, 2026</span>
+                                <span><i class="fas fa-headphones mr-1"></i>24</span>
+                            </div>
+                        </div>
+                    </div>
+                                                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                        <div class="relative h-48 overflow-hidden">
+                            <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/podcasts/episode-covers/MytRw5HWhs4ijh3YXCRjMkK6kcV2fkT5N8gb6vKm.jpg" alt="Premier Glow Moment" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-purple-700/90">
+        <span class="text-3xl font-bold text-white">PG</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="https://glowfmradio.com/podcasts/glow-moment/premier-glow-moment" 
+                                   class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fas fa-play ml-1"></i>
+                                </a>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2 py-1 bg-black/70 text-white text-xs rounded-full">
+                                    0:37
+                                </span>
+                            </div>
+                            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->                        </div>
+                        <div class="p-6">
+                            <p class="text-xs text-purple-600 font-semibold mb-2">GLOW MOMENT</p>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors">
+                                <a href="https://glowfmradio.com/podcasts/glow-moment/premier-glow-moment">
+                                    Premier Glow Moment
+                                </a>
+                            </h3>
+                            <p class="text-sm text-gray-600 mb-4 line-clamp-2">Welcome to the amazing glow moment of glowfm radio?</p>
+                            <div class="flex items-center justify-between text-xs text-gray-500">
+                                <span><i class="fas fa-calendar mr-1"></i>Jan 27, 2026</span>
+                                <span><i class="fas fa-headphones mr-1"></i>15</span>
+                            </div>
+                        </div>
+                    </div>
+                <!--[if ENDBLOCK]><![endif]-->            </div>
+        <!--[if ENDBLOCK]><![endif]-->
+        <div class="text-center mt-12">
+            <a href="https://glowfmradio.com/podcasts" class="inline-flex items-center space-x-2 px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                <span>Browse All Podcasts</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Featured Shows Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Featured Shows</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Tune in to our most popular programs featuring the best Podcasts and music selection
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!--[if BLOCK]><![endif]-->                                                            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
+                        <!--[if BLOCK]><![endif]-->                            <a href="https://glowfmradio.com/shows/amebo-keke" class="relative h-64 overflow-hidden block">
+                        <!--[if ENDBLOCK]><![endif]-->                            <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/shows/covers/u6THu6uKr3Czh4F5iTq31i53lqDjoTrpeXTYlcnr.jpg" alt="AMEBO KEKE" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-4xl font-bold text-white">AK</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span class="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                                    Information
+                                </span>
+                            </div>
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <h3 class="text-2xl font-bold text-white mb-1">AMEBO KEKE</h3>
+                                <p class="text-emerald-300 text-sm">Saturday</p>
+                            </div>
+                        <!--[if BLOCK]><![endif]-->                            </a>
+                        <!--[if ENDBLOCK]><![endif]-->                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-microphone text-white"></i>
+                                </div>
+                                <div>
+                                    <!--[if BLOCK]><![endif]-->                                        <a href="https://glowfmradio.com/oaps/desmond-ujiro" class="font-semibold text-gray-900 hover:text-emerald-600 transition-colors">
+                                            Desmond Ujiro
+                                        </a>
+                                    <!--[if ENDBLOCK]><![endif]-->                                    <p class="text-sm text-emerald-600">12:01 PM - 2:00 PM</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">A current affairs pidgin program</p>
+                            <!--[if BLOCK]><![endif]-->                                <a href="https://glowfmradio.com/shows/amebo-keke" class="inline-flex items-center space-x-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            <!--[if ENDBLOCK]><![endif]-->                        </div>
+                    </div>
+                                                                            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
+                        <!--[if BLOCK]><![endif]-->                            <a href="https://glowfmradio.com/shows/morning-motivations" class="relative h-64 overflow-hidden block">
+                        <!--[if ENDBLOCK]><![endif]-->                            <!--[if BLOCK]><![endif]-->    <img src="/storage/uploads/shows/covers/ME3U1yJPDjhH91s8M3HxMm6s3FHdKfhD5LSOZY7O.jpg" alt="Morning motivations " class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+         onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+    <div class="hidden absolute inset-0 flex items-center justify-center bg-emerald-700/90">
+        <span class="text-4xl font-bold text-white">MM</span>
+    </div>
+<!--[if ENDBLOCK]><![endif]-->                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span class="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                                    Education
+                                </span>
+                            </div>
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <h3 class="text-2xl font-bold text-white mb-1">Morning motivations </h3>
+                                <p class="text-emerald-300 text-sm">Monday</p>
+                            </div>
+                        <!--[if BLOCK]><![endif]-->                            </a>
+                        <!--[if ENDBLOCK]><![endif]-->                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-microphone text-white"></i>
+                                </div>
+                                <div>
+                                    <!--[if BLOCK]><![endif]-->                                        <a href="https://glowfmradio.com/oaps/desmond-ujiro" class="font-semibold text-gray-900 hover:text-emerald-600 transition-colors">
+                                            Desmond Ujiro
+                                        </a>
+                                    <!--[if ENDBLOCK]><![endif]-->                                    <p class="text-sm text-emerald-600">5:00 AM - 5:14 AM</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">A motivational program to always start up the week, every Monday morning, 5:10am - 5:15am</p>
+                            <!--[if BLOCK]><![endif]-->                                <a href="https://glowfmradio.com/shows/morning-motivations" class="inline-flex items-center space-x-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            <!--[if ENDBLOCK]><![endif]-->                        </div>
+                    </div>
+                <!--[if ENDBLOCK]><![endif]-->            </div>
+
+            <div class="text-center mt-12">
+                <a href="/shows" class="inline-flex items-center space-x-2 px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    <span>View All Shows</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">What Our Listeners Say</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Real feedback from our amazing community of listeners
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-orange-400 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Tune In?</h2>
+                <p class="text-xl text-emerald-100 mb-8 leading-relaxed">
+                    Join over 1 million listeners and experience the best radio station in the city. 
+                    Listen live now or request your favorite song!
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 px-8 py-4 bg-white text-emerald-700 font-bold rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-play-circle text-2xl"></i>
+                        <span>Start Listening</span>
+                    </a>
+                    <a href="/contact" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 px-8 py-4 bg-emerald-500/20 backdrop-blur-sm text-white font-semibold rounded-full border-2 border-white/30 hover:bg-white/10 transition-all duration-300">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 mt-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+
+                <!-- About Section -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                                                    <img src="https://glowfmradio.com/glowfm logo.jpeg" alt="Glow FM logo"
+                                class="w-12 h-12 rounded-xl object-contain bg-white shadow-lg p-1">
+                                                <div>
+                            <h3 class="text-xl font-bold">Glow FM</h3>
+                            <p class="text-sm text-emerald-400">99.1 MHz</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Your Voice, Your Music. Broadcasting the heartbeat of the city of Akure with the best music, engaging
+                        shows, and vibrant community connection.
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <a href=""
+                            class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href=""
+                            class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href=""
+                            class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href=""
+                            class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="/about"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/shows"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                Our Shows
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/schedule"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                Schedule
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/podcasts"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                Our Podcasts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/news"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                News & Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors duration-200 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i>
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact Info</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-emerald-400 mt-1"></i>
+                            <span class="text-gray-400">
+                                1 Efon Alaye street Ijapo Estate, Akure, Akure, Nigeria.
+                            </span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-emerald-400"></i>
+                            <a href="tel:+234 703 022 3281" class="text-gray-400 hover:text-emerald-400 transition-colors">
+                                +234 703 022 3281
+                            </a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-emerald-400"></i>
+                            <a href="mailto:info@glowfm.com"
+                                class="text-gray-400 hover:text-emerald-400 transition-colors">
+                                info@glowfm.com
+                            </a>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-clock text-emerald-400 mt-1"></i>
+                            <span class="text-gray-400">
+                                24/7 Broadcasting<br>
+                                Office: Mon-Fri, 9AM - 6PM
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to get updates on shows, events, and exclusive content!
+                    </p>
+                    <form method="POST" action="https://glowfmradio.com/newsletter/subscribe" class="space-y-3">
+                        <input type="hidden" name="_token" value="nV7YZCU2HHdjlHLQyRs3kN12pc8YtXueUu8Gc8a7" autocomplete="off">                        <input type="hidden" name="source" value="footer">
+                        <input type="email" name="email" required placeholder="Your email address"
+                            class="w-full px-4 py-3 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all">
+                        <button type="submit"
+                            class="w-full px-4 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-colors duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+
+                    <!-- Recent Shows -->
+                    <div class="mt-6 pt-6 border-t border-gray-800">
+                        <h4 class="text-sm font-semibold mb-3 text-gray-300">Recent Shows</h4>
+                        <div class="space-y-2">
+                                                            <a href="https://glowfmradio.com/shows/corruption-must-go"
+                                    class="flex items-center space-x-2 text-gray-400 hover:text-emerald-400 transition-colors text-sm">
+                                    <i class="fas fa-microphone text-xs"></i>
+                                    <span>Corruption must go</span>
+                                </a>
+                                                            <a href="https://glowfmradio.com/shows/ara-n-be"
+                                    class="flex items-center space-x-2 text-gray-400 hover:text-emerald-400 transition-colors text-sm">
+                                    <i class="fas fa-microphone text-xs"></i>
+                                    <span>Ara n be</span>
+                                </a>
+                                                            <a href="https://glowfmradio.com/shows/aseyori-ni-temi"
+                                    class="flex items-center space-x-2 text-gray-400 hover:text-emerald-400 transition-colors text-sm">
+                                    <i class="fas fa-microphone text-xs"></i>
+                                    <span>Aseyori ni temi</span>
+                                </a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2026 Glow FM 99.1 MHz. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-6 text-sm">
+                        <a href="privacy-policy" class="text-gray-400 hover:text-emerald-400 transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Listen Live Player -->
+    <div x-show="playerOpen" x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 translate-y-full" x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-full" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
+        <div class="bg-gray-900 text-white rounded-2xl shadow-2xl overflow-hidden max-w-[18rem] sm:max-w-sm">
+            <!-- Player Header -->
+            <div class="bg-emerald-600 px-3 py-1.5 sm:px-4 sm:py-2 flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <span class="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
+                        <span class="absolute inline-flex h-full w-full rounded-full bg-white opacity-60"
+                            :class="audioPlaying ? 'animate-ping' : ''"></span>
+                        <span class="relative inline-flex h-2.5 w-2.5 rounded-full"
+                            :class="audioPlaying ? 'bg-lime-300' : 'bg-white'"></span>
+                    </span>
+                    <span class="text-xs sm:text-sm font-semibold" x-text="audioPlaying ? 'STREAMING LIVE' : 'LIVE NOW'"></span>
+                </div>
+                <button @click="playerOpen = false" class="text-white hover:text-gray-200 transition-colors">
+                    <i class="fas fa-times text-sm sm:text-base"></i>
+                </button>
+            </div>
+
+            <!-- Player Content -->
+            <div class="p-3 sm:p-4">
+                <div class="flex items-center space-x-3 sm:space-x-4 mb-3 sm:mb-4">
+                    <div class="flex-shrink-0">
+                        <div
+                            class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg shadow-lg flex items-center justify-center">
+                            <i class="fas fa-music text-white text-xl sm:text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-semibold text-xs sm:text-sm truncate"></h4>
+                        <p class="text-xs text-gray-400 truncate"></p>
+                        <div class="flex items-center space-x-2 mt-1">
+                            <i class="fas fa-microphone text-emerald-400 text-xs"></i>
+                            <span class="text-xs text-gray-400 truncate">Commercials</span>
+                        </div>
+                        <div class="flex items-center space-x-2 mt-1">
+                            <i class="fas fa-user text-emerald-400 text-[10px]"></i>
+                            <span class="text-[11px] text-gray-400 truncate">Glow FM</span>
+                        </div>
+                        <div class="flex items-center space-x-2 mt-1">
+                            <i class="fas fa-clock text-emerald-400 text-[10px]"></i>
+                            <span class="text-[11px] text-gray-400">12:31 PM - 1:00 PM</span>
+                            <span class="text-[10px] text-emerald-300 font-semibold">WAT</span>
+                        </div>
+                    </div>
+                    <div class="flex items-end space-x-1" x-show="audioPlaying">
+                        <span class="w-1 h-3 bg-emerald-400 rounded-full animate-pulse"></span>
+                        <span class="w-1 h-5 bg-emerald-300 rounded-full animate-pulse"></span>
+                        <span class="w-1 h-4 bg-emerald-200 rounded-full animate-pulse"></span>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <button type="button" @click="toggleLive"
+                            class="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-600 hover:bg-emerald-700 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fas text-white text-sm sm:text-base" :class="audioPlaying ? 'fa-pause' : 'fa-play'"></i>
+                        </button>
+                        <button
+                            class="w-7 h-7 sm:w-8 sm:h-8 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors">
+                            <i class="fas fa-volume-up text-white text-xs sm:text-sm"></i>
+                        </button>
+                    </div>
+                    <span class="text-[11px] sm:text-xs text-gray-400">Broadcasting live now</span>
+                    <a href="https://stream-176.zeno.fm/mwam2yirv1pvv" target="_blank" rel="noopener"
+                        class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gray-800 hover:bg-gray-700 text-white text-[11px] sm:text-xs font-medium rounded-lg transition-colors">
+                        Full Player
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio x-ref="liveAudio" src="https://stream-176.zeno.fm/mwam2yirv1pvv" preload="none"></audio>
+
+    
+    
+    
+    <div x-cloak x-show="consentBannerOpen" x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 translate-y-6" x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-6"
+        class="js-cookie-consent cookie-consent fixed hover:uppercase bottom-0 inset-x-0 pb-2 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="p-2 rounded-lg bg-indigo-100">
+                <div class="flex flex-col sm:flex-row items-center justify-between flex-wrap">
+                    <div class="w-full sm:w-auto flex-1 items-center mb-2 sm:mb-0">
+                        <p class="ml-3 text-black cookie-consent__message">
+                            We use cookies to improve your experience.
+                        </p>
+                        <a href="https://glowfmradio.com/privacy-policy" class="ml-3 text-xs text-blue-800 hover:text-blue-900 underline">
+                            Privacy Policy
+                        </a>
+                    </div>
+                    <div class="mt-2 flex-shrink-0 sm:mt-0 sm:ml-2 sm:order-last">
+                        <button type="button" @click="setConsent('accept')"
+                            class="js-cookie-consent-agree cookie-consent__agree cursor-pointer flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium text-white hover:text-black bg-blue-800 hover:bg-blue-300">
+                            Agree
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('click', async (event) => {
+            const button = event.target.closest('[data-copy-link]');
+            if (!button) return;
+
+            event.preventDefault();
+            const link = button.getAttribute('data-copy-link') || '';
+            if (!link) return;
+
+            const textTarget = button.querySelector('[data-copy-text]');
+            const originalText = textTarget ? textTarget.textContent : '';
+
+            try {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    await navigator.clipboard.writeText(link);
+                } else {
+                    const textarea = document.createElement('textarea');
+                    textarea.value = link;
+                    textarea.setAttribute('readonly', '');
+                    textarea.style.position = 'absolute';
+                    textarea.style.left = '-9999px';
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    document.execCommand('copy');
+                    textarea.remove();
+                }
+                if (textTarget) {
+                    textTarget.textContent = 'Copied!';
+                    setTimeout(() => {
+                        textTarget.textContent = originalText;
+                    }, 1500);
+                }
+            } catch (e) {
+                if (textTarget) {
+                    textTarget.textContent = 'Copy failed';
+                    setTimeout(() => {
+                        textTarget.textContent = originalText;
+                    }, 1500);
+                }
+            }
+        });
+    </script>
+    <script src="/livewire/livewire.min.js?id=61e33937"   data-csrf="nV7YZCU2HHdjlHLQyRs3kN12pc8YtXueUu8Gc8a7" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script>
+        const openShareUrl = (url) => {
+            if (!url || typeof url !== 'string') return;
+            window.location.href = url;
+        };
+
+        window.addEventListener('open-share-url', (event) => {
+            openShareUrl(event?.detail?.url ?? event?.detail);
+        });
+
+        document.addEventListener('livewire:load', () => {
+            if (window.livewire && typeof window.livewire.on === 'function') {
+                window.livewire.on('open-share-url', (payload) => {
+                    openShareUrl(payload?.url ?? payload);
+                });
+            }
+        });
+
+        document.addEventListener('livewire:initialized', () => {
+            if (window.Livewire && typeof Livewire.on === 'function') {
+                Livewire.on('open-share-url', ({ url }) => openShareUrl(url));
+            }
+        });
+    </script>
+</body>
+
+</html>

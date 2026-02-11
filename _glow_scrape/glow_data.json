@@ -1,0 +1,2770 @@
+{
+  "home": {
+    "hero": {
+      "hero_badge": "NOW LIVE ON AIR",
+      "hero_title": "Your Station,",
+      "hero_highlight": "Your Voice",
+      "hero_subtitle": "Broadcasting the heartbeat of the city of Akure, 24/7 on 99.1 FM",
+      "primary_cta_text": "Listen Live Now",
+      "primary_cta_url": "#",
+      "secondary_cta_text": "View Schedule",
+      "secondary_cta_url": "/shows",
+      "now_playing_label": "Currently Playing",
+      "now_playing_title": "",
+      "now_playing_time": ""
+    },
+    "currentShow": {
+      "title": "Commercials",
+      "slug": "commercials",
+      "host": "Glow FM",
+      "host_slug": "glow-fm",
+      "time": "12:31 PM - 1:00 PM"
+    },
+    "stats": [
+      {
+        "number": "1M+",
+        "label": "Monthly Listeners",
+        "icon": "fas fa-users"
+      },
+      {
+        "number": "24/7",
+        "label": "Live Broadcasting",
+        "icon": "fas fa-broadcast-tower"
+      },
+      {
+        "number": "38",
+        "label": "News Articles",
+        "icon": "fas fa-newspaper"
+      },
+      {
+        "number": "2",
+        "label": "Blog Articles",
+        "icon": "fas fa-blog"
+      },
+      {
+        "number": "101+",
+        "label": "Show Programs",
+        "icon": "fas fa-microphone"
+      },
+      {
+        "number": "4",
+        "label": "Podcast Episodes",
+        "icon": "fas fa-podcast"
+      }
+    ],
+    "trendingNews": [
+      {
+        "id": 28,
+        "slug": "portugal-to-face-super-eagles-ahead-of-2026-fifa-world-cup",
+        "title": "Portugal to Face Super Eagles ahead of 2026 FIFA World Cup",
+        "category": "Sport",
+        "views": 196,
+        "published_at": "1 week ago"
+      },
+      {
+        "id": 29,
+        "slug": "suspected-jihadists-attack-niamey-airport",
+        "title": "SUSPECTED JIHADISTS ATTACK NIAMEY AIRPORT",
+        "category": "Foreign",
+        "views": 151,
+        "published_at": "1 week ago"
+      },
+      {
+        "id": 30,
+        "slug": "iran-threatens-us-after-trumps-warning",
+        "title": "Iran Threatens US After Trump\u2019s Warning",
+        "category": "Foreign",
+        "views": 148,
+        "published_at": "6 days ago"
+      },
+      {
+        "id": 27,
+        "slug": "akoko-edo-local-government-area-chairman-bliss-oshionogue-impeached",
+        "title": "AKOKO-EDO LOCAL GOVERNMENT AREA CHAIRMAN, BLISS OSHIONOGUE IMPEACHED ",
+        "category": "Politics",
+        "views": 132,
+        "published_at": "1 week ago"
+      },
+      {
+        "id": 31,
+        "slug": "grammy-awards-2026-full-winners-list-historic-wins-major-snubs",
+        "title": "Grammy Awards 2026: Full Winners List, Historic Wins & Major Snubs",
+        "category": "Entertainment",
+        "views": 128,
+        "published_at": "4 days ago"
+      }
+    ],
+    "featuredNews": [
+      {
+        "id": 46,
+        "slug": "nollywood-actress-aunty-ajara-passes-on-after-prolonged-illness",
+        "title": "Nollywood Actress Aunty Ajara Passes On After Prolonged Illness",
+        "excerpt": "Nollywood actress Ajara Lasisi, popularly known as Aunty Ajara, has passed away after a prolonged illness. Her death has drawn an outpouring of grief and tributes from colleagues, fans, and the Nollywood community.",
+        "image": "https://www.dockaysworld.com.ng/wp-content/uploads/2026/02/IMG_3268.jpeg",
+        "category": "Entertainment",
+        "date": "1 day ago",
+        "author": "Oyetoke Adedayo Ebenezer",
+        "read_time": "2 min read",
+        "views": "126",
+        "likes": 0
+      },
+      {
+        "id": 38,
+        "slug": "ondo-state-at-50-leaders-celebrate-five-decades-of-growth-and-resilience",
+        "title": "Ondo State at 50: Leaders Celebrate Five Decades of Growth and Resilience",
+        "excerpt": "AS ONDO STATE MARKS ITS GOLDEN JUBILEE TODAY, EMINENT LEADERS, POLITICIANS, LEGAL PRACTITIONERS AND ACADEMICS HAVE CONGRATULATED THE GOVERNMENT AND RESIDENTS ON 50 YEARS OF RESILIENCE, PROGRESS AND DEVELOPMENT.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30PTnr6vyQ5BjppAS8bjoPw1v9jfA0uxm_NcIz7ulbw&s=10",
+        "category": "Politics",
+        "date": "2 days ago",
+        "author": "Rachel Salami",
+        "read_time": "1 min read",
+        "views": "113",
+        "likes": 0
+      }
+    ],
+    "mostViewedNews": [
+      {
+        "id": 28,
+        "slug": "portugal-to-face-super-eagles-ahead-of-2026-fifa-world-cup",
+        "title": "Portugal to Face Super Eagles ahead of 2026 FIFA World Cup",
+        "category": "Sport",
+        "date": "1 week ago",
+        "views": "196",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDHb1sUorWPD-t3cWY6aJs06lC-Gn43N6GGncmhbxW2bxQ3aKKKZXfvmE&s=10"
+      },
+      {
+        "id": 29,
+        "slug": "suspected-jihadists-attack-niamey-airport",
+        "title": "SUSPECTED JIHADISTS ATTACK NIAMEY AIRPORT",
+        "category": "Foreign",
+        "date": "1 week ago",
+        "views": "151",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMn3BZubMWjaBROJAKVGntXQi_5_peqWqDhn9-Id61Qw&s=10"
+      },
+      {
+        "id": 30,
+        "slug": "iran-threatens-us-after-trumps-warning",
+        "title": "Iran Threatens US After Trump\u2019s Warning",
+        "category": "Foreign",
+        "date": "6 days ago",
+        "views": "148",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmtiY4CfnbRRdwGwWZqRYMZX22UZRAOdQVmUp6ZLiD1A&s=10"
+      },
+      {
+        "id": 27,
+        "slug": "akoko-edo-local-government-area-chairman-bliss-oshionogue-impeached",
+        "title": "AKOKO-EDO LOCAL GOVERNMENT AREA CHAIRMAN, BLISS OSHIONOGUE IMPEACHED ",
+        "category": "Politics",
+        "date": "1 week ago",
+        "views": "132",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRweqvyboo0j9_jSdgH5Am-joMrmNUxNjWiZy2lCPo3hi21IyP5j5mU6Y7O&s=10"
+      },
+      {
+        "id": 31,
+        "slug": "grammy-awards-2026-full-winners-list-historic-wins-major-snubs",
+        "title": "Grammy Awards 2026: Full Winners List, Historic Wins & Major Snubs",
+        "category": "Entertainment",
+        "date": "4 days ago",
+        "views": "128",
+        "image": "https://i8.amplience.net/i/naras/2024_grammys_general_key_art_euphoria_right_alined.jpg"
+      }
+    ],
+    "otherNews": [
+      {
+        "id": 48,
+        "slug": "lookman-makes-first-goal-for-atletico-madrid",
+        "title": "Lookman makes first goal for Atl\u00e9tico Madrid",
+        "excerpt": "Atl\u00e9tico Madrid\u2019s new forward Ademola Lookman announced himself in style on Thursday, scoring on his debut as the Spanish side faced Real Betis in a Copa del Rey quarter-final at Estadio La Cartuja, according to PUNCH Sports Extra",
+        "image": "https://vodacomsoccer.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmobi_express%2Fimages%2F2026%2F2%2F1770361450420%2F16%2Fademola-lookman-of-atletico-madrid-celebrates-his-goal-5-february-202616.jpeg&w=1920&q=75",
+        "category": "Sport",
+        "date": "3 hours ago",
+        "author": "japhet samuel",
+        "read_time": "1 min read",
+        "views": "2",
+        "likes": 0
+      },
+      {
+        "id": 47,
+        "slug": "popular-united-states-based-streamer-supports-makoko-community",
+        "title": "Popular United States-based streamer supports Makoko community",
+        "excerpt": "Popular United States-based streamer Kai Cenat has again shown support for the Makoko community in Lagos, visiting the Makoko Children School Orphanage Home as part of his current trip to Nigeria.",
+        "image": "https://lifestyle.thecable.ng/wp-content/uploads/2026/02/IMG-20260205-WA0000-770x560.jpg",
+        "category": "Entertainment",
+        "date": "22 hours ago",
+        "author": "japhet samuel",
+        "read_time": "1 min read",
+        "views": "3",
+        "likes": 0
+      },
+      {
+        "id": 44,
+        "slug": "ondo-at-50-govt-awards-obasanjo-fasoranti-aiyedatiwa-others",
+        "title": "ONDO @50: GOVT AWARDS OBASANJO, FASORANTI, AIYEDATIWA, OTHERS",
+        "excerpt": "IN A NIGHT OF ELEGANCE AND JUBILATION, ONDO STATE ENDED THE CELEBRATION OF ITS GOLDEN JUBILEE BY HONOURING PRESIDENT BOLA TINUBU, FORMER PRESIDENT OLUSEGUN OBASANJO, ELDER STATESMAN REUBEN FASORANTI, GOVERNOR LUCKY AIYEDATIWA, AND 67 OTHER DISTINGUISHED SONS, DAUGHTERS, AND FRIENDS OF THE STATE.",
+        "image": "/storage/uploads/news/LvEh8gxPYyvUFLTO4RGaQgiTpOLF0RivbY7Gl2LT.jpg",
+        "category": "Entertainment",
+        "date": "1 day ago",
+        "author": "Adekunle Aminah",
+        "read_time": "1 min read",
+        "views": "9",
+        "likes": 0
+      },
+      {
+        "id": 43,
+        "slug": "kwara-state-emir-urges-government-to-implement-policies-against-gender-based-violence",
+        "title": "Kwara State Emir urges Government to Implement Policies Against Gender Based Violence",
+        "excerpt": "EMIR OF SHONGA IN KWARA STATE, HALIRU NDANUSA SAYS THE GOVERNMENT HAVE TO IMPLEMENT POLICIES AGAINST GENDER BASED VIOLENCE TO END THE MENANCE.\n",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4koh3ixyT8vUAOKINM2klpLc1KiIy-ZybDynS6Cj8HQ&s=10",
+        "category": "Politics",
+        "date": "2 days ago",
+        "author": "Rachel Salami",
+        "read_time": "1 min read",
+        "views": "79",
+        "likes": 0
+      },
+      {
+        "id": 42,
+        "slug": "frc-warns-state-local-governments-against-borrowing-without-approval",
+        "title": "FRC Warns State, Local Governments against borrowing without approval ",
+        "excerpt": "THE FEDERAL GOVERNMENT HAS WARNED STATES AND LOCAL GOVERNMENTS AGAINST BORROWING FROM FINANCIAL INSTITUTIONS WITHOUT A CERTIFICATE OF PROOF OF COMPLIANCE FROM THE FISCAL RESPONSIBILITY COMMISSION (FRC).",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFVZtnvukljB47gUb1xYUh436lUhIOtX9ADniWDskknw&s=10",
+        "category": "Finance",
+        "date": "2 days ago",
+        "author": "Rachel Salami",
+        "read_time": "1 min read",
+        "views": "68",
+        "likes": 0
+      },
+      {
+        "id": 41,
+        "slug": "nigerias-super-falcons-to-open-training-camp-ahead-of-2026-womens-africa-cup",
+        "title": "Nigeria\u2019s Super Falcons to Open Training Camp ahead of 2026 Women\u2019s Africa Cup",
+        "excerpt": "NIGERIA\u2019S SUPER FALCONS ARE EXPECTED TO OPEN TRAINING CAMP FOR THE 2026 WOMEN\u2019S AFRICA CUP OF NATIONS ON FRIDAY, FEBRUARY 20.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSMGjbRk8W3WeTJZclZNwgo95Q357HQcH3FRc16tb6UQ&s=10",
+        "category": "Sport",
+        "date": "2 days ago",
+        "author": "Rachel Salami",
+        "read_time": "1 min read",
+        "views": "57",
+        "likes": 0
+      }
+    ],
+    "latestNews": [
+      {
+        "id": 48,
+        "slug": "lookman-makes-first-goal-for-atletico-madrid",
+        "title": "Lookman makes first goal for Atl\u00e9tico Madrid",
+        "excerpt": "Atl\u00e9tico Madrid\u2019s new forward Ademola Lookman announced himself in style on Thursday, scoring on his debut as the Spanish side faced Real Betis in a Copa del Rey quarter-final at Estadio La Cartuja, according to PUNCH Sports Extra",
+        "image": "https://vodacomsoccer.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmobi_express%2Fimages%2F2026%2F2%2F1770361450420%2F16%2Fademola-lookman-of-atletico-madrid-celebrates-his-goal-5-february-202616.jpeg&w=1920&q=75",
+        "category": "Sport",
+        "date": "3 hours ago",
+        "author": "japhet samuel",
+        "read_time": "1 min read",
+        "views": "2",
+        "likes": 0
+      },
+      {
+        "id": 47,
+        "slug": "popular-united-states-based-streamer-supports-makoko-community",
+        "title": "Popular United States-based streamer supports Makoko community",
+        "excerpt": "Popular United States-based streamer Kai Cenat has again shown support for the Makoko community in Lagos, visiting the Makoko Children School Orphanage Home as part of his current trip to Nigeria.",
+        "image": "https://lifestyle.thecable.ng/wp-content/uploads/2026/02/IMG-20260205-WA0000-770x560.jpg",
+        "category": "Entertainment",
+        "date": "22 hours ago",
+        "author": "japhet samuel",
+        "read_time": "1 min read",
+        "views": "3",
+        "likes": 0
+      },
+      {
+        "id": 46,
+        "slug": "nollywood-actress-aunty-ajara-passes-on-after-prolonged-illness",
+        "title": "Nollywood Actress Aunty Ajara Passes On After Prolonged Illness",
+        "excerpt": "Nollywood actress Ajara Lasisi, popularly known as Aunty Ajara, has passed away after a prolonged illness. Her death has drawn an outpouring of grief and tributes from colleagues, fans, and the Nollywood community.",
+        "image": "https://www.dockaysworld.com.ng/wp-content/uploads/2026/02/IMG_3268.jpeg",
+        "category": "Entertainment",
+        "date": "1 day ago",
+        "author": "Oyetoke Adedayo Ebenezer",
+        "read_time": "2 min read",
+        "views": "126",
+        "likes": 0
+      },
+      {
+        "id": 44,
+        "slug": "ondo-at-50-govt-awards-obasanjo-fasoranti-aiyedatiwa-others",
+        "title": "ONDO @50: GOVT AWARDS OBASANJO, FASORANTI, AIYEDATIWA, OTHERS",
+        "excerpt": "IN A NIGHT OF ELEGANCE AND JUBILATION, ONDO STATE ENDED THE CELEBRATION OF ITS GOLDEN JUBILEE BY HONOURING PRESIDENT BOLA TINUBU, FORMER PRESIDENT OLUSEGUN OBASANJO, ELDER STATESMAN REUBEN FASORANTI, GOVERNOR LUCKY AIYEDATIWA, AND 67 OTHER DISTINGUISHED SONS, DAUGHTERS, AND FRIENDS OF THE STATE.",
+        "image": "/storage/uploads/news/LvEh8gxPYyvUFLTO4RGaQgiTpOLF0RivbY7Gl2LT.jpg",
+        "category": "Entertainment",
+        "date": "1 day ago",
+        "author": "Adekunle Aminah",
+        "read_time": "1 min read",
+        "views": "9",
+        "likes": 0
+      },
+      {
+        "id": 43,
+        "slug": "kwara-state-emir-urges-government-to-implement-policies-against-gender-based-violence",
+        "title": "Kwara State Emir urges Government to Implement Policies Against Gender Based Violence",
+        "excerpt": "EMIR OF SHONGA IN KWARA STATE, HALIRU NDANUSA SAYS THE GOVERNMENT HAVE TO IMPLEMENT POLICIES AGAINST GENDER BASED VIOLENCE TO END THE MENANCE.\n",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4koh3ixyT8vUAOKINM2klpLc1KiIy-ZybDynS6Cj8HQ&s=10",
+        "category": "Politics",
+        "date": "2 days ago",
+        "author": "Rachel Salami",
+        "read_time": "1 min read",
+        "views": "79",
+        "likes": 0
+      },
+      {
+        "id": 42,
+        "slug": "frc-warns-state-local-governments-against-borrowing-without-approval",
+        "title": "FRC Warns State, Local Governments against borrowing without approval ",
+        "excerpt": "THE FEDERAL GOVERNMENT HAS WARNED STATES AND LOCAL GOVERNMENTS AGAINST BORROWING FROM FINANCIAL INSTITUTIONS WITHOUT A CERTIFICATE OF PROOF OF COMPLIANCE FROM THE FISCAL RESPONSIBILITY COMMISSION (FRC).",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFVZtnvukljB47gUb1xYUh436lUhIOtX9ADniWDskknw&s=10",
+        "category": "Finance",
+        "date": "2 days ago",
+        "author": "Rachel Salami",
+        "read_time": "1 min read",
+        "views": "68",
+        "likes": 0
+      }
+    ],
+    "latestBlogPosts": [
+      {
+        "id": 2,
+        "slug": "alaafin-kicks-as-makinde-installs-ladoja-chairman-of-obas-council",
+        "title": "Alaafin kicks as Makinde installs Ladoja chairman of Obas council",
+        "excerpt": "The Alaafin of Oyo, Oba Akeem Owoade, was conspicuously absent from the inauguration, which was held at the House of Chiefs, Parliament Building, Secretariat, Ibadan.",
+        "image": "https://cdn.punchng.com/wp-content/uploads/2025/11/11014215/Makinde.jpg",
+        "category": "Politics",
+        "category_slug": "politics",
+        "category_color": "red",
+        "date": "3 weeks ago",
+        "author": "Oyetoke Adedayo Ebenezer",
+        "read_time": "8 min read",
+        "views": "51",
+        "comments_count": 0
+      },
+      {
+        "id": 1,
+        "slug": "flutterwave-buys-nigerias-mono-in-rare-african-fintech-exit",
+        "title": "Flutterwave buys Nigeria\u2019s Mono in rare African fintech exit",
+        "excerpt": "The transaction mirrors earlier consolidation attempts in global fintech infrastructure, including\u00a0Visa\u2019s failed acquisition of Plaid in 2020, which was blocked by U.S. regulators. Hassan cited that deal as evidence that combining data infrastructure with payment rails can unlock scale.\u00a0",
+        "image": "/storage/uploads/blog/MJTJ5x3YtfvcvoIBCSEsWZgO2lTUQvs5mPmfcRc2.webp",
+        "category": "TechNology",
+        "category_slug": "technology",
+        "category_color": "pink",
+        "date": "Unpublished",
+        "author": "Oyetoke Adedayo Ebenezer",
+        "read_time": "4 min read",
+        "views": "60",
+        "comments_count": 0
+      }
+    ],
+    "latestPodcastEpisodes": [
+      {
+        "id": 6,
+        "slug": "eps-3",
+        "show_slug": "glow-chat-room",
+        "title": "EPS 3",
+        "description": "",
+        "image": "/storage/uploads/podcasts/episode-covers/du3yi0oA3yhvREXOGmi58aHmKmn8A317kfVEm1hD.png",
+        "show_title": "GLOW CHAT ROOM",
+        "duration": "24:18",
+        "published_at": "Feb 02, 2026",
+        "plays": "30",
+        "season_episode": null
+      },
+      {
+        "id": 5,
+        "slug": "eps-2",
+        "show_slug": "glow-chat-room",
+        "title": "EPS 2",
+        "description": "",
+        "image": "/storage/uploads/podcasts/episode-covers/LdAWMvX6DfCAKgk7YilP0jVFjldvF3IulxLfdWGi.png",
+        "show_title": "GLOW CHAT ROOM",
+        "duration": "21:24",
+        "published_at": "Feb 02, 2026",
+        "plays": "23",
+        "season_episode": null
+      },
+      {
+        "id": 4,
+        "slug": "glow-chat-room-episode-1",
+        "show_slug": "glow-chat-room",
+        "title": "Glow chat room episode 1",
+        "description": "",
+        "image": "/storage/uploads/podcasts/episode-covers/yCs68HibDIxWAzrjmJ9REA3NUnzqhoAZnh8x4XS8.png",
+        "show_title": "GLOW CHAT ROOM",
+        "duration": "22:55",
+        "published_at": "Jan 29, 2026",
+        "plays": "24",
+        "season_episode": null
+      },
+      {
+        "id": 3,
+        "slug": "premier-glow-moment",
+        "show_slug": "glow-moment",
+        "title": "Premier Glow Moment",
+        "description": "Welcome to the amazing glow moment of glowfm radio?",
+        "image": "/storage/uploads/podcasts/episode-covers/MytRw5HWhs4ijh3YXCRjMkK6kcV2fkT5N8gb6vKm.jpg",
+        "show_title": "GLOW MOMENT",
+        "duration": "0:37",
+        "published_at": "Jan 27, 2026",
+        "plays": "15",
+        "season_episode": null
+      }
+    ],
+    "featuredShows": [
+      {
+        "id": 2,
+        "slug": "amebo-keke",
+        "title": "AMEBO KEKE",
+        "host": "Desmond Ujiro",
+        "host_slug": "desmond-ujiro",
+        "time": "12:01 PM - 2:00 PM",
+        "description": "A current affairs pidgin program",
+        "image": "/storage/uploads/shows/covers/u6THu6uKr3Czh4F5iTq31i53lqDjoTrpeXTYlcnr.jpg",
+        "category": "Information",
+        "days": "Saturday"
+      },
+      {
+        "id": 4,
+        "slug": "morning-motivations",
+        "title": "Morning motivations ",
+        "host": "Desmond Ujiro",
+        "host_slug": "desmond-ujiro",
+        "time": "5:00 AM - 5:14 AM",
+        "description": "A motivational program to always start up the week, every Monday morning, 5:10am - 5:15am",
+        "image": "/storage/uploads/shows/covers/ME3U1yJPDjhH91s8M3HxMm6s3FHdKfhD5LSOZY7O.jpg",
+        "category": "Education",
+        "days": "Monday"
+      }
+    ],
+    "trendingBlogPosts": [
+      {
+        "id": 1,
+        "slug": "flutterwave-buys-nigerias-mono-in-rare-african-fintech-exit",
+        "title": "Flutterwave buys Nigeria\u2019s Mono in rare African fintech exit",
+        "category": "TechNology",
+        "views": 60,
+        "published_at": "Unpublished"
+      },
+      {
+        "id": 2,
+        "slug": "alaafin-kicks-as-makinde-installs-ladoja-chairman-of-obas-council",
+        "title": "Alaafin kicks as Makinde installs Ladoja chairman of Obas council",
+        "category": "Politics",
+        "views": 51,
+        "published_at": "3 weeks ago"
+      }
+    ],
+    "upcomingEvents": [
+      []
+    ]
+  },
+  "about": {
+    "header_title": "About Glow FM",
+    "header_subtitle": "Broadcasting excellence since 2024, bringing you the heartbeat of the city through music, conversation, and community connection.",
+    "story_title": "GLOW FM",
+    "story_paragraphs": [
+      "The Station That Refused to Be Average.\nSome radio stations arrive quietly. They tiptoe into town, whisper their presence, and hope listeners eventually notice them.\nGlow FM 99.1 Akure did the opposite.\nGlow FM 99.1 was officially opened on February 21, 2024, and by March 2024, it began broadcasting with the kind of urgency that sounded like destiny. Not as a \u201cnew station trying to find its voice,\u201d but as a station that already knew what it came to do: wake the city up, shake the airwaves, and become unforgettable.",
+      "And the location? That alone reads like a statement.\nGlow FM sits in a compound at Ijapo estate an iconic compound once owned by Chief Gani Fawehinmi, SAN a man whose name carries weight, courage, and a stubborn refusal to accept mediocrity. There\u2019s something poetic about it. A place once associated with fearless truth now housing a new kind of power: a voice that reaches the people daily, directly, and relentlessly.",
+      "From the beginning, the station moved like a storm with a plan.\nGlow FM wasn\u2019t built on timid ideas. It was powered by vibrant employees young, hungry, creative minds with energy loud enough to travel through walls. The early days were intense, exciting, and fast. The kind of early days that separate stations that are playing radio\u2026 from stations that are becoming culture.",
+      "But growth never comes without heat.\nGlow FM underwent many staff changes and not the cosmetic kind. These were changes that shaped character, refined standards, and demanded real professionalism. It was pressure and pruning. The station evolved in real time, learning what every great brand eventually learns:",
+      "You don\u2019t build excellence by wishing.\nYou build it by enforcing it.\nAnd that\u2019s exactly what happened.\nThrough the shifts, the reshuffles, and the strengthening of its internal engine, Glow FM kept rising. The sound became tighter. The delivery became sharper. The identity became clearer.\nProgramming became more confident. The station began to feel less like a newcomer and more like a force that had always belonged at the top.",
+      "Then came the moment that confirmed what listeners already knew.\nIn December 2025, Glow FM 99.1 Akure won Radio Station of the Year in Ondo state.\nNot by luck. Not by noise.\nBy growth. By grit. By doing the work when nobody was clapping.\nThat award wasn\u2019t just a trophy. It was a stamp. Proof that what started in 2024 as a bold new signal had become, by 2025, an institution.",
+      "But Glow FM didn\u2019t stop at radio. Because Glow FM is not just a station. It\u2019s an ecosystem.\nAs the station continued to grow in leaps and bounds, it expanded into the spaces where modern audiences live. YouTube channels. Podcast studios. Digital content growth. Media innovation platforms. The Glow brand began moving beyond the FM dial and into the future, where audiences don\u2019t just listen, they subscribe, share, comment, and connect.",
+      "Glow FM started building presence, not just broadcasts.\nBecause the truth is simple:\nRadio is powerful.\nBut radio that evolves is unstoppable.\nGlow FM 99.1 Akure represents something rare in a world full of recycled content and lazy ambition. It represents momentum. It represents the kind of brand that doesn\u2019t beg for attention, it earns loyalty. The kind of station that understands that relevance is not a gift, it\u2019s a discipline.",
+      "Opened in February 2024.\nBroadcasting by March 2024.\nImpactful from day one.\nRefined through change.\nCrowned Radio Station of the Year, December 2025.\nAnd still rising.\n\nGlow FM 99.1 isn\u2019t just on air.\n\nIt\u2019s on a mission.",
+      ""
+    ],
+    "story_badges": [
+      "Award-Winning",
+      "Community-Focused",
+      "Innovation Leaders"
+    ],
+    "mission_title": "Our Mission",
+    "mission_body": "To deliver exceptional radio broadcasting that entertains, informs, and connects our community. We strive to be the voice of the people, celebrating local culture, music, and stories while maintaining the highest standards of quality and integrity in everything we do.",
+    "vision_title": "Our Vision",
+    "vision_body": "To be the leading radio station that shapes cultural conversations, discovers new talent, and pioneers innovative broadcasting technologies. We envision a future where Glow FM continues to be the heartbeat of our community and a model for excellence in radio worldwide.",
+    "values_title": "Our Core Values",
+    "values_subtitle": "The principles that guide our decisions and shape our culture",
+    "values": [
+      {
+        "icon": "fas fa-heart",
+        "title": "Community First",
+        "description": "We put our listeners and local community at the heart of everything we do, creating content that resonates and connects.",
+        "color": "red"
+      },
+      {
+        "icon": "fas fa-star",
+        "title": "Excellence",
+        "description": "We strive for excellence in broadcasting, from audio quality to content creation, delivering the best experience possible.",
+        "color": "yellow"
+      },
+      {
+        "icon": "fas fa-lightbulb",
+        "title": "Innovation",
+        "description": "We embrace new technologies and creative approaches to stay ahead and provide cutting-edge entertainment.",
+        "color": "emerald"
+      },
+      {
+        "icon": "fas fa-hands-helping",
+        "title": "Integrity",
+        "description": "We operate with honesty, transparency, and ethical standards in all our interactions and business practices.",
+        "color": "blue"
+      },
+      {
+        "icon": "fas fa-users",
+        "title": "Diversity",
+        "description": "We celebrate diversity in music, voices, and perspectives, creating an inclusive platform for all.",
+        "color": "purple"
+      },
+      {
+        "icon": "fas fa-rocket",
+        "title": "Passion",
+        "description": "Our team is driven by genuine passion for music, broadcasting, and creating memorable experiences for our audience.",
+        "color": "orange"
+      }
+    ],
+    "milestones_title": "Our Journey",
+    "milestones_subtitle": "Key milestones in our story of growth and innovation",
+    "milestones": [
+      {
+        "year": "2024",
+        "title": "The Beginning",
+        "description": "Glow FM 99.1 launched with a vision to revolutionize radio broadcasting and bring fresh, engaging content to the community."
+      },
+      {
+        "year": "2024",
+        "title": "Digital Expansion",
+        "description": "Invested in state-of-the-art broadcasting equipment and renovated our studios to enhance audio quality and production capabilities."
+      },
+      {
+        "year": "2025",
+        "title": "Community Impact",
+        "description": "Reached 1 million monthly listeners and launched various community programs, charity initiatives, and local talent showcases."
+      },
+      {
+        "year": "2025",
+        "title": "Award Recognition",
+        "description": "Won our first LEADs Award for Best Radio Station, recognizing our innovative programming and community engagement."
+      }
+    ],
+    "team_title": "Meet Our Leadership",
+    "team_subtitle": "The passionate team behind Glow FM's success",
+    "team": [
+      {
+        "name": "Dr Ezekiel Kayode Akande",
+        "position": "Chairman",
+        "bio": "Dr. Ezekiel Akande is a visionary leader, seasoned medical professional, and transformative communicator whose work bridges science, consciousness, and societal impact. A U.S.-trained anesthesiologist with over three decades of clinical experience, he brings the same precision, calm authority, and depth of insight from the operating theatre into leadership, media, and human development.\nAs the Chairman and driving force behind Glow 99.1 FM, Dr. Akande has built a tech-forward, community-centered radio institution that amplifies truth, inspiration, and progressive dialogue. Under his stewardship, Glow 99.1 FM has evolved beyond traditional broadcasting into a multimedia ecosystem\u2014integrating radio, digital platforms, youth empowerment initiatives, and socially conscious programming\u2014while remaining firmly rooted in local culture and values.\nDr. Akande is also a respected thought leader in New Age philosophy, spiritual wealth, and personal transformation. Through his writing, radio programs, and public engagement, he challenges individuals\u2014especially Africans and the diaspora\u2014to rethink success, align inner consciousness with outer achievement, and build wealth with purpose and integrity. His voice is reflective yet bold, practical yet deeply spiritual, offering clarity in a world often distracted by noise.\nKnown for his discipline, resilience, and unwavering belief in human potential, Dr. Ezekiel Akande stands as a rare blend of healer, strategist, and visionary. His life\u2019s work is guided by a single conviction: that when knowledge, consciousness, and service align, individuals and communities do not merely survive\u2014they rise.",
+        "image": "/storage/uploads/website/team/2pBhBn38x1WbbL2NjS4wMSVMIs54ctHgq713n27G.jpg",
+        "social": [
+          {
+            "linkedin": "",
+            "twitter": "",
+            "email": "chairman@glowfmradio.com"
+          }
+        ],
+        "socials": [
+          [
+            [
+              {
+                "name": "Email",
+                "icon": "fas fa-envelope",
+                "url": "mailto:chairman@glowfmradio.com"
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "Akinwumi Abodunde",
+        "position": "General Manager",
+        "bio": "Akinwumi Abodunde is a seasoned Nigerian broadcaster and media executive who was recently appointed as the General Manager of Glow 99.1 FM Akure in January 2026.Career HighlightsGlow 99.1 FM: Appointed General Manager on January 19, 2026, to oversee strategic growth and audience expansion for the Akure-based station.Ondo State Radiovision Corporation (OSRC): Served for over 25 years as an \"ace journalist\" and prominent news anchor, notably hosting the News @ 7. He officially \"bowed out\" of OSRC in July 2023.FUTA Radio: Previously served as the Station Manager for FUTA Radio at the Federal University of Technology, Akure.\nAwards:\u00a0He has received multiple media honors, including awards from the Ondo State Media Group in recognition of his long-standing excellence in broadcasting.\u00a0\nPersonal BackgroundHe is an alumnus of the Federal University of Technology, Akure (FUTA).\u00a0\nHe is widely recognized in Ondo State as a veteran of the broadcast industry, often described as a \"gentleman per excellence\" by colleagues and the media community.",
+        "image": "/storage/uploads/website/team/YwgaU2XjCA4bZvIl71sluDdKi8iUn8XPW8TNEYHb.webp",
+        "social": [
+          {
+            "linkedin": "",
+            "twitter": "",
+            "email": "gm@glowfmradio.com"
+          }
+        ],
+        "socials": [
+          [
+            [
+              {
+                "name": "",
+                "icon": "fas fa-link",
+                "url": ""
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "Mojisola Oladele (arpa)",
+        "position": "Senior Marketing Manager,",
+        "bio": "Mojisola Oladele (arpa) is a seasoned broadcaster of over 28 years experience.She holds Higher National Diploma in Graphics Design from The Polytechnic Ibadan, Oyo State, Masters degree in Communication and Language Arts from the University of Ibadan. An Associate member, Advertising Regulatory Council of Nigeria (ARCON).\u00a0\nCareer Highlights\nShe worked with OSRC between 1997 and 2018 before her  voluntary retirement as Chief Production Officer.\nShe had produced many documentaries of which she earned official commendation, produced programmes to include outside broadcast (OB) production, Praise Night, Armed Forces and remembrance day and Youth Platform.\n\nAward\nThe Most Outstanding Member of Staff, OSRC - 2011.\nThe most proficient Marketing personnel of the year - 2024.\nShe is currently the Senior Marketing Manager, Glow 99.1 FM, Ijapo Estate, Akure.",
+        "image": "/storage/uploads/website/team/zaTtQyGMJtmL2YMsC2WnIptP7fqjjwEaCfb3Xiae.jpg",
+        "social": [
+          {
+            "linkedin": "",
+            "twitter": "",
+            "email": ""
+          }
+        ],
+        "socials": [
+          []
+        ]
+      },
+      {
+        "name": "Oke Joshua Olutayo",
+        "position": "Head, Engineering",
+        "bio": "Oke Joshua Olutayo is a highly skilled and dedicated broadcast engineer with over 14 years of hands-on professional experience in designing, operating, and maintaining high-performance audio systems for broadcast and live production environments. He possesses deep technical expertise in audio signal flow, sound reinforcement, mixing, and broadcast transmission standards, ensuring consistent delivery of clear, balanced, and high-fidelity sound across multiple platforms.\n\nHis proficiency includes the installation, calibration, troubleshooting, and preventive maintenance of broadcast equipment such as mixing consoles, microphones, transmitters, processors, and studio-to-transmitter links. Oke Joshua is also experienced in diagnosing complex technical faults under live broadcast conditions, implementing effective solutions to minimize downtime and maintain uninterrupted transmission. His strong understanding of acoustics, audio processing, and broadcast compliance enables him to deliver industry-standard sound quality while supporting seamless studio and field operations.\n\nIn recognition of his technical excellence and contribution to sound production, he was honored with the Best Music and Sound Engineer Award at the UKCDMA London Regional Film Festival in 2024, further affirming his professional competence and impact within the broadcast and audio engineering industry.",
+        "image": "/storage/uploads/website/team/HNEx8wiFrX2hRYKyYb3036mhpxzsR2dbzGShx9wr.png",
+        "social": [
+          {
+            "linkedin": "",
+            "twitter": "",
+            "email": ""
+          }
+        ],
+        "socials": [
+          []
+        ]
+      },
+      {
+        "name": "Comfort Omolafe",
+        "position": "Ag. Head News and Current Affairs ",
+        "bio": "Comfort Omolafe, popularly known as Queen Comfort Omolafe, is a multiple award-winning professional presenter, editor, newscaster, and journalist with nearly a decade of experience in broadcast journalism and public engagement.She is widely recognized for her confident and engaging on-air presence across radio, television, and live stage events, where she also serves as a seasoned compere. Her work reflects a strong commitment to informative, people-centered programming and impactful storytelling.\nCurrent Role \u2013 Glow 99.1 FM, AkureComfort Omolafe is a core on-air personality at Glow 99.1 FM Akure, where she hosts and anchors several flagship programmes, including:\n\nYour View \u2013 Debuted in January 2025, airing Mondays at 3:00 PM\n\n\nLET\u2019S TALK \u2013 Mondays, 4:00 PM \u2013 4:30 PM\n\n\nMusic While You Work \u2013 Tuesdays, 10:00 AM \u2013 11:00 AM\n\n\nWomen\u2019s World\n\n\nReading for Pleasure\n\n\nGlow Health Talk with NMA\n\nShe also anchors religious and environmental programmes sponsored by corporate and institutional partners.\nTelevisionBeyond radio, Comfort expanded her media footprint with the debut of \u201cChat Room with Omolafe Comfort\u201d on Glow TV, further showcasing her versatility as a television host and interviewer.\nPrevious Experience\n\n\n\n\n\n\n\n\nBefore joining Glow FM, she spent almost seven years at Breez 91.9 FM, where she hosted the station\u2019s highly popular current affairs programme, \u201cReporter\u2019s Diary.\u201d During her time there, she also presented several current affairs, personality, religious, and environmental programmes, establishing herself as a respected voice in broadcast journalism.",
+        "image": "/storage/uploads/website/team/tWarBJ56kXNdFTgCLxs9tfCQEPTCVoK2cdZ28m9b.jpg",
+        "social": [
+          {
+            "linkedin": "",
+            "twitter": "",
+            "email": ""
+          }
+        ],
+        "socials": [
+          [
+            [
+              {
+                "name": "Email",
+                "icon": "fas fa-envelope",
+                "url": "mailto:devirtuousdiva@gmail.com"
+              }
+            ],
+            [
+              {
+                "name": "Facebook",
+                "icon": "fab fa-facebook",
+                "url": "https://www.facebook.com/share/1DZhuRZKdm/"
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "Oluwaremilekun Idowu",
+        "position": "Head, Yoruba Unit",
+        "bio": "Oluwaremilekun Idowu is a professional presenter, newscaster, and journalist with a strong passion for impactful storytelling, public engagement, and credible, people-centered reporting. She is known for her clear delivery, confident on-air presence, and commitment to journalistic integrity, ensuring that news is presented accurately and responsibly. With a deep sense of professionalism, she connects effectively with audiences while shedding light on issues that inform, educate, and inspire. Her work reflects a dedication to excellence in broadcast journalism and the ethical communication of information.",
+        "image": "/storage/uploads/website/team/eOZPFVCJnhwQ6PakmFosrxvbzK1DYZ7I22X36TTw.jpg",
+        "social": [
+          {
+            "linkedin": "",
+            "twitter": "",
+            "email": ""
+          }
+        ],
+        "socials": [
+          []
+        ]
+      },
+      {
+        "name": "Mike \u2018Femi Halim",
+        "position": "Newscaster/Presenter",
+        "bio": "Mike Halim Obafemi, popularly known as MC Olumiko, is a dynamic and purpose-driven presenter and journalist with a sharp, confident voice for news delivery, in-depth interviews, and compelling real-time storytelling. He is deeply committed to truth, balance, and responsible journalism, using his platform to inform, educate, and engage audiences on issues that matter most. With a natural command of the microphone and a strong connection to listeners, he brings clarity, energy, and authenticity to every broadcast. His work reflects a passion for impact-driven media, ensuring that stories are not just told, but truly felt and understood.",
+        "image": "/storage/uploads/website/team/bEJUKUwOcJITWt2mvJVwF2WfN7mR8d9ZVI4bH8qN.jpg",
+        "socials": [
+          [
+            [
+              {
+                "name": "Email",
+                "icon": "fas fa-envelope",
+                "url": "mailto:mcolumiko@gmail.com"
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "achievements_title": "Awards & Recognition",
+    "achievements_subtitle": "Honored for our commitment to excellence in broadcasting",
+    "achievements": [
+      {
+        "year": "2025",
+        "award": "Best Radio Station of the Year",
+        "organization": "LEADs Awards",
+        "icon": "fas fa-trophy"
+      }
+    ],
+    "partners_title": "Our Partners",
+    "partners_subtitle": "Proud to work with industry-leading organizations",
+    "partners": [
+      {
+        "name": "Media Group",
+        "logo": "https://thenma.ng/wp-content/uploads/2024/07/nma-website-logo-wyt.svg"
+      }
+    ],
+    "stats_title": "Glow FM By The Numbers",
+    "stats_subtitle": "Our impact on the community in numbers",
+    "stats": [
+      {
+        "number": "1M+",
+        "label": "Monthly Listeners"
+      },
+      {
+        "number": "100+",
+        "label": "Weekly Shows"
+      },
+      {
+        "number": "2+",
+        "label": "Years Experience"
+      },
+      {
+        "number": "30+",
+        "label": "Team Members"
+      }
+    ],
+    "cta_title": "Join Our Community",
+    "cta_body": "Become part of the Glow FM family. Whether you're a listener, advertiser, or potential team member, we'd love to hear from you!",
+    "cta_primary_text": "Contact Us",
+    "cta_primary_url": "/contact",
+    "cta_secondary_text": "Listen Live",
+    "cta_secondary_url": "/"
+  },
+  "schedule": {
+    "Monday": [
+      {
+        "time": "5:00 AM - 5:14 AM",
+        "title": "Morning motivations",
+        "host": "Desmond Ujiro",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/morning-motivations"
+      },
+      {
+        "time": "5:15 AM - 5:29 AM",
+        "title": "Wakati Iyanu",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/wakati-iyanu"
+      },
+      {
+        "time": "5:30 AM - 5:59 AM",
+        "title": "Comfort Life Mission",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/comfort-life-mission"
+      },
+      {
+        "time": "6:00 AM - 6:29 AM",
+        "title": "Ojumo Ayo",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/ojumo-ayo"
+      },
+      {
+        "time": "6:30 AM - 6:44 AM",
+        "title": "Oloruko Nla",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/oloruko-nla"
+      },
+      {
+        "time": "6:45 AM - 6:59 AM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "7:00 AM - 7:04 AM",
+        "title": "Morning News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/morning-news"
+      },
+      {
+        "time": "7:05 AM - 7:59 AM",
+        "title": "Issues in the Dailies",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/issues-in-the-dailies"
+      },
+      {
+        "time": "8:00 AM - 8:59 AM",
+        "title": "Oropo ninu iwe iroyin",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/oropo-ninu-iwe-iroyin"
+      },
+      {
+        "time": "9:00 AM - 9:59 AM",
+        "title": "Jawon Si Lori Ere",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/jawon-si-lori-ere"
+      },
+      {
+        "time": "10:00 AM - 10:59 AM",
+        "title": "Ijinle Odu",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ijinle-odu"
+      },
+      {
+        "time": "11:00 AM - 11:04 AM",
+        "title": "News bite",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-bite"
+      },
+      {
+        "time": "11:06 AM - 11:59 AM",
+        "title": "Ijinle Odu",
+        "host": "Tolu Adedayo",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ijinle-odu"
+      },
+      {
+        "time": "12:00 PM - 12:29 PM",
+        "title": "Mid Day News/ Iroyin ojo kanri",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/mid-day-news-iroyin-ojo-kanri"
+      },
+      {
+        "time": "12:30 PM - 12:59 PM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "1:00 PM - 1:29 PM",
+        "title": "kayefi N la",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/kayefi-n-la"
+      },
+      {
+        "time": "1:30 PM - 1:59 PM",
+        "title": "Ondo Request",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ondo-request"
+      },
+      {
+        "time": "2:00 PM - 2:59 PM",
+        "title": "Glow Moment",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/glow-moment"
+      },
+      {
+        "time": "3:00 PM - 3:14 PM",
+        "title": "News Across The Country",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-across-the-country"
+      },
+      {
+        "time": "3:15 PM - 3:59 PM",
+        "title": "A N woyin",
+        "host": "Host TBA",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/a-n-woyin"
+      },
+      {
+        "time": "4:00 PM - 4:29 PM",
+        "title": "Let's Talk",
+        "host": "Comfort Omolafe",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/lets-talk"
+      },
+      {
+        "time": "4:30 PM - 4:59 PM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "5:00 PM - 5:04 PM",
+        "title": "News bite",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-bite"
+      },
+      {
+        "time": "5:05 PM - 5:59 PM",
+        "title": "Agborandun",
+        "host": "Tolu Adedayo",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/agborandun"
+      },
+      {
+        "time": "6:00 PM - 6:29 PM",
+        "title": "The News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/the-news"
+      },
+      {
+        "time": "6:30 PM - 7:14 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "7:15 PM - 7:29 PM",
+        "title": "Commercials",
+        "host": "Radio DJ",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "7:30 PM - 7:59 PM",
+        "title": "B. G. G. C",
+        "host": "Pastor Olufowobi",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/b-g-g-c"
+      },
+      {
+        "time": "8:00 PM - 8:29 PM",
+        "title": "Ba mi se",
+        "host": "Pastor Awise",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/ba-mi-se"
+      },
+      {
+        "time": "8:30 PM - 9:29 PM",
+        "title": "Akoni Oodua",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/akoni-oodua"
+      },
+      {
+        "time": "9:30 PM - 9:59 PM",
+        "title": "Arogun gbogun mi",
+        "host": "Prop Olajide",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/arogun-gbogun-mi"
+      },
+      {
+        "time": "10:00 PM - 10:59 PM",
+        "title": "Inner Gold",
+        "host": "Dr. Ezekiel Akande",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/inner-gold"
+      }
+    ],
+    "Tuesday": [
+      {
+        "time": "5:00 AM - 5:14 AM",
+        "title": "Morning motivations",
+        "host": "Desmond Ujiro",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/morning-motivations"
+      },
+      {
+        "time": "5:15 AM - 5:29 AM",
+        "title": "Wakati Iyanu",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/wakati-iyanu"
+      },
+      {
+        "time": "5:30 AM - 5:59 AM",
+        "title": "Comfort Life Mission",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/comfort-life-mission"
+      },
+      {
+        "time": "6:00 AM - 6:29 AM",
+        "title": "Ojumo Ayo",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/ojumo-ayo"
+      },
+      {
+        "time": "6:30 AM - 6:44 AM",
+        "title": "Oloruko Nla",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/oloruko-nla"
+      },
+      {
+        "time": "6:45 AM - 6:59 AM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "7:00 AM - 7:04 AM",
+        "title": "Morning News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/morning-news"
+      },
+      {
+        "time": "7:05 AM - 7:59 AM",
+        "title": "Issues in the Dailies",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/issues-in-the-dailies"
+      },
+      {
+        "time": "8:00 AM - 8:59 AM",
+        "title": "Oropo ninu iwe iroyin",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/oropo-ninu-iwe-iroyin"
+      },
+      {
+        "time": "9:00 AM - 9:59 AM",
+        "title": "Jawon Si Lori Ere",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/jawon-si-lori-ere"
+      },
+      {
+        "time": "10:00 AM - 10:59 AM",
+        "title": "Music while you work",
+        "host": "Comfort Omolafe",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music-while-you-work"
+      },
+      {
+        "time": "11:00 AM - 11:59 AM",
+        "title": "Oju Abe",
+        "host": "Clement Ade Oyepata",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/oju-abe"
+      },
+      {
+        "time": "12:00 PM - 12:29 PM",
+        "title": "Mid Day News/ Iroyin ojo kanri",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/mid-day-news-iroyin-ojo-kanri"
+      },
+      {
+        "time": "12:30 PM - 12:59 PM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "1:00 PM - 1:29 PM",
+        "title": "kayefi N la",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/kayefi-n-la"
+      },
+      {
+        "time": "1:30 PM - 1:59 PM",
+        "title": "The Intellect Avenue",
+        "host": "Nancy chidinma",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/the-intellect-avenue"
+      },
+      {
+        "time": "2:00 PM - 2:59 PM",
+        "title": "Glow Moment",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/glow-moment"
+      },
+      {
+        "time": "3:00 PM - 3:14 PM",
+        "title": "News Across The Country",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-across-the-country"
+      },
+      {
+        "time": "3:15 PM - 3:29 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "3:30 PM - 3:59 PM",
+        "title": "Aseyori ni temi",
+        "host": "Awe",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/aseyori-ni-temi"
+      },
+      {
+        "time": "4:00 PM - 4:44 PM",
+        "title": "Ara n be",
+        "host": "mcolumiko",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ara-n-be"
+      },
+      {
+        "time": "4:45 PM - 4:59 PM",
+        "title": "Corruption must go",
+        "host": "Comfort Omolafe",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/corruption-must-go"
+      },
+      {
+        "time": "5:00 PM - 5:04 PM",
+        "title": "News bite",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-bite"
+      },
+      {
+        "time": "5:05 PM - 5:59 PM",
+        "title": "Street Palava",
+        "host": "McChurchill",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/street-palava"
+      },
+      {
+        "time": "6:00 PM - 6:29 PM",
+        "title": "The News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/the-news"
+      },
+      {
+        "time": "6:30 PM - 6:59 PM",
+        "title": "Youth Arena",
+        "host": "Ikeoluwa",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/youth-arena"
+      },
+      {
+        "time": "7:00 PM - 7:14 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "7:15 PM - 7:29 PM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "7:30 PM - 7:59 PM",
+        "title": "Mo bo lowo iya",
+        "host": "Wale Fosa",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/mo-bo-lowo-iya"
+      },
+      {
+        "time": "8:00 PM - 8:14 PM",
+        "title": "Kini Bibeli wi?",
+        "host": "Pastor Steven",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/kini-bibeli-wi"
+      },
+      {
+        "time": "8:15 PM - 8:29 PM",
+        "title": "Agbe Iwoyi",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/agbe-iwoyi"
+      },
+      {
+        "time": "8:30 PM - 8:59 PM",
+        "title": "O sokutu wowo",
+        "host": "Kay on top",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/o-sokutu-wowo"
+      },
+      {
+        "time": "9:00 PM - 9:59 PM",
+        "title": "Atunse eda",
+        "host": "Owonikoko",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/atunse-eda"
+      },
+      {
+        "time": "10:00 PM - 11:00 PM",
+        "title": "Tori Junction",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/tori-junction"
+      }
+    ],
+    "Wednesday": [
+      {
+        "time": "5:00 AM - 5:14 AM",
+        "title": "Morning motivations",
+        "host": "Desmond Ujiro",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/morning-motivations"
+      },
+      {
+        "time": "5:15 AM - 5:29 AM",
+        "title": "Wakati Iyanu",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/wakati-iyanu"
+      },
+      {
+        "time": "5:31 AM - 5:59 AM",
+        "title": "Comfort Life Mission",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/comfort-life-mission"
+      },
+      {
+        "time": "6:00 AM - 6:29 AM",
+        "title": "Ojumo Ayo",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/ojumo-ayo"
+      },
+      {
+        "time": "6:30 AM - 6:44 AM",
+        "title": "Oloruko Nla",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/oloruko-nla"
+      },
+      {
+        "time": "6:45 AM - 6:59 AM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "7:00 AM - 7:04 AM",
+        "title": "Morning News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/morning-news"
+      },
+      {
+        "time": "7:05 AM - 7:59 AM",
+        "title": "Issues in the Dailies",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/issues-in-the-dailies"
+      },
+      {
+        "time": "8:00 AM - 8:59 AM",
+        "title": "Oropo ninu iwe iroyin",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/oropo-ninu-iwe-iroyin"
+      },
+      {
+        "time": "9:00 AM - 9:59 AM",
+        "title": "Jawon Si Lori Ere",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/jawon-si-lori-ere"
+      },
+      {
+        "time": "10:00 AM - 10:59 AM",
+        "title": "Gbangbadekun",
+        "host": "Sogigun",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/gbangbadekun"
+      },
+      {
+        "time": "11:00 AM - 11:04 AM",
+        "title": "News bite",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-bite"
+      },
+      {
+        "time": "11:05 AM - 11:59 AM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "12:00 PM - 12:29 PM",
+        "title": "Mid Day News/ Iroyin ojo kanri",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/mid-day-news-iroyin-ojo-kanri"
+      },
+      {
+        "time": "12:30 PM - 12:59 PM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "1:00 PM - 1:29 PM",
+        "title": "kayefi N la",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/kayefi-n-la"
+      },
+      {
+        "time": "1:30 PM - 1:59 PM",
+        "title": "School on Air",
+        "host": "Pa Omoresemi",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/school-on-air"
+      },
+      {
+        "time": "2:00 PM - 2:59 PM",
+        "title": "Glow Moment",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/glow-moment"
+      },
+      {
+        "time": "3:00 PM - 3:14 PM",
+        "title": "News Across The Country",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-across-the-country"
+      },
+      {
+        "time": "3:15 PM - 3:29 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "3:30 PM - 3:59 PM",
+        "title": "Rotary Club",
+        "host": "Comfort Omolafe",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/rotary-club"
+      },
+      {
+        "time": "4:00 PM - 4:59 PM",
+        "title": "Sportainment",
+        "host": "mcolumiko",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/sportainment"
+      },
+      {
+        "time": "5:00 PM - 5:04 PM",
+        "title": "News bite",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-bite"
+      },
+      {
+        "time": "5:05 PM - 5:59 PM",
+        "title": "Mario Wa",
+        "host": "Ajakaye",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/mario-wa"
+      },
+      {
+        "time": "6:00 PM - 6:29 PM",
+        "title": "The News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/the-news"
+      },
+      {
+        "time": "6:30 PM - 6:59 PM",
+        "title": "Wakati Itusile",
+        "host": "Evang. Bankole",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/wakati-itusile"
+      },
+      {
+        "time": "7:00 PM - 7:14 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "7:15 PM - 7:29 PM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "7:30 PM - 7:59 PM",
+        "title": "Okan Tuntun",
+        "host": "CAC Manner",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/okan-tuntun"
+      },
+      {
+        "time": "8:00 PM - 8:29 PM",
+        "title": "Ba mi se",
+        "host": "Pastor Awise",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/ba-mi-se"
+      },
+      {
+        "time": "8:30 PM - 8:44 PM",
+        "title": "San bi ara",
+        "host": "Pastor John",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/san-bi-ara"
+      },
+      {
+        "time": "8:45 PM - 8:59 PM",
+        "title": "S P",
+        "host": "Host TBA",
+        "status": "Automated",
+        "url": "https://glowfmradio.com/shows/s-p"
+      },
+      {
+        "time": "9:00 PM - 10:00 PM",
+        "title": "Ale Ariwo",
+        "host": "McChurchill",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ale-ariwo"
+      }
+    ],
+    "Thursday": [
+      {
+        "time": "5:00 AM - 5:14 AM",
+        "title": "Morning motivations",
+        "host": "Desmond Ujiro",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/morning-motivations"
+      },
+      {
+        "time": "5:15 AM - 5:29 AM",
+        "title": "Wakati Iyanu",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/wakati-iyanu"
+      },
+      {
+        "time": "5:30 AM - 5:59 AM",
+        "title": "Comfort Life Mission",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/comfort-life-mission"
+      },
+      {
+        "time": "6:00 AM - 6:29 AM",
+        "title": "Ojumo Ayo",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/ojumo-ayo"
+      },
+      {
+        "time": "6:30 AM - 6:44 AM",
+        "title": "Oloruko Nla",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/oloruko-nla"
+      },
+      {
+        "time": "6:45 AM - 6:59 AM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "7:00 AM - 7:04 AM",
+        "title": "Morning News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/morning-news"
+      },
+      {
+        "time": "7:05 AM - 7:59 AM",
+        "title": "Issues in the Dailies",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/issues-in-the-dailies"
+      },
+      {
+        "time": "8:00 AM - 8:59 AM",
+        "title": "Oropo ninu iwe iroyin",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/oropo-ninu-iwe-iroyin"
+      },
+      {
+        "time": "9:00 AM - 9:59 AM",
+        "title": "Jawon Si Lori Ere",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/jawon-si-lori-ere"
+      },
+      {
+        "time": "10:00 AM - 10:59 AM",
+        "title": "E maa ya se",
+        "host": "Clement Ade Oyepata",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/e-maa-ya-se"
+      },
+      {
+        "time": "11:00 AM - 11:04 AM",
+        "title": "News bite",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-bite"
+      },
+      {
+        "time": "11:05 AM - 11:59 AM",
+        "title": "Political Hangout",
+        "host": "Olatunbosun",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/political-hangout"
+      },
+      {
+        "time": "12:00 PM - 12:29 PM",
+        "title": "Mid Day News/ Iroyin ojo kanri",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/mid-day-news-iroyin-ojo-kanri"
+      },
+      {
+        "time": "12:30 PM - 12:59 PM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "1:00 PM - 1:29 PM",
+        "title": "kayefi N la",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/kayefi-n-la"
+      },
+      {
+        "time": "1:30 PM - 1:59 PM",
+        "title": "Katun Rari",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/katun-rari"
+      },
+      {
+        "time": "2:00 PM - 2:59 PM",
+        "title": "Glow Moment",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/glow-moment"
+      },
+      {
+        "time": "3:00 PM - 3:14 PM",
+        "title": "News Across The Country",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-across-the-country"
+      },
+      {
+        "time": "3:15 PM - 3:59 PM",
+        "title": "Women's World",
+        "host": "Comfort Omolafe",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/womens-world"
+      },
+      {
+        "time": "4:00 PM - 4:59 PM",
+        "title": "Ariyan Jiyan",
+        "host": "Tolu Adedayo",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/ariyan-jiyan"
+      },
+      {
+        "time": "5:00 PM - 5:04 PM",
+        "title": "News bite",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-bite"
+      },
+      {
+        "time": "5:05 PM - 5:29 PM",
+        "title": "Ore Meji",
+        "host": "Tolu Adedayo",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ore-meji"
+      },
+      {
+        "time": "5:30 PM - 5:59 PM",
+        "title": "Mo  gbede",
+        "host": "Tolu Adedayo",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/mo-gbede"
+      },
+      {
+        "time": "6:00 PM - 6:29 PM",
+        "title": "The News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/the-news"
+      },
+      {
+        "time": "6:30 PM - 6:59 PM",
+        "title": "Hour of Truth",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/hour-of-truth"
+      },
+      {
+        "time": "7:00 PM - 7:14 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "7:30 PM - 8:29 PM",
+        "title": "Atunse laarin ilu",
+        "host": "Ejide",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/atunse-laarin-ilu"
+      },
+      {
+        "time": "8:30 PM - 8:59 PM",
+        "title": "Evershine",
+        "host": "Jagilegbo",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/evershine"
+      },
+      {
+        "time": "9:00 PM - 9:59 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "10:00 PM - 11:00 PM",
+        "title": "Ogba Ife",
+        "host": "McChurchill",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ogba-ife"
+      }
+    ],
+    "Friday": [
+      {
+        "time": "5:00 AM - 5:14 AM",
+        "title": "Morning motivations",
+        "host": "Desmond Ujiro",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/morning-motivations"
+      },
+      {
+        "time": "5:15 AM - 5:29 AM",
+        "title": "Wakati Iyanu",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/wakati-iyanu"
+      },
+      {
+        "time": "5:30 AM - 5:59 AM",
+        "title": "Comfort Life Mission",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/comfort-life-mission"
+      },
+      {
+        "time": "6:00 AM - 6:29 AM",
+        "title": "Ojumo Ayo",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/ojumo-ayo"
+      },
+      {
+        "time": "6:30 AM - 6:44 AM",
+        "title": "Oloruko Nla",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/oloruko-nla"
+      },
+      {
+        "time": "6:45 AM - 6:59 AM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "7:00 AM - 7:04 AM",
+        "title": "Morning News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/morning-news"
+      },
+      {
+        "time": "7:05 AM - 7:59 AM",
+        "title": "Issues in the Dailies",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/issues-in-the-dailies"
+      },
+      {
+        "time": "8:01 AM - 9:00 AM",
+        "title": "Oropo ninu iwe iroyin",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/oropo-ninu-iwe-iroyin"
+      },
+      {
+        "time": "9:01 AM - 10:00 AM",
+        "title": "Jawon Si Lori Ere",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/jawon-si-lori-ere"
+      },
+      {
+        "time": "10:01 AM - 11:00 AM",
+        "title": "Ki lesin wi",
+        "host": "Alh. Bature",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ki-lesin-wi"
+      },
+      {
+        "time": "11:01 AM - 11:05 AM",
+        "title": "News bite",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-bite"
+      },
+      {
+        "time": "11:06 AM - 12:00 PM",
+        "title": "Ki lo ku?",
+        "host": "Alade",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ki-lo-ku"
+      },
+      {
+        "time": "12:01 PM - 12:30 PM",
+        "title": "Mid Day News/ Iroyin ojo kanri",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/mid-day-news-iroyin-ojo-kanri"
+      },
+      {
+        "time": "12:31 PM - 1:00 PM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "1:01 PM - 1:30 PM",
+        "title": "kayefi N la",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/kayefi-n-la"
+      },
+      {
+        "time": "1:31 PM - 2:00 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "2:01 PM - 3:00 PM",
+        "title": "Glow Moment",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/glow-moment"
+      },
+      {
+        "time": "3:01 PM - 3:15 PM",
+        "title": "News Across The Country",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-across-the-country"
+      },
+      {
+        "time": "3:16 PM - 4:00 PM",
+        "title": "Stewardship",
+        "host": "Olatunbosun",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/stewardship"
+      },
+      {
+        "time": "4:01 PM - 5:00 PM",
+        "title": "E - Factory",
+        "host": "mcolumiko",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/e-factory"
+      },
+      {
+        "time": "5:01 PM - 5:05 PM",
+        "title": "News bite",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-bite"
+      },
+      {
+        "time": "5:06 PM - 6:00 PM",
+        "title": "High Life Wazobia",
+        "host": "Sam",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/high-life-wazobia"
+      },
+      {
+        "time": "6:01 PM - 6:30 PM",
+        "title": "The News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/the-news"
+      },
+      {
+        "time": "6:30 PM - 7:00 PM",
+        "title": "Lati Ile Igbimo Asofin",
+        "host": "Clement Ade Oyepata",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/lati-ile-igbimo-asofin"
+      },
+      {
+        "time": "7:01 PM - 7:15 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "7:31 PM - 8:00 PM",
+        "title": "Hours of Revelation",
+        "host": "Mojisola",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/hours-of-revelation"
+      },
+      {
+        "time": "8:01 PM - 8:30 PM",
+        "title": "The promised land",
+        "host": "Mojisola",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/the-promised-land"
+      },
+      {
+        "time": "8:31 PM - 9:00 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "9:01 PM - 11:00 PM",
+        "title": "Ka sun re",
+        "host": "Tolu Adedayo",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/ka-sun-re"
+      }
+    ],
+    "Saturday": [
+      {
+        "time": "5:00 AM - 5:15 AM",
+        "title": "Morning motivations",
+        "host": "Desmond Ujiro",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/morning-motivations"
+      },
+      {
+        "time": "5:16 AM - 5:30 AM",
+        "title": "Wakati Iyanu",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/wakati-iyanu"
+      },
+      {
+        "time": "5:31 AM - 6:00 AM",
+        "title": "Comfort Life Mission",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/comfort-life-mission"
+      },
+      {
+        "time": "6:01 AM - 6:30 AM",
+        "title": "Ojumo Ayo",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/ojumo-ayo"
+      },
+      {
+        "time": "6:31 AM - 6:45 AM",
+        "title": "Oloruko Nla",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/oloruko-nla"
+      },
+      {
+        "time": "6:46 AM - 7:00 AM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "7:01 AM - 8:00 AM",
+        "title": "Glow Health",
+        "host": "Comfort Omolafe",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/glow-health"
+      },
+      {
+        "time": "8:01 AM - 10:00 AM",
+        "title": "Point Blank",
+        "host": "Olatunbosun",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/point-blank"
+      },
+      {
+        "time": "10:01 AM - 10:30 AM",
+        "title": "Gbedegbeyo",
+        "host": "Oke Babatunde",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/gbedegbeyo"
+      },
+      {
+        "time": "10:31 AM - 11:00 AM",
+        "title": "You and the Law",
+        "host": "Ayobami",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/you-and-the-law"
+      },
+      {
+        "time": "11:01 AM - 12:00 PM",
+        "title": "Sport Desk",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/sport-desk"
+      },
+      {
+        "time": "12:01 PM - 2:00 PM",
+        "title": "AMEBO KEKE",
+        "host": "Desmond Ujiro",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/amebo-keke"
+      },
+      {
+        "time": "2:01 PM - 3:00 PM",
+        "title": "Awiye Oselu",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/awiye-oselu"
+      },
+      {
+        "time": "3:01 PM - 3:15 PM",
+        "title": "News Across The Country",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-across-the-country"
+      },
+      {
+        "time": "3:16 PM - 3:30 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "3:31 PM - 4:00 PM",
+        "title": "Voice of Rest",
+        "host": "Motun",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/voice-of-rest"
+      },
+      {
+        "time": "4:01 PM - 4:45 PM",
+        "title": "Glow kiddies",
+        "host": "Rachel Salami",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/glow-kiddies"
+      },
+      {
+        "time": "4:46 PM - 5:00 PM",
+        "title": "Leadership and Foll",
+        "host": "Godwyns",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/leadership-and-foll"
+      },
+      {
+        "time": "5:01 PM - 5:05 PM",
+        "title": "News bite",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-bite"
+      },
+      {
+        "time": "5:06 PM - 6:00 PM",
+        "title": "Ayo ni o",
+        "host": "Opete",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ayo-ni-o"
+      },
+      {
+        "time": "6:01 PM - 6:30 PM",
+        "title": "The News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/the-news"
+      },
+      {
+        "time": "6:31 PM - 7:00 PM",
+        "title": "Hymns to the redeemer",
+        "host": "Canon Ilori",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/hymns-to-the-redeemer"
+      },
+      {
+        "time": "7:01 PM - 7:15 PM",
+        "title": "Jummy Gold",
+        "host": "Motun",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/jummy-gold"
+      },
+      {
+        "time": "7:31 PM - 8:00 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "8:01 PM - 8:30 PM",
+        "title": "The Business Coach",
+        "host": "Mr. Gbenga",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/the-business-coach"
+      },
+      {
+        "time": "8:31 PM - 9:30 PM",
+        "title": "Apedahun",
+        "host": "Prop Olajide",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/apedahun"
+      },
+      {
+        "time": "9:31 PM - 10:00 PM",
+        "title": "Love Saturday",
+        "host": "Ikeoluwa",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/love-saturday"
+      },
+      {
+        "time": "10:31 PM - 11:00 PM",
+        "title": "Saturday Vibez",
+        "host": "Dejavu",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/saturday-vibez"
+      }
+    ],
+    "Sunday": [
+      {
+        "time": "5:00 AM - 5:15 AM",
+        "title": "Morning motivations",
+        "host": "Desmond Ujiro",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/morning-motivations"
+      },
+      {
+        "time": "5:16 AM - 5:30 AM",
+        "title": "Solemn Music",
+        "host": "Radio DJ",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/solemn-music"
+      },
+      {
+        "time": "5:31 AM - 6:00 AM",
+        "title": "Comfort Life Mission",
+        "host": "Glow FM",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/comfort-life-mission"
+      },
+      {
+        "time": "6:01 AM - 6:30 AM",
+        "title": "Ojumo Ayo",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/ojumo-ayo"
+      },
+      {
+        "time": "6:31 AM - 6:45 AM",
+        "title": "Oloruko Nla",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/oloruko-nla"
+      },
+      {
+        "time": "6:46 AM - 7:00 AM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "7:01 AM - 7:30 AM",
+        "title": "Jerusalem Church",
+        "host": "Mojisola",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/jerusalem-church"
+      },
+      {
+        "time": "7:31 AM - 8:00 AM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "8:00 AM - 10:00 AM",
+        "title": "Owuro Logo",
+        "host": "Clement Ade Oyepata",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/owuro-logo"
+      },
+      {
+        "time": "10:01 AM - 12:30 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "12:31 PM - 1:00 PM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "1:01 PM - 1:30 PM",
+        "title": "Awa Obinrin",
+        "host": "Blessing",
+        "status": "Pre-recorded",
+        "url": "https://glowfmradio.com/shows/awa-obinrin"
+      },
+      {
+        "time": "1:31 PM - 2:00 PM",
+        "title": "Abo Ilu",
+        "host": "Mr. Gbenga",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/abo-ilu"
+      },
+      {
+        "time": "2:01 PM - 2:30 PM",
+        "title": "Reading for pleasure",
+        "host": "Comfort Omolafe",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/reading-for-pleasure"
+      },
+      {
+        "time": "2:31 PM - 3:00 PM",
+        "title": "Ipe si igbala",
+        "host": "Mojisola",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ipe-si-igbala"
+      },
+      {
+        "time": "3:01 PM - 3:15 PM",
+        "title": "News Across The Country",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/news-across-the-country"
+      },
+      {
+        "time": "3:15 PM - 4:00 PM",
+        "title": "Yoruba Gbayi",
+        "host": "Oluwaremilekun Idowu",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/yoruba-gbayi"
+      },
+      {
+        "time": "4:00 PM - 6:00 PM",
+        "title": "Gbagede Oselu",
+        "host": "Clement Ade Oyepata",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/gbagede-oselu"
+      },
+      {
+        "time": "6:01 PM - 6:30 PM",
+        "title": "The News",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/the-news"
+      },
+      {
+        "time": "6:31 PM - 7:00 PM",
+        "title": "Lati inu ijo",
+        "host": "Alade",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/lati-inu-ijo"
+      },
+      {
+        "time": "7:01 PM - 7:15 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      },
+      {
+        "time": "7:16 PM - 7:30 PM",
+        "title": "Commercials",
+        "host": "Glow FM",
+        "status": "Hybrid",
+        "url": "https://glowfmradio.com/shows/commercials"
+      },
+      {
+        "time": "7:31 PM - 8:00 PM",
+        "title": "Irawo Eda",
+        "host": "Wale Fosa",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/irawo-eda"
+      },
+      {
+        "time": "8:01 PM - 8:30 PM",
+        "title": "Political Hangout",
+        "host": "Glow FM",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/political-hangout"
+      },
+      {
+        "time": "9:01 PM - 10:00 PM",
+        "title": "Ayetoto",
+        "host": "Alaroye Ekiti",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/ayetoto"
+      },
+      {
+        "time": "10:01 PM - 11:00 PM",
+        "title": "Music",
+        "host": "Radio DJ",
+        "status": "Live",
+        "url": "https://glowfmradio.com/shows/music"
+      }
+    ]
+  },
+  "shows": [
+    {
+      "title": "AMEBO KEKE",
+      "category": "Information",
+      "duration": "120 mins",
+      "host": "Desmond Ujiro",
+      "description": "A current affairs pidgin program",
+      "status": "Live",
+      "url": "https://glowfmradio.com/shows/amebo-keke"
+    },
+    {
+      "title": "Morning motivations",
+      "category": "Education",
+      "duration": "5 mins",
+      "host": "Desmond Ujiro",
+      "description": "A motivational program to always start up the week, every Monday morning, 5:10am - 5:15am",
+      "status": "Pre-recorded",
+      "url": "https://glowfmradio.com/shows/morning-motivations"
+    },
+    {
+      "title": "A N woyin",
+      "category": "Information",
+      "duration": "45 mins",
+      "host": "Glow FM",
+      "description": "A N woyin programs",
+      "status": "Live",
+      "url": "https://glowfmradio.com/shows/a-n-woyin"
+    },
+    {
+      "title": "Abo Ilu",
+      "category": "Information",
+      "duration": "30 mins",
+      "host": "Mr. Gbenga",
+      "description": "Abo Ilu by Gbenga",
+      "status": "Live",
+      "url": "https://glowfmradio.com/shows/abo-ilu"
+    },
+    {
+      "title": "Agbe Iwoyi",
+      "category": "Information",
+      "duration": "15 mins",
+      "host": "Glow FM",
+      "description": "Agbe Iwoyi",
+      "status": "Live",
+      "url": "https://glowfmradio.com/shows/agbe-iwoyi"
+    },
+    {
+      "title": "Agborandun",
+      "category": "Entertainment",
+      "duration": "60 mins",
+      "host": "Tolu Adedayo",
+      "description": "Agborandun by Tolu Adedayo",
+      "status": "Pre-recorded",
+      "url": "https://glowfmradio.com/shows/agborandun"
+    },
+    {
+      "title": "Akoni Oodua",
+      "category": "Information",
+      "duration": "60 mins",
+      "host": "Glow FM",
+      "description": "Akoni Oodua",
+      "status": "Live",
+      "url": "https://glowfmradio.com/shows/akoni-oodua"
+    },
+    {
+      "title": "Ale Ariwo",
+      "category": "Entertainment",
+      "duration": "60 mins",
+      "host": "McChurchill",
+      "description": "Ale Ariwo by Churchill and Co.",
+      "status": "Live",
+      "url": "https://glowfmradio.com/shows/ale-ariwo"
+    },
+    {
+      "title": "Apedahun",
+      "category": "Religious",
+      "duration": "60 mins",
+      "host": "Prop Olajide",
+      "description": "Apedahun by Prop Olajide",
+      "status": "Pre-recorded",
+      "url": "https://glowfmradio.com/shows/apedahun"
+    }
+  ],
+  "showCategories": [
+    {
+      "name": "All Shows",
+      "count": 101
+    },
+    {
+      "name": "Education",
+      "count": 9
+    },
+    {
+      "name": "Information",
+      "count": 17
+    },
+    {
+      "name": "Politics",
+      "count": 8
+    },
+    {
+      "name": "Religious",
+      "count": 24
+    },
+    {
+      "name": "Current Affairs",
+      "count": 1
+    },
+    {
+      "name": "Social Networking",
+      "count": 2
+    },
+    {
+      "name": "Entertainment",
+      "count": 25
+    },
+    {
+      "name": "Commercials",
+      "count": 1
+    },
+    {
+      "name": "News",
+      "count": 9
+    },
+    {
+      "name": "Sport",
+      "count": 2
+    },
+    {
+      "name": "Health",
+      "count": 1
+    },
+    {
+      "name": "Law",
+      "count": 1
+    },
+    {
+      "name": "Business",
+      "count": 1
+    }
+  ],
+  "podcasts": [
+    {
+      "title": "EPS 3",
+      "show": "GLOW CHAT ROOM",
+      "duration": "24:18",
+      "date": "Feb 02, 2026",
+      "listens": "30",
+      "image": "/storage/uploads/podcasts/episode-covers/du3yi0oA3yhvREXOGmi58aHmKmn8A317kfVEm1hD.png",
+      "link": "https://glowfmradio.com/podcasts/glow-chat-room/eps-3",
+      "description": ""
+    },
+    {
+      "title": "EPS 2",
+      "show": "GLOW CHAT ROOM",
+      "duration": "21:24",
+      "date": "Feb 02, 2026",
+      "listens": "23",
+      "image": "/storage/uploads/podcasts/episode-covers/LdAWMvX6DfCAKgk7YilP0jVFjldvF3IulxLfdWGi.png",
+      "link": "https://glowfmradio.com/podcasts/glow-chat-room/eps-2",
+      "description": ""
+    },
+    {
+      "title": "Glow chat room episode 1",
+      "show": "GLOW CHAT ROOM",
+      "duration": "22:55",
+      "date": "Jan 29, 2026",
+      "listens": "24",
+      "image": "/storage/uploads/podcasts/episode-covers/yCs68HibDIxWAzrjmJ9REA3NUnzqhoAZnh8x4XS8.png",
+      "link": "https://glowfmradio.com/podcasts/glow-chat-room/glow-chat-room-episode-1",
+      "description": ""
+    },
+    {
+      "title": "Premier Glow Moment",
+      "show": "GLOW MOMENT",
+      "duration": "0:37",
+      "date": "Jan 27, 2026",
+      "listens": "15",
+      "image": "/storage/uploads/podcasts/episode-covers/MytRw5HWhs4ijh3YXCRjMkK6kcV2fkT5N8gb6vKm.jpg",
+      "link": "https://glowfmradio.com/podcasts/glow-moment/premier-glow-moment",
+      "description": "Welcome to the amazing glow moment of glowfm radio?"
+    }
+  ],
+  "blogPosts": [
+    {
+      "title": "Alaafin kicks as Makinde installs Ladoja chairman of Obas council",
+      "category": "Politics",
+      "views": "51",
+      "date": "Jan 16, 2026",
+      "read": "8 min read",
+      "excerpt": "The Alaafin of Oyo, Oba Akeem Owoade, was conspicuously absent from the inauguration, which was held at the House of Chiefs, Parliament Building, Secretariat, Ibadan.",
+      "author": "Oyetoke Adedayo Ebenezer",
+      "authorRole": "admin",
+      "image": "https://cdn.punchng.com/wp-content/uploads/2025/11/11014215/Makinde.jpg",
+      "link": "https://glowfmradio.com/blog/alaafin-kicks-as-makinde-installs-ladoja-chairman-of-obas-council"
+    },
+    {
+      "title": "Flutterwave buys Nigeria\u2019s Mono in rare African fintech exit",
+      "category": "TechNology",
+      "views": "60",
+      "date": "Feb 06, 2026",
+      "read": "4 min read",
+      "excerpt": "The transaction mirrors earlier consolidation attempts in global fintech infrastructure, including\u00a0Visa\u2019s failed acquisition of Plaid in 2020, which was blocked by U.S. regulators. Hassan cited that deal as evidence that combining data infrastructure with payment rails can unlock scale.",
+      "author": "Oyetoke Adedayo Ebenezer",
+      "authorRole": "admin",
+      "image": "/storage/uploads/blog/MJTJ5x3YtfvcvoIBCSEsWZgO2lTUQvs5mPmfcRc2.webp",
+      "link": "https://glowfmradio.com/blog/flutterwave-buys-nigerias-mono-in-rare-african-fintech-exit"
+    }
+  ],
+  "newsPosts": [
+    {
+      "title": "Lookman makes first goal for Atl\u00e9tico Madrid",
+      "category": "Sport",
+      "views": "2",
+      "date": "Feb 06, 2026",
+      "read": "1 min read",
+      "excerpt": "Atl\u00e9tico Madrid\u2019s new forward Ademola Lookman announced himself in style on Thursday, scoring on his debut as the Spanish side faced Real Betis in a Copa del Rey quarter-final at Estadio La Cartuja, according to PUNCH Sports Extra",
+      "image": "https://vodacomsoccer.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmobi_express%2Fimages%2F2026%2F2%2F1770361450420%2F16%2Fademola-lookman-of-atletico-madrid-celebrates-his-goal-5-february-202616.jpeg&w=1920&q=75",
+      "link": "https://glowfmradio.com/news/lookman-makes-first-goal-for-atletico-madrid"
+    },
+    {
+      "title": "Popular United States-based streamer supports Makoko community",
+      "category": "Entertainment",
+      "views": "3",
+      "date": "Feb 05, 2026",
+      "read": "1 min read",
+      "excerpt": "Popular United States-based streamer Kai Cenat has again shown support for the Makoko community in Lagos, visiting the Makoko Children School Orphanage Home as part of his current trip to Nigeria.",
+      "image": "https://lifestyle.thecable.ng/wp-content/uploads/2026/02/IMG-20260205-WA0000-770x560.jpg",
+      "link": "https://glowfmradio.com/news/popular-united-states-based-streamer-supports-makoko-community"
+    },
+    {
+      "title": "Nollywood Actress Aunty Ajara Passes On After Prolonged Illness",
+      "category": "Entertainment",
+      "views": "126",
+      "date": "Feb 05, 2026",
+      "read": "2 min read",
+      "excerpt": "Nollywood actress Ajara Lasisi, popularly known as Aunty Ajara, has passed away after a prolonged illness. Her death has drawn an outpouring of grief and tributes from colleagues, fans, and the Nollywood community.",
+      "image": "https://www.dockaysworld.com.ng/wp-content/uploads/2026/02/IMG_3268.jpeg",
+      "link": "https://glowfmradio.com/news/nollywood-actress-aunty-ajara-passes-on-after-prolonged-illness"
+    },
+    {
+      "title": "ONDO @50: GOVT AWARDS OBASANJO, FASORANTI, AIYEDATIWA, OTHERS",
+      "category": "Entertainment",
+      "views": "9",
+      "date": "Feb 04, 2026",
+      "read": "1 min read",
+      "excerpt": "IN A NIGHT OF ELEGANCE AND JUBILATION, ONDO STATE ENDED THE CELEBRATION OF ITS GOLDEN JUBILEE BY HONOURING PRESIDENT BOLA TINUBU, FORMER PRESIDENT OLUSEGUN OBASANJO, ELDER STATESMAN REUBEN FASORANTI, GOVERNOR LUCKY AIYEDATIWA, AND 67 OTHER DISTINGUISHED SONS, DAUGHTERS, AND FRIENDS OF THE STATE.",
+      "image": "/storage/uploads/news/LvEh8gxPYyvUFLTO4RGaQgiTpOLF0RivbY7Gl2LT.jpg",
+      "link": "https://glowfmradio.com/news/ondo-at-50-govt-awards-obasanjo-fasoranti-aiyedatiwa-others"
+    },
+    {
+      "title": "Kwara State Emir urges Government to Implement Policies Against Gender Based Violence",
+      "category": "Politics",
+      "views": "79",
+      "date": "Feb 04, 2026",
+      "read": "1 min read",
+      "excerpt": "EMIR OF SHONGA IN KWARA STATE, HALIRU NDANUSA SAYS THE GOVERNMENT HAVE TO IMPLEMENT POLICIES AGAINST GENDER BASED VIOLENCE TO END THE MENANCE.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4koh3ixyT8vUAOKINM2klpLc1KiIy-ZybDynS6Cj8HQ&s=10",
+      "link": "https://glowfmradio.com/news/kwara-state-emir-urges-government-to-implement-policies-against-gender-based-violence"
+    },
+    {
+      "title": "FRC Warns State, Local Governments against borrowing without approval",
+      "category": "Finance",
+      "views": "68",
+      "date": "Feb 04, 2026",
+      "read": "1 min read",
+      "excerpt": "THE FEDERAL GOVERNMENT HAS WARNED STATES AND LOCAL GOVERNMENTS AGAINST BORROWING FROM FINANCIAL INSTITUTIONS WITHOUT A CERTIFICATE OF PROOF OF COMPLIANCE FROM THE FISCAL RESPONSIBILITY COMMISSION (FRC).",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFVZtnvukljB47gUb1xYUh436lUhIOtX9ADniWDskknw&s=10",
+      "link": "https://glowfmradio.com/news/frc-warns-state-local-governments-against-borrowing-without-approval"
+    },
+    {
+      "title": "Nigeria\u2019s Super Falcons to Open Training Camp ahead of 2026 Women\u2019s Africa Cup",
+      "category": "Sport",
+      "views": "57",
+      "date": "Feb 04, 2026",
+      "read": "1 min read",
+      "excerpt": "NIGERIA\u2019S SUPER FALCONS ARE EXPECTED TO OPEN TRAINING CAMP FOR THE 2026 WOMEN\u2019S AFRICA CUP OF NATIONS ON FRIDAY, FEBRUARY 20.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSMGjbRk8W3WeTJZclZNwgo95Q357HQcH3FRc16tb6UQ&s=10",
+      "link": "https://glowfmradio.com/news/nigerias-super-falcons-to-open-training-camp-ahead-of-2026-womens-africa-cup"
+    },
+    {
+      "title": "Lagos State House Of Assembly Orders Permanent Halt on Demolitions in Makoko",
+      "category": "Politics",
+      "views": "68",
+      "date": "Feb 04, 2026",
+      "read": "1 min read",
+      "excerpt": "LAGOS STATE HOUSE OF ASSEMBLY HAS ORDERED STOPPAGE OF DEMOLITION AT MAKOKO COMMUNITY WATERFRONT.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8T-7ms-qokrXNxlPcRF3HKd_BtcxRWxxB28x2s21en65l2SmU8VoP6Z0&s=10",
+      "link": "https://glowfmradio.com/news/lagos-state-house-of-assembly-orders-permanent-halt-on-demolitions-in-makoko"
+    },
+    {
+      "title": "THE FORMER DIRECTOR GENERAL OF THE FEDERAL RADIO CORPORATION OF NIGERIA SPOKE ON THE CRITICALLY ON THE CONDUCT OF THE 2023 GENERAL ELECTIONS.",
+      "category": "Politics",
+      "views": "76",
+      "date": "Feb 03, 2026",
+      "read": "1 min read",
+      "excerpt": "IN A MOVE TO SHIFT ALLIANCES IN NATIONAL POLITICS, THE FORMER DIRECTOR GENERAL OF THE FEDERAL RADIO CORPORATION OF NIGERIA, LADAN SALIHU, WHO IS ALSO THE SPOKESPERSON OF THE LEAGUE OF NORTHERN DEMOCRATS SPOKE CRITICALLY ON THE CONDUCT OF THE 2023 GENERAL ELECTIONS.",
+      "image": "/storage/uploads/news/Qtmt3Pqfqegk01uTOWwm4yh8BeJsRnXffKQXqG7Z.jpg",
+      "link": "https://glowfmradio.com/news/the-former-director-general-of-the-federal-radio-corporation-of-nigeria-spoke-on-the-critically-on-the-conduct-of-the-2023-general-elections"
+    }
+  ],
+  "oaps": [
+    {
+      "name": "Ajakaye",
+      "employment": "full-time",
+      "department": "General",
+      "shows": "1 shows",
+      "link": "https://glowfmradio.com/oaps/ajakaye"
+    },
+    {
+      "name": "AK 47",
+      "employment": "full-time",
+      "department": "General",
+      "shows": "1 shows",
+      "link": "https://glowfmradio.com/oaps/ak-47"
+    },
+    {
+      "name": "Alade",
+      "employment": "full-time",
+      "department": "General",
+      "shows": "2 shows",
+      "link": "https://glowfmradio.com/oaps/alade"
+    },
+    {
+      "name": "Alaroye Ekiti",
+      "employment": "full-time",
+      "department": "General",
+      "shows": "1 shows",
+      "link": "https://glowfmradio.com/oaps/alaroye-ekiti"
+    },
+    {
+      "name": "Alh. Bature",
+      "employment": "full-time",
+      "department": "General",
+      "shows": "1 shows",
+      "link": "https://glowfmradio.com/oaps/alh-bature"
+    },
+    {
+      "name": "Awe",
+      "employment": "full-time",
+      "department": "General",
+      "shows": "1 shows",
+      "link": "https://glowfmradio.com/oaps/awe"
+    },
+    {
+      "name": "Ayobami",
+      "employment": "full-time",
+      "department": "General",
+      "shows": "1 shows",
+      "link": "https://glowfmradio.com/oaps/ayobami"
+    },
+    {
+      "name": "Blessing",
+      "employment": "full-time",
+      "department": "General",
+      "shows": "1 shows",
+      "link": "https://glowfmradio.com/oaps/blessing"
+    },
+    {
+      "name": "CAC Manner",
+      "employment": "full-time",
+      "department": "General",
+      "shows": "1 shows",
+      "link": "https://glowfmradio.com/oaps/cac-manner"
+    },
+    {
+      "name": "Canon Ilori",
+      "employment": "full-time",
+      "department": "General",
+      "shows": "1 shows",
+      "link": "https://glowfmradio.com/oaps/canon-ilori"
+    },
+    {
+      "name": "Clement Ade Oyepata",
+      "employment": "Show Hosting",
+      "department": "Programs",
+      "shows": "5 shows",
+      "link": "https://glowfmradio.com/oaps/clement-ade-oyepata"
+    },
+    {
+      "name": "Comfort Omolafe",
+      "employment": "News Caster",
+      "department": "News and Current Affairs",
+      "shows": "6 shows",
+      "link": "https://glowfmradio.com/oaps/comfort-omolafe"
+    }
+  ],
+  "team": [
+    {
+      "name": "AGUNBIADE AYOMIDE",
+      "role": "Web Developer",
+      "department": "ICT",
+      "email": "agunbiadeayomide880@gmail.com",
+      "phone": "",
+      "bio": "",
+      "link": "https://glowfmradio.com/team/profile/staff/agunbiade-ayomide"
+    },
+    {
+      "name": "ATANLOGUN MOTUNRAYO",
+      "role": "Marketing",
+      "department": "Management",
+      "email": "ATANLOGUNMOTUN@GMAIL.COM",
+      "phone": "",
+      "bio": "",
+      "link": "https://glowfmradio.com/team/profile/staff/atanlogun-motunrayo"
+    },
+    {
+      "name": "Ayodamope Ogunrinde",
+      "role": "Reporter",
+      "department": "News and Current Affairs",
+      "email": "ayodamope0@gmail.com",
+      "phone": "08103735357",
+      "bio": "Ayodamope is a skilled newscaster and reporter, passionate about his job.",
+      "link": "https://glowfmradio.com/team/profile/staff/ayodamope-ogunrinde"
+    },
+    {
+      "name": "Bose Owolabi",
+      "role": "Accountant",
+      "department": "Management",
+      "email": "owolabibose13@gmail.com",
+      "phone": "08101333307",
+      "bio": "Owolabi Bose serves as the Accountant, playing a vital role in ensuring accurate financial records and supporting effective financial planning and management within the organization. With a strong attention to detail and a commitment to accountability, she helps maintain financial transparency and operational efficiency. Her work supports informed decision-making and contributes to the overall stability and growth of the organization.",
+      "link": "https://glowfmradio.com/team/profile/staff/bose-owolabi"
+    },
+    {
+      "name": "Clement Ade Oyepata",
+      "role": "Show Hosting",
+      "department": "Programs",
+      "email": "divineconnections2016@gmail.com",
+      "phone": "07036316110",
+      "bio": "",
+      "link": "https://glowfmradio.com/team/profile/staff/clement-ade-oyepata"
+    },
+    {
+      "name": "Comfort Omolafe",
+      "role": "News Caster",
+      "department": "News and Current Affairs",
+      "email": "devirtuousdiva@gmail.com",
+      "phone": "+234 805 333 5045",
+      "bio": "Comfort Omolafe, popularly known as Queen Comfort Omolafe, is a multiple award-winning presenter, journalist, and broadcaster with nearly a decade of experience across radio, television, and live events. She is an on-air personality at Glow 99.1 FM Akure, where she hosts programmes including Your View, Let\u2019s Talk, Women\u2019s World, and Music While You Work. She also presents Chat Room  on Glow TV and anchors sponsored religious, health, and environmental programmes. Previously, she spent almost seven years at Breez 91.9 FM, where she hosted the popular current affairs show Reporter\u2019s Diary.",
+      "link": "https://glowfmradio.com/team/profile/staff/comfort-omolafe"
+    },
+    {
+      "name": "Desmond Ujiro",
+      "role": "Show Hosting",
+      "department": "Programs",
+      "email": "Desmondujiro@gmail.com",
+      "phone": "08060488022",
+      "bio": "",
+      "link": "https://glowfmradio.com/team/profile/staff/desmond-ujiro"
+    },
+    {
+      "name": "Glow FM",
+      "role": "Admin",
+      "department": "Management",
+      "email": "super@admin.com",
+      "phone": "",
+      "bio": "",
+      "link": "https://glowfmradio.com/team/profile/staff/glow-fm"
+    },
+    {
+      "name": "Japhet Samuel",
+      "role": "Web Developer",
+      "department": "ICT",
+      "email": "sdan21888@gmail.com",
+      "phone": "",
+      "bio": "",
+      "link": "https://glowfmradio.com/team/profile/staff/japhet-samuel"
+    },
+    {
+      "name": "mcolumiko",
+      "role": "Show Hosting",
+      "department": "Programs",
+      "email": "mcolumiko@gmail.com",
+      "phone": "07066333474",
+      "bio": "Mike Halim Obafemi, popularly known as MC Olumiko, is a dynamic and purpose-driven presenter and journalist with a sharp, confident voice for news delivery, in-depth interviews, and compelling real-time storytelling. He is deeply committed to truth, balance, and responsible journalism, using his platform to inform, educate, and engage audiences on issues that matter most. With a natural command of the microphone and a strong connection to listeners, he brings clarity, energy, and authenticity to every broadcast. His work reflects a passion for impact-driven media, ensuring that stories are not just told, but truly felt and understood.",
+      "link": "https://glowfmradio.com/team/profile/staff/mcolumiko"
+    },
+    {
+      "name": "Mojisola Oladele (arpa)",
+      "role": "Marketing",
+      "department": "Management",
+      "email": "tamilore39@gmail.com",
+      "phone": "+234 703 212 0921",
+      "bio": "Mojisola Oladele (arpa) is a seasoned broadcaster with over 28 years of professional experience in the media and communications industry. She built a distinguished career at the Ondo State Radiovision Corporation (OSRC), where she served diligently from 1997 to 2018, contributing significantly to broadcasting excellence before her voluntary retirement.\n\nHer academic background reflects a strong blend of creativity, communication, and strategic thinking. She holds a Higher National Diploma (HND) in Graphics Design from The Polytechnic, Ibadan, Oyo State, as well as a Master\u2019s degree in Communication and Language Arts from the University of Ibadan. She is also an Associate Member of the Advertising Regulatory Council of Nigeria (ARCON), underscoring her professional standing in advertising and media regulation.\n\nCurrently, Mojisola Oladele serves as the Senior Marketing Manager at Glow 99.1 FM, located in Ijapo Estate, Akure, where she brings her vast experience in broadcasting, branding, and strategic communication to drive the station\u2019s marketing initiatives and audience growth.",
+      "link": "https://glowfmradio.com/team/profile/staff/mojisola-oladele-arpa"
+    },
+    {
+      "name": "Nancy chidinma",
+      "role": "Show Hosting",
+      "department": "Programs",
+      "email": "Egoyibopresents@gmail.com",
+      "phone": "09032595936",
+      "bio": "",
+      "link": "https://glowfmradio.com/team/profile/staff/nancy-chidinma"
+    }
+  ],
+  "contact": {
+    "phone": "+234 703 022 3281",
+    "email": "info@glowfm.com",
+    "address": "1 Efon Alaye street Ijapo Estate, Akure, Akure, Nigeria.",
+    "office_hours": {
+      "Weekdays": "9AM - 6PM",
+      "Saturday": "10AM - 4PM",
+      "Sunday": "10AM - 4PM"
+    },
+    "note": "We broadcast 24/7, but office hours are as listed above."
+  }
+}
