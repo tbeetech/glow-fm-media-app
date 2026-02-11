@@ -228,7 +228,6 @@ const AppShell = (): JSX.Element => {
   const [activeSection, setActiveSection] = useState<Section>('Home');
   const [activeDay, setActiveDay] = useState<string>('Monday');
   const soundRef = useRef<Audio.Sound | null>(null);
-  const playPress = useRef(new Animated.Value(1)).current;
   const [expandedEpisodeId, setExpandedEpisodeId] = useState<string | null>(null);
   const playPulse = useRef(new Animated.Value(0)).current;
 
@@ -257,13 +256,6 @@ const AppShell = (): JSX.Element => {
     [],
   );
   
-  const playPressStyle = useMemo(
-    () => ({
-      transform: [{ scale: playPress.interpolate({ inputRange: [0.94, 1], outputRange: [0.94, 1] }) }],
-    }),
-    [playPress],
-  );
-
   const playPulseScale = playPulse.interpolate({ inputRange: [0, 1], outputRange: [1, 1.35] });
   const playPulseOpacity = playPulse.interpolate({ inputRange: [0, 1], outputRange: [0.4, 0] });
 
@@ -547,24 +539,6 @@ const AppShell = (): JSX.Element => {
     await togglePlayback();
   }, [togglePlayback]);
 
-  const handlePressIn = useCallback(() => {
-    Animated.spring(playPress, {
-      toValue: 0.94,
-      useNativeDriver: true,
-      speed: 20,
-      bounciness: 6,
-    }).start();
-  }, [playPress]);
-
-  const handlePressOut = useCallback(() => {
-    Animated.spring(playPress, {
-      toValue: 1,
-      useNativeDriver: true,
-      speed: 20,
-      bounciness: 6,
-    }).start();
-  }, [playPress]);
-
   const hero = glowData.home.hero;
   const currentShow = glowData.home.currentShow;
   const stats = glowData.home.stats;
@@ -845,11 +819,8 @@ const AppShell = (): JSX.Element => {
                       borderRadius: playButtonSize / 2,
                     },
                     isPlaying && styles.playButtonActive,
-                    playPressStyle,
                   ]}
                   onPress={handleLivePress}
-                  onPressIn={handlePressIn}
-                  onPressOut={handlePressOut}
                   disabled={isLoading}
                   activeOpacity={0.88}
                   hitSlop={{ top: 16, bottom: 16, left: 16, right: 16 }}
@@ -861,25 +832,25 @@ const AppShell = (): JSX.Element => {
                   {isLoading ? (
                     <ActivityIndicator size="large" color={THEME.colors.highlight} />
                   ) : (
-                    <View style={styles.minPlayShell}>
+                    <>
                       {isPlaying && (
                         <Animated.View
                           pointerEvents="none"
                           style={[
-                            styles.minPlayPulse,
+                            styles.playButtonGlow,
                             { opacity: playPulseOpacity, transform: [{ scale: playPulseScale }] },
                           ]}
                         />
                       )}
-                      <View style={[styles.waveIcon, isPlaying && styles.waveIconActive]}>
+                      <View style={styles.playButtonCore}>
                         <Ionicons
                           name={isPlaying ? 'pause' : 'play'}
-                          size={28}
-                          color={THEME.colors.accentDeep}
-                          style={!isPlaying ? styles.vinylPlayOffset : undefined}
+                          size={34}
+                          color={THEME.colors.highlight}
+                          style={!isPlaying ? styles.playIconOffset : undefined}
                         />
                       </View>
-                    </View>
+                    </>
                   )}
                 </TouchableOpacity>
                 <Text style={styles.controlHint}>
@@ -1882,50 +1853,43 @@ const styles = StyleSheet.create({
     width: 120,
     height: 120,
     borderRadius: 70,
-    backgroundColor: 'rgba(7, 18, 38, 0.58)',
+    backgroundColor: 'rgba(6, 20, 40, 0.78)',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: 'rgba(166, 242, 255, 0.5)',
+    borderColor: 'rgba(126, 224, 255, 0.56)',
     shadowColor: THEME.colors.glow,
-    shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.45,
-    shadowRadius: 14,
-    overflow: 'hidden',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.42,
+    shadowRadius: 16,
   },
   playButtonActive: {
-    backgroundColor: 'rgba(13, 34, 66, 0.65)',
+    backgroundColor: 'rgba(10, 30, 58, 0.9)',
     shadowColor: THEME.colors.highlight,
-    borderColor: 'rgba(30, 215, 96, 0.75)',
+    shadowOpacity: 0.62,
+    shadowRadius: 24,
+    borderColor: 'rgba(166, 242, 255, 0.95)',
   },
-  minPlayShell: {
+  playButtonGlow: {
+    position: 'absolute',
     width: '100%',
     height: '100%',
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: 'rgba(166, 242, 255, 0.68)',
+    backgroundColor: 'rgba(105, 214, 255, 0.15)',
+  },
+  playButtonCore: {
+    width: '78%',
+    height: '78%',
+    borderRadius: 999,
+    backgroundColor: 'rgba(4, 14, 30, 0.75)',
+    borderWidth: 1,
+    borderColor: 'rgba(166, 242, 255, 0.28)',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  minPlayPulse: {
-    position: 'absolute',
-    width: '90%',
-    height: '90%',
-    borderRadius: 999,
-    backgroundColor: THEME.colors.accent,
-  },
-  waveIcon: {
-    position: 'absolute',
-    right: 10,
-    bottom: 10,
-    width: 36,
-    height: 36,
-    borderRadius: 999,
-    backgroundColor: 'rgba(10, 27, 54, 0.78)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  waveIconActive: {
-    backgroundColor: 'rgba(10, 27, 54, 0.9)',
-  },
-  vinylPlayOffset: {
+  playIconOffset: {
     marginLeft: 2,
   },
   controlHint: {
