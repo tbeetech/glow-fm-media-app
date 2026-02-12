@@ -19,7 +19,7 @@ import {
 } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Audio, AVPlaybackStatus } from 'expo-av';
+import { Audio as ExpoAudio, AVPlaybackStatus } from 'expo-av';
 import { Ionicons } from '@expo/vector-icons';
 import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useGlowData } from './data/useGlowData';
@@ -35,20 +35,18 @@ type Station = {
   tags: string[];
 };
 
+const ZENO_STREAM_URL = 'https://stream-176.zeno.fm/mwam2yirv1pvv';
+type WebAudioListener = { type: string; handler: EventListener };
+
 const RADIO_STATIONS: Station[] = [
   {
     id: 'glow-991',
     name: 'GLOW 99.1 FM',
-    url: 'https://stream-176.zeno.fm/mwam2yirv1pvv',
+    url: ZENO_STREAM_URL,
     vibe: 'Live broadcast',
     description: 'Your Station, Your Voice â€” Akure, 24/7.',
     tags: ['99.1 FM', 'Akure', 'Live'],
   },
-];
-
-const STREAM_FALLBACK_URLS = [
-  'https://stream.zeno.fm/mwam2yirv1pvv',
-  'https://stream-176.zeno.fm/mwam2yirv1pvv',
 ];
 
 const SECTIONS = [
@@ -73,19 +71,19 @@ type AppErrorBoundaryState = {
 
 const THEME = {
   colors: {
-    background: '#010915',
-    surface: 'rgba(8, 22, 46, 0.68)',
-    surfaceSoft: 'rgba(12, 30, 58, 0.54)',
-    border: 'rgba(122, 168, 255, 0.24)',
-    textPrimary: '#f5f8ff',
-    textSecondary: '#c1d5f2',
-    textMuted: '#8aa2c6',
-    accent: '#69d6ff',
-    accentDeep: '#2b7cff',
-    glow: '#a6f2ff',
-    highlight: '#e2fbff',
-    glass: 'rgba(6, 18, 36, 0.55)',
-    glassStrong: 'rgba(12, 32, 62, 0.76)',
+    background: '#16071f',
+    surface: 'rgba(42, 14, 52, 0.7)',
+    surfaceSoft: 'rgba(62, 21, 70, 0.56)',
+    border: 'rgba(255, 159, 92, 0.28)',
+    textPrimary: '#fff5ef',
+    textSecondary: '#efd6fb',
+    textMuted: '#c59ad8',
+    accent: '#ff923e',
+    accentDeep: '#8a3fd8',
+    glow: '#ffc379',
+    highlight: '#fff1e6',
+    glass: 'rgba(31, 10, 42, 0.58)',
+    glassStrong: 'rgba(51, 16, 64, 0.8)',
   },
   radius: {
     large: 22,
@@ -98,28 +96,84 @@ const THEME = {
   },
 };
 
-const BACKDROP_THEMES = {
+const LIGHT_THEME: typeof THEME = {
+  ...THEME,
+  colors: {
+    background: '#fff8f2',
+    surface: 'rgba(255, 255, 255, 0.9)',
+    surfaceSoft: 'rgba(255, 238, 226, 0.88)',
+    border: 'rgba(125, 60, 184, 0.2)',
+    textPrimary: '#2d123f',
+    textSecondary: '#5a3671',
+    textMuted: '#8966a1',
+    accent: '#ef7d2f',
+    accentDeep: '#7b35c9',
+    glow: '#a245d6',
+    highlight: '#ffffff',
+    glass: 'rgba(255, 255, 255, 0.76)',
+    glassStrong: 'rgba(255, 255, 255, 0.92)',
+  },
+};
+
+type BackdropThemeConfig = {
+  label: string;
+  gradient: [string, string, string];
+  orbPrimary: string;
+  orbSecondary: string;
+  ringStrong: string;
+  ringMid: string;
+  ringSoft: string;
+  pulse: string;
+};
+
+type BackdropThemeKey = 'atlantic' | 'aurora';
+type BackdropThemeMap = Record<BackdropThemeKey, BackdropThemeConfig>;
+
+const BACKDROP_THEMES: BackdropThemeMap = {
   atlantic: {
-    label: 'Atlantic Sink',
-    gradient: ['#010b16', '#042c4c', '#04162d'],
-    orbPrimary: 'rgba(86, 196, 255, 0.24)',
-    orbSecondary: 'rgba(0, 188, 206, 0.2)',
-    ringStrong: 'rgba(105, 214, 255, 0.55)',
-    ringMid: 'rgba(72, 182, 255, 0.48)',
-    ringSoft: 'rgba(28, 118, 210, 0.34)',
-    pulse: 'rgba(166, 242, 255, 0.78)',
+    label: 'Sunset Pulse',
+    gradient: ['#1a0623', '#3d0f3f', '#6c2a24'],
+    orbPrimary: 'rgba(255, 134, 62, 0.28)',
+    orbSecondary: 'rgba(178, 74, 255, 0.22)',
+    ringStrong: 'rgba(255, 158, 84, 0.56)',
+    ringMid: 'rgba(204, 110, 255, 0.45)',
+    ringSoft: 'rgba(137, 69, 214, 0.34)',
+    pulse: 'rgba(255, 199, 132, 0.82)',
   },
   aurora: {
-    label: 'Neon Drift',
-    gradient: ['#05051a', '#0a1d33', '#07162a'],
-    orbPrimary: 'rgba(147, 112, 255, 0.24)',
-    orbSecondary: 'rgba(0, 210, 190, 0.18)',
-    ringStrong: 'rgba(126, 224, 255, 0.52)',
-    ringMid: 'rgba(104, 184, 255, 0.44)',
-    ringSoft: 'rgba(255, 156, 255, 0.26)',
-    pulse: 'rgba(126, 224, 255, 0.85)',
+    label: 'Violet Ember',
+    gradient: ['#14031f', '#2d0b45', '#58201d'],
+    orbPrimary: 'rgba(176, 94, 255, 0.28)',
+    orbSecondary: 'rgba(255, 146, 72, 0.2)',
+    ringStrong: 'rgba(190, 108, 255, 0.52)',
+    ringMid: 'rgba(255, 153, 88, 0.44)',
+    ringSoft: 'rgba(255, 210, 138, 0.28)',
+    pulse: 'rgba(255, 181, 106, 0.84)',
   },
-} as const;
+};
+
+const LIGHT_BACKDROP_THEMES: BackdropThemeMap = {
+  atlantic: {
+    label: 'Sunset Pulse',
+    gradient: ['#fff8f1', '#ffe9d5', '#fff4e8'],
+    orbPrimary: 'rgba(255, 140, 64, 0.2)',
+    orbSecondary: 'rgba(180, 92, 255, 0.16)',
+    ringStrong: 'rgba(233, 122, 52, 0.34)',
+    ringMid: 'rgba(171, 90, 246, 0.32)',
+    ringSoft: 'rgba(214, 148, 255, 0.26)',
+    pulse: 'rgba(241, 147, 71, 0.34)',
+  },
+  aurora: {
+    label: 'Violet Ember',
+    gradient: ['#fff7fb', '#f3e9ff', '#fff5ea'],
+    orbPrimary: 'rgba(164, 96, 255, 0.17)',
+    orbSecondary: 'rgba(255, 154, 84, 0.15)',
+    ringStrong: 'rgba(151, 77, 235, 0.34)',
+    ringMid: 'rgba(239, 134, 66, 0.31)',
+    ringSoft: 'rgba(255, 189, 133, 0.25)',
+    pulse: 'rgba(225, 118, 48, 0.34)',
+  },
+};
 
 const resolveUrl = (url: string) => {
   if (!url) return '';
@@ -130,6 +184,31 @@ const resolveUrl = (url: string) => {
 const imageSource = (path?: string) => {
   const resolved = resolveUrl(path ?? '');
   return resolved ? { uri: resolved } : LOGO;
+};
+
+const STAFF_IMAGE_BY_SLUG: Record<string, string> = {
+  'bose-owolabi': '/storage/uploads/staff/photos/Wv032m30hDZcDun8079SWehgfuJDFNJllT1wUYbx.jpg',
+  'comfort-omolafe': '/storage/uploads/users/avatars/bzeeEBC2Wtk7D7YKvpArvEv8ZdQZk8dgRllH3VaX.jpg',
+  mcolumiko: '/storage/uploads/oaps/photos/3II9v4HF1RG5RBZErEpxUJemmXvl23vsTKUSFz88.jpg',
+};
+
+const slugFromUrl = (url?: string) => {
+  if (!url) return '';
+  const clean = url.split('?')[0].replace(/\/+$/, '');
+  const parts = clean.split('/');
+  return parts[parts.length - 1]?.toLowerCase() ?? '';
+};
+
+const avatarSource = (name?: string) => ({
+  uri: `https://ui-avatars.com/api/?name=${encodeURIComponent(name || 'Glow FM')}&background=4b1c6d&color=fff4eb&size=400`,
+});
+
+const profileImageSource = (item: { image?: string; link?: string; name?: string }) => {
+  if (item.image) return imageSource(item.image);
+  const slug = slugFromUrl(item.link);
+  const mapped = slug ? STAFF_IMAGE_BY_SLUG[slug] : '';
+  if (mapped) return imageSource(mapped);
+  return avatarSource(item.name);
 };
 
 const getEpisodeEmbedUrl = (url?: string) => {
@@ -149,10 +228,7 @@ const getEpisodeEmbedUrl = (url?: string) => {
   return '';
 };
 
-const getStationStreamUrls = (primaryUrl: string) => {
-  const urls = [primaryUrl, ...STREAM_FALLBACK_URLS].filter(Boolean);
-  return [...new Set(urls)];
-};
+const getStationStreamUrls = () => [ZENO_STREAM_URL];
 
 const formatPlaybackError = (error: unknown) => {
   const message = error instanceof Error ? error.message : String(error);
@@ -193,9 +269,9 @@ class AppErrorBoundary extends React.Component<React.PropsWithChildren, AppError
     }
 
     return (
-      <SafeAreaView style={styles.errorShell}>
-        <Text style={styles.errorTitle}>App failed to render</Text>
-        <Text style={styles.errorBody}>{this.state.message}</Text>
+      <SafeAreaView style={errorStyles.errorShell}>
+        <Text style={errorStyles.errorTitle}>App failed to render</Text>
+        <Text style={errorStyles.errorBody}>{this.state.message}</Text>
       </SafeAreaView>
     );
   }
@@ -203,6 +279,13 @@ class AppErrorBoundary extends React.Component<React.PropsWithChildren, AppError
 
 const AppShell = (): JSX.Element => {
   const { data: glowData, isSyncing } = useGlowData();
+  const [isLightMode, setIsLightMode] = useState(false);
+  const theme = useMemo(() => (isLightMode ? LIGHT_THEME : THEME), [isLightMode]);
+  const styles = useMemo(() => createStyles(theme), [theme]);
+  const backdropThemes = useMemo(
+    () => (isLightMode ? LIGHT_BACKDROP_THEMES : BACKDROP_THEMES),
+    [isLightMode],
+  );
   const insets = useSafeAreaInsets();
   const rawInsetTop = Number.isFinite(insets.top) ? insets.top : 0;
   const safeInsetTop = Math.max(0, Math.min(48, rawInsetTop));
@@ -212,7 +295,7 @@ const AppShell = (): JSX.Element => {
   const heroTitleSize = isCompact ? 26 : isWide ? 34 : 30;
   const sectionTitleSize = isCompact ? 18 : isWide ? 22 : 20;
   const playButtonSize = isCompact ? 96 : isWide ? 140 : 120;
-  const [backdropTheme, setBackdropTheme] = useState<keyof typeof BACKDROP_THEMES>('atlantic');
+  const [backdropTheme, setBackdropTheme] = useState<BackdropThemeKey>('atlantic');
 
   const waveOne = useRef(new Animated.Value(0)).current;
   const waveTwo = useRef(new Animated.Value(0)).current;
@@ -227,13 +310,23 @@ const AppShell = (): JSX.Element => {
   const [playbackError, setPlaybackError] = useState('');
   const [activeSection, setActiveSection] = useState<Section>('Home');
   const [activeDay, setActiveDay] = useState<string>('Monday');
-  const soundRef = useRef<Audio.Sound | null>(null);
+  const soundRef = useRef<ExpoAudio.Sound | null>(null);
+  const webAudioRef = useRef<HTMLAudioElement | null>(null);
+  const webAudioListeners = useRef<WebAudioListener[]>([]);
+  const playStartTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isStartingPlaybackRef = useRef(false);
+  const isPlayingRef = useRef(false);
+  const playPop = useRef(new Animated.Value(1)).current;
   const [expandedEpisodeId, setExpandedEpisodeId] = useState<string | null>(null);
   const playPulse = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     LogBox.ignoreLogs(['[expo-av]: Expo AV has been deprecated']);
   }, []);
+
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
 
   const easeInOutSin = useMemo(
     () =>
@@ -255,9 +348,48 @@ const AppShell = (): JSX.Element => {
     () => (typeof Easing?.linear === 'function' ? Easing.linear : (t: number) => t),
     [],
   );
+  const canUseNativeDriver = Platform.OS !== 'web';
   
   const playPulseScale = playPulse.interpolate({ inputRange: [0, 1], outputRange: [1, 1.35] });
   const playPulseOpacity = playPulse.interpolate({ inputRange: [0, 1], outputRange: [0.4, 0] });
+  const playBeamOneScale = playPulse.interpolate({ inputRange: [0, 1], outputRange: [1, 1.26] });
+  const playBeamTwoScale = playPulse.interpolate({ inputRange: [0, 1], outputRange: [1, 1.52] });
+  const playBeamThreeScale = playPulse.interpolate({ inputRange: [0, 1], outputRange: [1, 1.78] });
+  const playBeamOneOpacity = playPulse.interpolate({ inputRange: [0, 1], outputRange: [0.42, 0] });
+  const playBeamTwoOpacity = playPulse.interpolate({ inputRange: [0, 1], outputRange: [0.28, 0] });
+  const playBeamThreeOpacity = playPulse.interpolate({ inputRange: [0, 1], outputRange: [0.2, 0] });
+  const playPopStyle = useMemo(
+    () => ({
+      transform: [{ scale: playPop }],
+    }),
+    [playPop],
+  );
+
+  const clearPlayStartTimeout = useCallback(() => {
+    if (!playStartTimeoutRef.current) return;
+    clearTimeout(playStartTimeoutRef.current);
+    playStartTimeoutRef.current = null;
+  }, []);
+
+  const endPlaybackStartup = useCallback(() => {
+    isStartingPlaybackRef.current = false;
+    clearPlayStartTimeout();
+    setIsLoading(false);
+  }, [clearPlayStartTimeout]);
+
+  const beginPlaybackStartup = useCallback(() => {
+    isStartingPlaybackRef.current = true;
+    clearPlayStartTimeout();
+    setIsLoading(true);
+    playStartTimeoutRef.current = setTimeout(() => {
+      if (!isStartingPlaybackRef.current) return;
+      isStartingPlaybackRef.current = false;
+      setIsLoading(false);
+      if (!isPlayingRef.current) {
+        setPlaybackError('Stream took too long to start. Tap play again.');
+      }
+    }, 6500);
+  }, [clearPlayStartTimeout]);
 
   const openExternal = useCallback((url?: string) => {
     if (!url) return;
@@ -270,7 +402,7 @@ const AppShell = (): JSX.Element => {
     (entry?.slug ? `https://glowfmradio.com/news/${entry.slug}` : '');
 
   const scheduleDays = useMemo(() => Object.keys(glowData.schedule), [glowData.schedule]);
-  const wallpaper = BACKDROP_THEMES[backdropTheme];
+  const wallpaper = backdropThemes[backdropTheme];
   const sweepWidth = useMemo(() => Math.min(width * 1.4, 960), [width]);
 
   useEffect(() => {
@@ -287,19 +419,61 @@ const AppShell = (): JSX.Element => {
         console.error('Playback error:', statusError);
         setPlaybackError(formatPlaybackError(statusError));
       }
+      isStartingPlaybackRef.current = false;
       setIsPlaying(false);
       setIsLoading(false);
       return;
     }
     setPlaybackError('');
     setIsPlaying(status.isPlaying);
-    setIsLoading(status.isBuffering);
+    if (status.isPlaying) {
+      endPlaybackStartup();
+      return;
+    }
+    setIsLoading(isStartingPlaybackRef.current ? status.isBuffering : false);
+  }, [endPlaybackStartup]);
+
+  const ensureWebAudio = useCallback(() => {
+    if (Platform.OS !== 'web') return null;
+    if (webAudioRef.current) return webAudioRef.current;
+    if (typeof window === 'undefined' || typeof window.Audio !== 'function') return null;
+
+    const audio = new window.Audio(ZENO_STREAM_URL);
+    audio.crossOrigin = 'anonymous';
+    audio.preload = 'none';
+
+    const handlePlaying = () => {
+      setIsPlaying(true);
+      setIsLoading(false);
+      setPlaybackError('');
+    };
+    const handlePause = () => setIsPlaying(false);
+    const handleWaiting = () => setIsLoading(true);
+    const handleStalled = () => setIsLoading(true);
+    const handleError = () => {
+      setIsPlaying(false);
+      setIsLoading(false);
+      setPlaybackError('Unable to start the live stream right now. Please try again.');
+    };
+
+    const listeners: WebAudioListener[] = [
+      { type: 'playing', handler: handlePlaying },
+      { type: 'pause', handler: handlePause },
+      { type: 'waiting', handler: handleWaiting },
+      { type: 'stalled', handler: handleStalled },
+      { type: 'error', handler: handleError },
+    ];
+
+    listeners.forEach(({ type, handler }) => audio.addEventListener(type, handler));
+    webAudioListeners.current = listeners;
+    webAudioRef.current = audio;
+    return audio;
   }, []);
 
   useEffect(() => {
     const configureAudio = async () => {
       try {
-        await Audio.setAudioModeAsync({
+        await ExpoAudio.setAudioModeAsync({
           allowsRecordingIOS: false,
           staysActiveInBackground: true,
           playsInSilentModeIOS: true,
@@ -320,8 +494,23 @@ const AppShell = (): JSX.Element => {
         );
         soundRef.current = null;
       }
+      clearPlayStartTimeout();
+      if (webAudioRef.current) {
+        webAudioListeners.current.forEach(({ type, handler }) =>
+          webAudioRef.current?.removeEventListener(type, handler),
+        );
+        webAudioListeners.current = [];
+        try {
+          webAudioRef.current.pause();
+          webAudioRef.current.src = '';
+          webAudioRef.current.load?.();
+        } catch {
+          // ignore
+        }
+        webAudioRef.current = null;
+      }
     };
-  }, []);
+  }, [clearPlayStartTimeout]);
 
   useEffect(() => {
     const makeWave = (anim: Animated.Value, duration: number, delay: number) =>
@@ -332,13 +521,13 @@ const AppShell = (): JSX.Element => {
             toValue: 1,
             duration,
             easing: easeInOutSin,
-            useNativeDriver: true,
+            useNativeDriver: canUseNativeDriver,
           }),
           Animated.timing(anim, {
             toValue: 0,
             duration,
             easing: easeInOutSin,
-            useNativeDriver: true,
+            useNativeDriver: canUseNativeDriver,
           }),
         ]),
       );
@@ -357,13 +546,13 @@ const AppShell = (): JSX.Element => {
           toValue: 1,
           duration: 12000,
           easing: easeInOutQuad,
-          useNativeDriver: true,
+          useNativeDriver: canUseNativeDriver,
         }),
         Animated.timing(drift, {
           toValue: 0,
           duration: 12000,
           easing: easeInOutQuad,
-          useNativeDriver: true,
+          useNativeDriver: canUseNativeDriver,
         }),
       ]),
     );
@@ -374,7 +563,7 @@ const AppShell = (): JSX.Element => {
       waveAnimations.forEach((animation) => animation.stop());
       driftAnimation.stop();
     };
-  }, [drift, waveOne, waveTwo, waveThree]);
+  }, [canUseNativeDriver, drift, easeInOutQuad, easeInOutSin, waveOne, waveTwo, waveThree]);
 
   useEffect(() => {
     const makeSweep = (anim: Animated.Value, delay: number, duration: number) =>
@@ -385,12 +574,12 @@ const AppShell = (): JSX.Element => {
             toValue: 1,
             duration,
             easing: linearEase,
-            useNativeDriver: true,
+            useNativeDriver: canUseNativeDriver,
           }),
           Animated.timing(anim, {
             toValue: 0,
             duration: 0,
-            useNativeDriver: true,
+            useNativeDriver: canUseNativeDriver,
           }),
         ]),
       );
@@ -401,7 +590,7 @@ const AppShell = (): JSX.Element => {
     return () => {
       sweepAnimations.forEach((animation) => animation.stop());
     };
-  }, [sweepForward, sweepReverse]);
+  }, [canUseNativeDriver, linearEase, sweepForward, sweepReverse]);
 
   useEffect(() => {
     let pulseLoop: Animated.CompositeAnimation | null = null;
@@ -413,12 +602,12 @@ const AppShell = (): JSX.Element => {
             toValue: 1,
             duration: 900,
             easing: linearEase,
-            useNativeDriver: true,
+            useNativeDriver: canUseNativeDriver,
           }),
           Animated.timing(playPulse, {
             toValue: 0,
             duration: 0,
-            useNativeDriver: true,
+            useNativeDriver: canUseNativeDriver,
           }),
         ]),
       );
@@ -431,24 +620,61 @@ const AppShell = (): JSX.Element => {
     return () => {
       if (pulseLoop) pulseLoop.stop();
     };
-  }, [isLoading, isPlaying, linearEase, playPulse]);
+  }, [canUseNativeDriver, isLoading, isPlaying, linearEase, playPulse]);
 
   const playStation = useCallback(
     async (station: Station) => {
       if (actionLock.current) return;
       actionLock.current = true;
       try {
-        setIsLoading(true);
+        beginPlaybackStartup();
         setPlaybackError('');
+
+        if (Platform.OS === 'web') {
+          const audio = ensureWebAudio();
+          if (!audio) {
+            endPlaybackStartup();
+            setPlaybackError('Unable to start the live stream right now. Please try again.');
+            return;
+          }
+          audio.src = ZENO_STREAM_URL;
+          try {
+            const playResult = audio.play();
+            if (playResult && typeof playResult.catch === 'function') {
+              await playResult.catch((err: unknown) => {
+                throw err;
+              });
+            }
+            endPlaybackStartup();
+            setIsPlaying(true);
+            setPlaybackError('');
+            return;
+          } catch (err) {
+            setPlaybackError(formatPlaybackError(err));
+            endPlaybackStartup();
+            setIsPlaying(false);
+            return;
+          }
+        }
 
         if (station.id === selectedStation.id && soundRef.current) {
           try {
             const status = await soundRef.current.getStatusAsync();
             if (status.isLoaded && !status.isPlaying) {
               await soundRef.current.playAsync();
+              const latestStatus = await soundRef.current.getStatusAsync();
+              if (latestStatus.isLoaded && latestStatus.isPlaying) {
+                endPlaybackStartup();
+                setIsPlaying(true);
+              }
+              return;
             }
-            setIsLoading(false);
-            return;
+            if (status.isLoaded && status.isPlaying) {
+              endPlaybackStartup();
+              setIsPlaying(true);
+              setIsLoading(false);
+              return;
+            }
           } catch (resumeError) {
             console.warn('Resume playback failed; reinitializing stream', resumeError);
             await soundRef.current.unloadAsync().catch(() => null);
@@ -464,22 +690,35 @@ const AppShell = (): JSX.Element => {
         }
 
         let lastError: unknown = null;
-        const candidateUrls = getStationStreamUrls(station.url);
+        const candidateUrls = getStationStreamUrls();
         for (const streamUrl of candidateUrls) {
           try {
-            const { sound, status } = await Audio.Sound.createAsync(
+            const initialStatus = {
+              shouldPlay: true,
+              progressUpdateIntervalMillis: 250,
+            };
+            const { sound, status } = await ExpoAudio.Sound.createAsync(
               { uri: streamUrl },
-              { shouldPlay: true },
+              initialStatus,
               handleStatusUpdate,
+              false,
             );
             soundRef.current = sound;
 
             if (status.isLoaded) {
-              setIsPlaying(status.isPlaying);
-              setIsLoading(status.isBuffering);
+              await sound.setProgressUpdateIntervalAsync(250).catch(() => null);
+              const latestStatus = await sound.getStatusAsync().catch(() => status);
+              if (latestStatus.isLoaded) {
+                setIsPlaying(latestStatus.isPlaying);
+                if (latestStatus.isPlaying) {
+                  endPlaybackStartup();
+                }
+              } else {
+                endPlaybackStartup();
+              }
               setPlaybackError('');
             } else {
-              setIsLoading(false);
+              endPlaybackStartup();
             }
             return;
           } catch (attemptError) {
@@ -490,54 +729,125 @@ const AppShell = (): JSX.Element => {
       } catch (error) {
         console.error('Error playing station:', error);
         setPlaybackError(formatPlaybackError(error));
-        setIsLoading(false);
+        endPlaybackStartup();
         setIsPlaying(false);
       } finally {
         actionLock.current = false;
       }
     },
-    [handleStatusUpdate, selectedStation.id],
+    [beginPlaybackStartup, endPlaybackStartup, ensureWebAudio, handleStatusUpdate, selectedStation.id],
   );
 
   const togglePlayback = useCallback(async () => {
     if (actionLock.current) {
       return;
     }
+    if (Platform.OS === 'web') {
+      actionLock.current = true;
+      try {
+        const audio = ensureWebAudio();
+        if (!audio) {
+          setPlaybackError('Unable to start the live stream right now. Please try again.');
+          return;
+        }
+        if (audio.paused) {
+          beginPlaybackStartup();
+          const playResult = audio.play();
+          if (playResult && typeof playResult.catch === 'function') {
+            await playResult.catch((err: unknown) => {
+              throw err;
+            });
+          }
+          endPlaybackStartup();
+          setIsPlaying(true);
+          setPlaybackError('');
+        } else {
+          audio.pause();
+          endPlaybackStartup();
+          setIsPlaying(false);
+        }
+        return;
+      } catch (error) {
+        console.error('Error toggling playback:', error);
+        setPlaybackError(formatPlaybackError(error));
+        endPlaybackStartup();
+        setIsPlaying(false);
+      } finally {
+        actionLock.current = false;
+      }
+      return;
+    }
+
+    if (!soundRef.current) {
+      await playStation(selectedStation);
+      return;
+    }
 
     actionLock.current = true;
     try {
-      if (!soundRef.current) {
-        await playStation(selectedStation);
-        return;
-      }
-
       const status = await soundRef.current.getStatusAsync();
       if (!status.isLoaded) {
+        actionLock.current = false;
         await playStation(selectedStation);
         return;
       }
 
       if (status.isPlaying) {
         await soundRef.current.pauseAsync();
-        setIsLoading(false);
+        endPlaybackStartup();
         setIsPlaying(false);
       } else {
-        setIsLoading(true);
+        beginPlaybackStartup();
         await soundRef.current.playAsync();
+        const latestStatus = await soundRef.current.getStatusAsync();
+        if (latestStatus.isLoaded && latestStatus.isPlaying) {
+          endPlaybackStartup();
+          setIsPlaying(true);
+        }
       }
     } catch (error) {
       console.error('Error toggling playback:', error);
       setPlaybackError(formatPlaybackError(error));
-      setIsLoading(false);
+      endPlaybackStartup();
       setIsPlaying(false);
     } finally {
       actionLock.current = false;
     }
-  }, [isLoading, playStation, selectedStation]);
+  }, [beginPlaybackStartup, endPlaybackStartup, ensureWebAudio, playStation, selectedStation]);
 
   const handleLivePress = useCallback(async () => {
     await togglePlayback();
   }, [togglePlayback]);
+
+  const triggerPlayPop = useCallback(() => {
+    playPop.stopAnimation();
+    playPop.setValue(1);
+    Animated.sequence([
+      Animated.timing(playPop, {
+        toValue: 0.9,
+        duration: 70,
+        easing: easeInOutQuad,
+        useNativeDriver: canUseNativeDriver,
+      }),
+      Animated.spring(playPop, {
+        toValue: 1.08,
+        useNativeDriver: canUseNativeDriver,
+        speed: 22,
+        bounciness: 7,
+      }),
+      Animated.spring(playPop, {
+        toValue: 1,
+        useNativeDriver: canUseNativeDriver,
+        speed: 18,
+        bounciness: 6,
+      }),
+    ]).start();
+  }, [canUseNativeDriver, easeInOutQuad, playPop]);
+
+  const handleLivePressWithPop = useCallback(async () => {
+    triggerPlayPop();
+    await handleLivePress();
+  }, [handleLivePress, triggerPlayPop]);
 
   const hero = glowData.home.hero;
   const currentShow = glowData.home.currentShow;
@@ -630,11 +940,16 @@ const AppShell = (): JSX.Element => {
 
   return (
     <SafeAreaView style={styles.container} edges={['top', 'left', 'right']}>
-      <StatusBar barStyle="light-content" backgroundColor={THEME.colors.background} />
+      <StatusBar
+        barStyle={isLightMode ? 'dark-content' : 'light-content'}
+        backgroundColor={theme.colors.background}
+      />
 
       <View
-        pointerEvents="none"
-        style={[styles.atlanticBackdrop, { height: 360 + safeInsetTop, top: -safeInsetTop }]}
+        style={[
+          styles.atlanticBackdrop,
+          { height: 360 + safeInsetTop, top: -safeInsetTop, pointerEvents: 'none' },
+        ]}
       >
         <LinearGradient
           colors={wallpaper.gradient}
@@ -703,25 +1018,39 @@ const AppShell = (): JSX.Element => {
       >
         <View style={styles.content}>
           <View style={styles.header}>
-            <View style={styles.logoMark}>
-              <Image source={LOGO} style={styles.logoMarkImage} resizeMode="contain" />
+            <View style={styles.headerLeft}>
+              <View style={styles.logoMark}>
+                <Image source={LOGO} style={styles.logoMarkImage} resizeMode="contain" />
+              </View>
+              <View style={styles.headerCopy}>
+                <Text style={[styles.title, isWide && styles.titleWide]}>Glow 99.1 FM</Text>
+                <Text style={styles.subtitle}>City heartbeat, live.</Text>
+              </View>
             </View>
-            <View style={styles.headerCopy}>
-              <Text style={[styles.title, isWide && styles.titleWide]}>Glow 99.1 FM</Text>
-              <Text style={styles.subtitle}>City heartbeat, live.</Text>
-            </View>
+            <TouchableOpacity
+              style={styles.modeSwitch}
+              onPress={() => setIsLightMode((current) => !current)}
+              activeOpacity={0.85}
+              accessibilityRole="switch"
+              accessibilityLabel="Toggle light mode"
+              accessibilityState={{ checked: isLightMode }}
+            >
+              <View style={[styles.modeSwitchTrack, isLightMode && styles.modeSwitchTrackActive]}>
+                <View style={[styles.modeSwitchDot, isLightMode && styles.modeSwitchDotActive]} />
+              </View>
+            </TouchableOpacity>
           </View>
           <View style={styles.syncRow}>
             <View style={[styles.syncDot, isSyncing && styles.syncDotActive]} />
             <Text style={styles.syncText}>{isSyncing ? 'Syncing live' : 'Live sync ready'}</Text>
           </View>
           <View style={styles.themeRow}>
-            {Object.entries(BACKDROP_THEMES).map(([key, entry]) => {
+            {Object.entries(backdropThemes).map(([key, entry]) => {
               const active = backdropTheme === key;
               return (
                 <TouchableOpacity
                   key={key}
-                  onPress={() => setBackdropTheme(key as keyof typeof BACKDROP_THEMES)}
+                  onPress={() => setBackdropTheme(key as BackdropThemeKey)}
                   hitSlop={8}
                   activeOpacity={0.85}
                   style={[styles.themeChip, active && styles.themeChipActive]}
@@ -777,9 +1106,9 @@ const AppShell = (): JSX.Element => {
                   <TouchableOpacity
                     style={styles.primaryButton}
                     onPress={handleLivePress}
-                    disabled={isLoading}
                     accessibilityRole="button"
                     accessibilityLabel="Listen live now"
+                    accessibilityState={{ busy: isLoading }}
                   >
                     <Text style={styles.primaryButtonText}>
                       {isPlaying ? 'Pause Live' : hero.primary_cta_text}
@@ -819,9 +1148,9 @@ const AppShell = (): JSX.Element => {
                       borderRadius: playButtonSize / 2,
                     },
                     isPlaying && styles.playButtonActive,
+                    playPopStyle,
                   ]}
-                  onPress={handleLivePress}
-                  disabled={isLoading}
+                  onPress={handleLivePressWithPop}
                   activeOpacity={0.88}
                   hitSlop={{ top: 16, bottom: 16, left: 16, right: 16 }}
                   accessibilityRole="button"
@@ -830,23 +1159,60 @@ const AppShell = (): JSX.Element => {
                   accessibilityState={{ busy: isLoading }}
                 >
                   {isLoading ? (
-                    <ActivityIndicator size="large" color={THEME.colors.highlight} />
+                    <ActivityIndicator size="large" color={theme.colors.highlight} />
                   ) : (
                     <>
                       {isPlaying && (
-                        <Animated.View
-                          pointerEvents="none"
-                          style={[
-                            styles.playButtonGlow,
-                            { opacity: playPulseOpacity, transform: [{ scale: playPulseScale }] },
-                          ]}
-                        />
+                        <>
+                          <Animated.View
+                            style={[
+                              styles.playButtonGlow,
+                              {
+                                pointerEvents: 'none',
+                                opacity: playPulseOpacity,
+                                transform: [{ scale: playPulseScale }],
+                              },
+                            ]}
+                          />
+                          <Animated.View
+                            style={[
+                              styles.playBeam,
+                              {
+                                pointerEvents: 'none',
+                                opacity: playBeamOneOpacity,
+                                transform: [{ scale: playBeamOneScale }],
+                              },
+                            ]}
+                          />
+                          <Animated.View
+                            style={[
+                              styles.playBeam,
+                              styles.playBeamMid,
+                              {
+                                pointerEvents: 'none',
+                                opacity: playBeamTwoOpacity,
+                                transform: [{ scale: playBeamTwoScale }],
+                              },
+                            ]}
+                          />
+                          <Animated.View
+                            style={[
+                              styles.playBeam,
+                              styles.playBeamOuter,
+                              {
+                                pointerEvents: 'none',
+                                opacity: playBeamThreeOpacity,
+                                transform: [{ scale: playBeamThreeScale }],
+                              },
+                            ]}
+                          />
+                        </>
                       )}
                       <View style={styles.playButtonCore}>
                         <Ionicons
                           name={isPlaying ? 'pause' : 'play'}
                           size={34}
-                          color={THEME.colors.highlight}
+                          color={theme.colors.highlight}
                           style={!isPlaying ? styles.playIconOffset : undefined}
                         />
                       </View>
@@ -933,7 +1299,11 @@ const AppShell = (): JSX.Element => {
                   keyExtractor={(item) => item.slug ?? item.title}
                   scrollEnabled={false}
                   renderItem={({ item: show }) => (
-                    <View style={styles.featureCard}>
+                    <TouchableOpacity
+                      activeOpacity={0.9}
+                      onPress={() => openExternal((show as any).url || (show as any).link)}
+                      style={styles.featureCard}
+                    >
                       <Image
                         source={imageSource(show.image)}
                         style={styles.featureImage}
@@ -945,7 +1315,7 @@ const AppShell = (): JSX.Element => {
                         <Text style={styles.featureMeta}>{show.time} • {show.host}</Text>
                         <Text style={styles.mediaExcerpt} numberOfLines={3}>{show.description}</Text>
                       </View>
-                    </View>
+                    </TouchableOpacity>
                   )}
                 />
               </View>
@@ -957,7 +1327,11 @@ const AppShell = (): JSX.Element => {
                   keyExtractor={(item) => item.link ?? item.title}
                   scrollEnabled={false}
                   renderItem={({ item: episode }) => (
-                    <View style={styles.listCard}>
+                    <TouchableOpacity
+                      activeOpacity={0.9}
+                      onPress={() => openExternal(episode.link)}
+                      style={styles.listCard}
+                    >
                       <Image
                         source={imageSource(episode.image)}
                         style={styles.thumbImage}
@@ -975,7 +1349,7 @@ const AppShell = (): JSX.Element => {
                           </Text>
                         ) : null}
                       </View>
-                    </View>
+                    </TouchableOpacity>
                   )}
                 />
               </View>
@@ -987,7 +1361,11 @@ const AppShell = (): JSX.Element => {
                   keyExtractor={(item) => item.link ?? item.title}
                   scrollEnabled={false}
                   renderItem={({ item: post }) => (
-                    <View style={styles.listCard}>
+                    <TouchableOpacity
+                      activeOpacity={0.9}
+                      onPress={() => openExternal(post.link)}
+                      style={styles.listCard}
+                    >
                       <Image
                         source={imageSource(post.image)}
                         style={styles.thumbImage}
@@ -1003,7 +1381,7 @@ const AppShell = (): JSX.Element => {
                           {post.excerpt}
                         </Text>
                       </View>
-                    </View>
+                    </TouchableOpacity>
                   )}
                 />
               </View>
@@ -1344,7 +1722,12 @@ const AppShell = (): JSX.Element => {
             <View style={styles.sectionCard}>
               <Text style={[styles.sectionTitle, { fontSize: sectionTitleSize }]}>Blog Articles</Text>
               {blogPosts.map((post) => (
-                <View key={post.link} style={styles.mediaCard}>
+                <TouchableOpacity
+                  key={post.link}
+                  activeOpacity={0.9}
+                  onPress={() => openExternal(post.link)}
+                  style={styles.mediaCard}
+                >
                   <Image
                     source={imageSource(post.image)}
                     style={styles.mediaImage}
@@ -1361,7 +1744,7 @@ const AppShell = (): JSX.Element => {
                     </Text>
                     <Text style={styles.mediaMeta}>By {post.author}</Text>
                   </View>
-                </View>
+                </TouchableOpacity>
               ))}
             </View>
           )}
@@ -1370,7 +1753,17 @@ const AppShell = (): JSX.Element => {
             <View style={styles.sectionCard}>
               <Text style={[styles.sectionTitle, { fontSize: sectionTitleSize }]}>Team Directory</Text>
               {glowData.team.map((member) => (
-                <View key={member.link} style={styles.listRow}>
+                <TouchableOpacity
+                  key={member.link}
+                  style={styles.listCard}
+                  activeOpacity={0.9}
+                  onPress={() => openExternal(member.link)}
+                >
+                  <Image
+                    source={profileImageSource(member)}
+                    style={styles.thumbImage}
+                    resizeMode="cover"
+                  />
                   <View style={styles.listBody}>
                     <Text style={styles.mediaTitle}>{member.name}</Text>
                     <Text style={styles.mediaCategory}>{member.role} • {member.department}</Text>
@@ -1382,7 +1775,7 @@ const AppShell = (): JSX.Element => {
                     {member.email ? <Text style={styles.mediaMeta}>{member.email}</Text> : null}
                     {member.phone ? <Text style={styles.mediaMeta}>{member.phone}</Text> : null}
                   </View>
-                </View>
+                </TouchableOpacity>
               ))}
             </View>
           )}
@@ -1391,7 +1784,17 @@ const AppShell = (): JSX.Element => {
             <View style={styles.sectionCard}>
               <Text style={[styles.sectionTitle, { fontSize: sectionTitleSize }]}>On-Air Personalities</Text>
               {glowData.oaps.map((oap) => (
-                <View key={oap.link} style={styles.listRow}>
+                <TouchableOpacity
+                  key={oap.link}
+                  style={styles.listCard}
+                  activeOpacity={0.9}
+                  onPress={() => openExternal(oap.link)}
+                >
+                  <Image
+                    source={profileImageSource(oap)}
+                    style={styles.thumbImage}
+                    resizeMode="cover"
+                  />
                   <View style={styles.listBody}>
                     <Text style={styles.mediaTitle}>{oap.name}</Text>
                     <Text style={styles.mediaCategory}>
@@ -1399,7 +1802,7 @@ const AppShell = (): JSX.Element => {
                     </Text>
                     <Text style={styles.mediaMeta}>{oap.shows}</Text>
                   </View>
-                </View>
+                </TouchableOpacity>
               ))}
             </View>
           )}
@@ -1449,11 +1852,7 @@ function App(): JSX.Element {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: THEME.colors.background,
-  },
+const errorStyles = StyleSheet.create({
   errorShell: {
     flex: 1,
     backgroundColor: THEME.colors.background,
@@ -1461,7 +1860,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
   errorTitle: {
-    color: '#ffb6c1',
+    color: '#ffb07a',
     fontSize: 22,
     fontWeight: '700',
     marginBottom: 12,
@@ -1469,6 +1868,32 @@ const styles = StyleSheet.create({
   },
   errorBody: {
     color: THEME.colors.textSecondary,
+    fontSize: 14,
+    textAlign: 'center',
+    lineHeight: 20,
+  },
+});
+
+const createStyles = (theme: typeof THEME) => StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: theme.colors.background,
+  },
+  errorShell: {
+    flex: 1,
+    backgroundColor: theme.colors.background,
+    justifyContent: 'center',
+    paddingHorizontal: 24,
+  },
+  errorTitle: {
+    color: '#ffb07a',
+    fontSize: 22,
+    fontWeight: '700',
+    marginBottom: 12,
+    textAlign: 'center',
+  },
+  errorBody: {
+    color: theme.colors.textSecondary,
     fontSize: 14,
     textAlign: 'center',
     lineHeight: 20,
@@ -1493,8 +1918,8 @@ const styles = StyleSheet.create({
     borderRadius: 140,
     top: -120,
     right: -60,
-    backgroundColor: 'rgba(105, 214, 255, 0.25)',
-    shadowColor: 'rgba(105, 214, 255, 0.5)',
+    backgroundColor: 'rgba(255, 147, 70, 0.26)',
+    shadowColor: 'rgba(255, 147, 70, 0.52)',
     shadowOpacity: 0.6,
     shadowOffset: { width: 0, height: 12 },
     shadowRadius: 30,
@@ -1506,8 +1931,8 @@ const styles = StyleSheet.create({
     borderRadius: 110,
     bottom: -80,
     left: -40,
-    backgroundColor: 'rgba(43, 124, 255, 0.18)',
-    shadowColor: 'rgba(43, 124, 255, 0.4)',
+    backgroundColor: 'rgba(169, 83, 255, 0.2)',
+    shadowColor: 'rgba(169, 83, 255, 0.45)',
     shadowOpacity: 0.5,
     shadowOffset: { width: 0, height: 8 },
     shadowRadius: 24,
@@ -1518,15 +1943,15 @@ const styles = StyleSheet.create({
     right: 20,
     top: 220,
     height: 1,
-    backgroundColor: 'rgba(255, 255, 255, 0.08)',
+    backgroundColor: 'rgba(255, 180, 130, 0.14)',
   },
   radioSweep: {
     position: 'absolute',
     left: '12%',
     height: 2,
     borderRadius: 999,
-    backgroundColor: 'rgba(166, 242, 255, 0.78)',
-    shadowColor: 'rgba(166, 242, 255, 0.5)',
+    backgroundColor: 'rgba(255, 199, 132, 0.82)',
+    shadowColor: 'rgba(255, 199, 132, 0.54)',
     shadowOpacity: 0.5,
     shadowOffset: { width: 0, height: 4 },
     shadowRadius: 8,
@@ -1539,7 +1964,7 @@ const styles = StyleSheet.create({
   waveRing: {
     position: 'absolute',
     borderRadius: 200,
-    borderColor: 'rgba(166, 242, 255, 0.65)',
+    borderColor: 'rgba(255, 199, 132, 0.68)',
     borderLeftColor: 'transparent',
     borderBottomColor: 'transparent',
   },
@@ -1556,7 +1981,7 @@ const styles = StyleSheet.create({
     borderWidth: 8,
     top: -60,
     right: -40,
-    borderColor: 'rgba(105, 214, 255, 0.5)',
+    borderColor: 'rgba(201, 112, 255, 0.52)',
     borderLeftColor: 'transparent',
     borderBottomColor: 'transparent',
   },
@@ -1566,7 +1991,7 @@ const styles = StyleSheet.create({
     borderWidth: 6,
     top: -100,
     right: -80,
-    borderColor: 'rgba(43, 124, 255, 0.45)',
+    borderColor: 'rgba(255, 148, 84, 0.46)',
     borderLeftColor: 'transparent',
     borderBottomColor: 'transparent',
   },
@@ -1582,7 +2007,42 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'space-between',
     marginBottom: 6,
+  },
+  headerLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flex: 1,
+  },
+  modeSwitch: {
+    marginLeft: 12,
+    padding: 4,
+  },
+  modeSwitchTrack: {
+    width: 30,
+    height: 18,
+    borderRadius: 999,
+    backgroundColor: 'rgba(255, 255, 255, 0.22)',
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    justifyContent: 'center',
+    paddingHorizontal: 2,
+  },
+  modeSwitchTrackActive: {
+    backgroundColor: 'rgba(247, 132, 54, 0.32)',
+    borderColor: theme.colors.accent,
+  },
+  modeSwitchDot: {
+    width: 10,
+    height: 10,
+    borderRadius: 999,
+    backgroundColor: theme.colors.highlight,
+    alignSelf: 'flex-start',
+  },
+  modeSwitchDotActive: {
+    backgroundColor: theme.colors.accent,
+    alignSelf: 'flex-end',
   },
   syncRow: {
     flexDirection: 'row',
@@ -1601,32 +2061,32 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 14,
     borderWidth: 1,
-    borderColor: THEME.colors.border,
-    backgroundColor: THEME.colors.glass,
+    borderColor: theme.colors.border,
+    backgroundColor: theme.colors.glass,
   },
   themeChipActive: {
-    borderColor: THEME.colors.accent,
-    backgroundColor: 'rgba(105, 214, 255, 0.16)',
+    borderColor: theme.colors.accent,
+    backgroundColor: 'rgba(255, 150, 74, 0.2)',
   },
   themeChipText: {
-    color: THEME.colors.textSecondary,
+    color: theme.colors.textSecondary,
     fontSize: 12,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
     fontWeight: '700',
     letterSpacing: 0.3,
   },
   themeChipTextActive: {
-    color: THEME.colors.textPrimary,
+    color: theme.colors.textPrimary,
   },
   syncDot: {
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: 'rgba(166, 242, 255, 0.5)',
+    backgroundColor: 'rgba(255, 198, 138, 0.52)',
   },
   syncDotActive: {
-    backgroundColor: THEME.colors.accent,
-    shadowColor: THEME.colors.accent,
+    backgroundColor: theme.colors.accent,
+    shadowColor: theme.colors.accent,
     shadowOpacity: 0.9,
     shadowOffset: { width: 0, height: 0 },
     shadowRadius: 6,
@@ -1635,8 +2095,8 @@ const styles = StyleSheet.create({
     fontSize: 11,
     letterSpacing: 1.4,
     textTransform: 'uppercase',
-    color: THEME.colors.textMuted,
-    fontFamily: THEME.fonts.body,
+    color: theme.colors.textMuted,
+    fontFamily: theme.fonts.body,
   },
   logoMark: {
     width: 64,
@@ -1649,7 +2109,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     borderWidth: 1,
     borderColor: 'rgba(255, 255, 255, 0.25)',
-    shadowColor: 'rgba(105, 214, 255, 0.7)',
+    shadowColor: 'rgba(169, 83, 255, 0.55)',
     shadowOpacity: 0.5,
     shadowOffset: { width: 0, height: 6 },
     shadowRadius: 10,
@@ -1661,9 +2121,9 @@ const styles = StyleSheet.create({
   logoText: {
     fontSize: 16,
     fontWeight: '800',
-    color: THEME.colors.background,
+    color: theme.colors.background,
     letterSpacing: 1,
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   headerCopy: {
     flex: 1,
@@ -1671,18 +2131,18 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: '800',
-    color: THEME.colors.textPrimary,
+    color: theme.colors.textPrimary,
     letterSpacing: 0.4,
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   titleWide: {
     fontSize: 28,
   },
   subtitle: {
     fontSize: 14,
-    color: THEME.colors.textSecondary,
+    color: theme.colors.textSecondary,
     marginTop: 4,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   tabRow: {
     paddingVertical: 8,
@@ -1692,33 +2152,33 @@ const styles = StyleSheet.create({
     paddingHorizontal: 14,
     paddingVertical: 8,
     borderRadius: 999,
-    backgroundColor: THEME.colors.glass,
+    backgroundColor: theme.colors.glass,
     borderWidth: 1,
-    borderColor: THEME.colors.border,
+    borderColor: theme.colors.border,
   },
   tabChipActive: {
-    backgroundColor: 'rgba(105, 214, 255, 0.9)',
-    borderColor: 'rgba(105, 214, 255, 0.9)',
+    backgroundColor: 'rgba(245, 129, 49, 0.94)',
+    borderColor: 'rgba(245, 129, 49, 0.94)',
   },
   tabText: {
     fontSize: 13,
-    color: THEME.colors.textSecondary,
+    color: theme.colors.textSecondary,
     fontWeight: '600',
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   tabTextActive: {
-    color: THEME.colors.background,
+    color: theme.colors.background,
     fontWeight: '700',
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   heroCard: {
-    backgroundColor: THEME.colors.glassStrong,
-    borderRadius: THEME.radius.large,
+    backgroundColor: theme.colors.glassStrong,
+    borderRadius: theme.radius.large,
     padding: 18,
     borderWidth: 1,
     borderColor: 'rgba(255, 255, 255, 0.18)',
     marginBottom: 18,
-    shadowColor: 'rgba(5, 20, 48, 0.6)',
+    shadowColor: 'rgba(52, 18, 74, 0.58)',
     shadowOpacity: 0.35,
     shadowOffset: { width: 0, height: 12 },
     shadowRadius: 20,
@@ -1734,43 +2194,43 @@ const styles = StyleSheet.create({
     height: 72,
   },
   heroLogoText: {
-    color: THEME.colors.textPrimary,
-    fontFamily: THEME.fonts.display,
+    color: theme.colors.textPrimary,
+    fontFamily: theme.fonts.display,
     fontSize: 18,
     fontWeight: '800',
   },
   heroLogoSub: {
-    color: THEME.colors.textMuted,
-    fontFamily: THEME.fonts.body,
+    color: theme.colors.textMuted,
+    fontFamily: theme.fonts.body,
     fontSize: 12,
     letterSpacing: 0.6,
     marginTop: 2,
   },
   heroBadge: {
-    color: THEME.colors.accent,
+    color: theme.colors.accent,
     fontSize: 12,
     letterSpacing: 1.8,
     marginBottom: 8,
     textTransform: 'uppercase',
     fontWeight: '700',
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   heroTitle: {
-    color: THEME.colors.textPrimary,
+    color: theme.colors.textPrimary,
     fontSize: 30,
     fontWeight: '800',
     marginBottom: 6,
     letterSpacing: 0.4,
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   heroHighlight: {
-    color: THEME.colors.glow,
+    color: theme.colors.glow,
   },
   heroCopy: {
-    color: THEME.colors.textSecondary,
+    color: theme.colors.textSecondary,
     fontSize: 14,
     lineHeight: 20,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   heroActions: {
     flexDirection: 'row',
@@ -1782,35 +2242,35 @@ const styles = StyleSheet.create({
     paddingHorizontal: 18,
     paddingVertical: 12,
     borderRadius: 999,
-    backgroundColor: THEME.colors.accentDeep,
-    shadowColor: THEME.colors.accentDeep,
+    backgroundColor: theme.colors.accentDeep,
+    shadowColor: theme.colors.accentDeep,
     shadowOpacity: 0.35,
     shadowOffset: { width: 0, height: 6 },
     shadowRadius: 12,
   },
   primaryButtonText: {
-    color: THEME.colors.background,
+    color: theme.colors.background,
     fontWeight: '700',
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   secondaryButton: {
     paddingHorizontal: 18,
     paddingVertical: 12,
     borderRadius: 999,
     borderWidth: 1,
-    borderColor: THEME.colors.border,
-    backgroundColor: THEME.colors.glass,
+    borderColor: theme.colors.border,
+    backgroundColor: theme.colors.glass,
   },
   secondaryButtonText: {
-    color: THEME.colors.textPrimary,
+    color: theme.colors.textPrimary,
     fontWeight: '600',
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   nowPlayingCard: {
     marginBottom: 18,
     padding: 18,
-    borderRadius: THEME.radius.large,
-    backgroundColor: THEME.colors.glass,
+    borderRadius: theme.radius.large,
+    backgroundColor: theme.colors.glass,
     borderWidth: 1,
     borderColor: 'rgba(255, 255, 255, 0.14)',
     shadowColor: 'rgba(4, 12, 32, 0.8)',
@@ -1819,31 +2279,31 @@ const styles = StyleSheet.create({
     shadowRadius: 20,
   },
   cardLabel: {
-    color: THEME.colors.textMuted,
+    color: theme.colors.textMuted,
     fontSize: 12,
     letterSpacing: 1.3,
     marginBottom: 8,
     textTransform: 'uppercase',
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   stationName: {
-    color: THEME.colors.textPrimary,
+    color: theme.colors.textPrimary,
     fontSize: 24,
     fontWeight: '800',
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   stationVibe: {
-    color: THEME.colors.glow,
+    color: theme.colors.glow,
     fontSize: 16,
     marginTop: 4,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   stationDescription: {
-    color: THEME.colors.textSecondary,
+    color: theme.colors.textSecondary,
     fontSize: 14,
     marginTop: 8,
     lineHeight: 20,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   controls: {
     alignItems: 'center',
@@ -1853,22 +2313,22 @@ const styles = StyleSheet.create({
     width: 120,
     height: 120,
     borderRadius: 70,
-    backgroundColor: 'rgba(6, 20, 40, 0.78)',
+    backgroundColor: 'rgba(38, 14, 52, 0.82)',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: 'rgba(126, 224, 255, 0.56)',
-    shadowColor: THEME.colors.glow,
+    borderColor: 'rgba(255, 173, 106, 0.6)',
+    shadowColor: theme.colors.glow,
     shadowOffset: { width: 0, height: 10 },
     shadowOpacity: 0.42,
     shadowRadius: 16,
   },
   playButtonActive: {
-    backgroundColor: 'rgba(10, 30, 58, 0.9)',
-    shadowColor: THEME.colors.highlight,
+    backgroundColor: 'rgba(69, 26, 86, 0.92)',
+    shadowColor: theme.colors.highlight,
     shadowOpacity: 0.62,
     shadowRadius: 24,
-    borderColor: 'rgba(166, 242, 255, 0.95)',
+    borderColor: 'rgba(255, 201, 140, 0.95)',
   },
   playButtonGlow: {
     position: 'absolute',
@@ -1876,16 +2336,31 @@ const styles = StyleSheet.create({
     height: '100%',
     borderRadius: 999,
     borderWidth: 1,
-    borderColor: 'rgba(166, 242, 255, 0.68)',
-    backgroundColor: 'rgba(105, 214, 255, 0.15)',
+    borderColor: 'rgba(255, 201, 140, 0.76)',
+    backgroundColor: 'rgba(255, 140, 64, 0.18)',
+  },
+  playBeam: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    borderRadius: 999,
+    borderWidth: 1.5,
+    borderColor: 'rgba(255, 196, 135, 0.78)',
+    backgroundColor: 'transparent',
+  },
+  playBeamMid: {
+    borderColor: 'rgba(210, 123, 255, 0.66)',
+  },
+  playBeamOuter: {
+    borderColor: 'rgba(255, 153, 84, 0.56)',
   },
   playButtonCore: {
     width: '78%',
     height: '78%',
     borderRadius: 999,
-    backgroundColor: 'rgba(4, 14, 30, 0.75)',
+    backgroundColor: 'rgba(29, 10, 42, 0.78)',
     borderWidth: 1,
-    borderColor: 'rgba(166, 242, 255, 0.28)',
+    borderColor: 'rgba(255, 190, 126, 0.34)',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -1894,9 +2369,9 @@ const styles = StyleSheet.create({
   },
   controlHint: {
     marginTop: 12,
-    color: THEME.colors.textSecondary,
+    color: theme.colors.textSecondary,
     fontSize: 13,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   controlError: {
     marginTop: 8,
@@ -1905,14 +2380,14 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     maxWidth: 280,
     lineHeight: 16,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   sectionCard: {
-    backgroundColor: THEME.colors.glass,
-    borderRadius: THEME.radius.large,
+    backgroundColor: theme.colors.glass,
+    borderRadius: theme.radius.large,
     padding: 18,
     borderWidth: 1,
-    borderColor: THEME.colors.border,
+    borderColor: theme.colors.border,
     marginBottom: 18,
     shadowColor: 'rgba(4, 12, 32, 0.65)',
     shadowOpacity: 0.25,
@@ -1920,19 +2395,19 @@ const styles = StyleSheet.create({
     shadowRadius: 18,
   },
   sectionTitle: {
-    color: THEME.colors.textPrimary,
+    color: theme.colors.textPrimary,
     fontSize: 20,
     fontWeight: '700',
     marginBottom: 10,
     letterSpacing: 0.3,
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   sectionCopy: {
-    color: THEME.colors.textSecondary,
+    color: theme.colors.textSecondary,
     fontSize: 14,
     lineHeight: 20,
     marginBottom: 8,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   statScroll: {
     flexDirection: 'row',
@@ -1942,25 +2417,25 @@ const styles = StyleSheet.create({
   statItem: {
     minWidth: 180,
     padding: 12,
-    borderRadius: THEME.radius.medium,
-    backgroundColor: THEME.colors.glassStrong,
+    borderRadius: theme.radius.medium,
+    backgroundColor: theme.colors.glassStrong,
     borderWidth: 1,
-    borderColor: THEME.colors.border,
+    borderColor: theme.colors.border,
   },
   statItemWide: {
     minWidth: 200,
   },
   statNumber: {
-    color: THEME.colors.glow,
+    color: theme.colors.glow,
     fontSize: 18,
     fontWeight: '800',
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   statLabel: {
-    color: THEME.colors.textSecondary,
+    color: theme.colors.textSecondary,
     fontSize: 13,
     marginTop: 4,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   trendingList: {
     gap: 12,
@@ -1968,19 +2443,19 @@ const styles = StyleSheet.create({
   trendingItem: {
     paddingVertical: 8,
     borderBottomWidth: 1,
-    borderBottomColor: THEME.colors.border,
+    borderBottomColor: theme.colors.border,
   },
   trendingTitle: {
-    color: THEME.colors.textPrimary,
+    color: theme.colors.textPrimary,
     fontSize: 15,
     fontWeight: '600',
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   trendingMeta: {
-    color: THEME.colors.textMuted,
+    color: theme.colors.textMuted,
     fontSize: 12,
     marginTop: 4,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   cardGrid: {
     gap: 16,
@@ -1992,11 +2467,11 @@ const styles = StyleSheet.create({
     gap: 16,
   },
   mediaCard: {
-    backgroundColor: THEME.colors.glassStrong,
-    borderRadius: THEME.radius.medium,
+    backgroundColor: theme.colors.glassStrong,
+    borderRadius: theme.radius.medium,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: THEME.colors.border,
+    borderColor: theme.colors.border,
     marginBottom: 16,
     shadowColor: 'rgba(4, 12, 32, 0.5)',
     shadowOpacity: 0.3,
@@ -2014,39 +2489,39 @@ const styles = StyleSheet.create({
     padding: 14,
   },
   mediaCategory: {
-    color: THEME.colors.glow,
+    color: theme.colors.glow,
     fontSize: 12,
     fontWeight: '700',
     textTransform: 'uppercase',
     marginBottom: 6,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   mediaTitle: {
-    color: THEME.colors.textPrimary,
+    color: theme.colors.textPrimary,
     fontSize: 16,
     fontWeight: '700',
     marginBottom: 6,
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   mediaMeta: {
-    color: THEME.colors.textMuted,
+    color: theme.colors.textMuted,
     fontSize: 12,
     marginBottom: 6,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   mediaExcerpt: {
-    color: THEME.colors.textSecondary,
+    color: theme.colors.textSecondary,
     fontSize: 13,
     lineHeight: 18,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   featureCard: {
     flexDirection: 'row',
-    backgroundColor: THEME.colors.glassStrong,
-    borderRadius: THEME.radius.medium,
+    backgroundColor: theme.colors.glassStrong,
+    borderRadius: theme.radius.medium,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: THEME.colors.border,
+    borderColor: theme.colors.border,
     marginBottom: 12,
   },
   featureImage: {
@@ -2058,30 +2533,30 @@ const styles = StyleSheet.create({
     padding: 12,
   },
   featureTitle: {
-    color: THEME.colors.textPrimary,
+    color: theme.colors.textPrimary,
     fontSize: 16,
     fontWeight: '700',
     marginBottom: 4,
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   featureMeta: {
-    color: THEME.colors.textMuted,
+    color: theme.colors.textMuted,
     fontSize: 12,
     marginBottom: 4,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   listCard: {
     flexDirection: 'row',
-    backgroundColor: THEME.colors.glassStrong,
-    borderRadius: THEME.radius.medium,
+    backgroundColor: theme.colors.glassStrong,
+    borderRadius: theme.radius.medium,
     borderWidth: 1,
-    borderColor: THEME.colors.border,
+    borderColor: theme.colors.border,
     marginBottom: 12,
     overflow: 'hidden',
   },
   listCardExpanded: {
-    borderColor: THEME.colors.accent,
-    shadowColor: THEME.colors.accent,
+    borderColor: theme.colors.accent,
+    shadowColor: theme.colors.accent,
     shadowOpacity: 0.2,
     shadowRadius: 12,
   },
@@ -2095,11 +2570,11 @@ const styles = StyleSheet.create({
   },
   embedCard: {
     marginTop: 10,
-    borderRadius: THEME.radius.medium,
+    borderRadius: theme.radius.medium,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: THEME.colors.border,
-    backgroundColor: THEME.colors.glass,
+    borderColor: theme.colors.border,
+    backgroundColor: theme.colors.glass,
     height: 220,
   },
   embedWebView: {
@@ -2115,37 +2590,37 @@ const styles = StyleSheet.create({
   badgeChip: {
     paddingHorizontal: 10,
     paddingVertical: 6,
-    borderRadius: THEME.radius.small,
-    backgroundColor: THEME.colors.glass,
+    borderRadius: theme.radius.small,
+    backgroundColor: theme.colors.glass,
     borderWidth: 1,
-    borderColor: THEME.colors.border,
+    borderColor: theme.colors.border,
   },
   badgeText: {
-    color: THEME.colors.textSecondary,
+    color: theme.colors.textSecondary,
     fontSize: 12,
     fontWeight: '600',
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   valueCard: {
     padding: 14,
-    borderRadius: THEME.radius.medium,
-    backgroundColor: THEME.colors.glassStrong,
+    borderRadius: theme.radius.medium,
+    backgroundColor: theme.colors.glassStrong,
     borderWidth: 1,
-    borderColor: THEME.colors.border,
+    borderColor: theme.colors.border,
     marginBottom: 10,
   },
   valueTitle: {
-    color: THEME.colors.textPrimary,
+    color: theme.colors.textPrimary,
     fontSize: 15,
     fontWeight: '700',
     marginBottom: 6,
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   valueCopy: {
-    color: THEME.colors.textSecondary,
+    color: theme.colors.textSecondary,
     fontSize: 13,
     lineHeight: 18,
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   milestoneItem: {
     flexDirection: 'row',
@@ -2153,26 +2628,26 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   milestoneYear: {
-    color: THEME.colors.glow,
+    color: theme.colors.glow,
     fontSize: 16,
     fontWeight: '700',
     width: 60,
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   milestoneBody: {
     flex: 1,
   },
   milestoneTitle: {
-    color: THEME.colors.textPrimary,
+    color: theme.colors.textPrimary,
     fontSize: 15,
     fontWeight: '700',
     marginBottom: 4,
-    fontFamily: THEME.fonts.display,
+    fontFamily: theme.fonts.display,
   },
   listRow: {
     paddingVertical: 12,
     borderBottomWidth: 1,
-    borderBottomColor: THEME.colors.border,
+    borderBottomColor: theme.colors.border,
   },
   scheduleList: {
     marginTop: 12,
@@ -2183,10 +2658,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: 12,
-    borderRadius: THEME.radius.medium,
-    backgroundColor: THEME.colors.glassStrong,
+    borderRadius: theme.radius.medium,
+    backgroundColor: theme.colors.glassStrong,
     borderWidth: 1,
-    borderColor: THEME.colors.border,
+    borderColor: theme.colors.border,
   },
   scheduleCopy: {
     flex: 1,
@@ -2196,13 +2671,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 6,
     borderRadius: 999,
-    backgroundColor: THEME.colors.accent,
+    backgroundColor: theme.colors.accent,
   },
   statusText: {
-    color: THEME.colors.background,
+    color: theme.colors.background,
     fontSize: 11,
     fontWeight: '700',
-    fontFamily: THEME.fonts.body,
+    fontFamily: theme.fonts.body,
   },
   contactRow: {
     marginBottom: 10,
@@ -2210,6 +2685,8 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+
 
 
 

@@ -588,7 +588,7 @@ export const GLOW_DATA = {
           {
             "linkedin": "",
             "twitter": "",
-            "email": "gm@glowfmradio.com"
+            "email": "chairman@glowfmradio.com"
           }
         ],
         "socials": [
@@ -2762,7 +2762,7 @@ export const GLOW_DATA = {
   ],
   "contact": {
     "phone": "+234 703 022 3281",
-    "email": "info@glowfm.com",
+    "email": "chairman@glowfmradio.com",
     "address": "1 Efon Alaye street Ijapo Estate, Akure, Akure, Nigeria.",
     "office_hours": {
       "Weekdays": "9AM - 6PM",
